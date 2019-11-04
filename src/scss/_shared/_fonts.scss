@@ -95,3 +95,13 @@
 	font-weight: bold;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Aktiv Grotesk Ex';
+	src: url('../fonts/AktivGroteskEx.woff2') format('woff2'),
+	url('../fonts/AktivGroteskEx.woff') format('woff'),
+	url('../fonts/AktivGroteskEx.ttf') format('truetype'),
+	url('../fonts/AktivGroteskEx.svg#.') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}

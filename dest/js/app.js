@@ -79,7 +79,29 @@ $(document).ready(function (ev) {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+  var initVideo = function initVideo() {
+    var vid = document.getElementById("video");
 
+    if (vid) {
+      $('[play-video-js]').on('click', function (ev) {
+        var elem = $(ev.currentTarget);
+
+        if (!vid.paused) {
+          vid.pause();
+        } else {
+          vid.play();
+          elem.fadeOut(300);
+        }
+      });
+
+      $(vid).on('click', function () {
+        if (!vid.paused) {
+          vid.pause();
+          $('[play-video-js]').fadeIn(300);
+        }
+      });
+    }
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -97,6 +119,7 @@ $(document).ready(function (ev) {
     // ==========================================
 
     // callback
+    initVideo();
     // ==========================================
   };
   initJquery();

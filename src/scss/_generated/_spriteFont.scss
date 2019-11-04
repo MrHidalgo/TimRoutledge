@@ -33,6 +33,9 @@
 	@if $filename == instagram {
 		$char: "\E002";
 	}
+	@if $filename == play {
+		$char: "\E003";
+	}
 
 	@return $char;
 }
@@ -54,5 +57,9 @@
 }
 .icon-instagram {
 	@include icon(instagram);
+
+}
+.icon-play {
+	@include icon(play);
 
 }

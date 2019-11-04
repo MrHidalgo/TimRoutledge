@@ -35,7 +35,7 @@
 /// ===============
 //@import "_macros/logotype";
 //@import "_macros/nav";
-//@import "_macros/title";
+@import "_macros/title";
 //@import "_macros/subtitle";
 //@import "_macros/btn";
 //@import "_macros/modal";
@@ -50,7 +50,9 @@
 
 //@import "_components/about";
 //@import "_components/category";
-//@import "_components/showreel";
+
+@import "_components/showreel/showreel";
+
 //@import "_components/projects";
 //@import "_components/single-project";
 //@import "_components/press";

@@ -1,0 +1,131 @@
+// SECTION showreel :: START
+
+.showreel {
+  overflow: hidden;
+  position: relative;
+  padding-top: 123px;
+  padding-bottom: 124px;
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      top: 70px;
+      left: 68px;
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    max-width: 1146px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__content {
+    display: flex;
+    padding-bottom: 101px;
+
+    > div {
+      width: 100%;
+
+      &:nth-of-type(1) {
+        max-width: 541px;
+      }
+
+      &:nth-of-type(2) {
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+        padding-top: 12px;
+      }
+    }
+  }
+
+  &__title {
+
+  }
+
+  &__desc {
+    padding-bottom: 23px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    height: 641px;
+
+    &-line {
+      z-index: 2;
+      position: absolute;
+      right: 99px;
+      top: -78px;
+      width: 2px;
+      height: 80px;
+      background-color: #FFFFFF;
+    }
+
+    &-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: rgba(#000, 0.8);
+
+      &:hover {
+        .icon-font {
+          transform: scale(1.1);
+          @include transition(transform);
+        }
+      }
+
+      .icon-font {
+        position: relative;
+        left: 2px;
+        color: #ffffff;
+        font-size: 20px;
+        backface-visibility: hidden;
+        transform-origin: center;
+        @include transition(transform);
+      }
+    }
+
+    iframe,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+// SECTION showreel :: END
