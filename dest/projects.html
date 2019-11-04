@@ -34,8 +34,41 @@
   <body>
     <!-- HEADER :: START-->
     <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper"></div>
+      <div class="header__wrapper d-flex flex-column justify-content-between position-relative">
+        <div class="header__wrapper-top d-flex justify-content-center">
+          <div class="logo logo--header"><a class="logo__btn" href="/" title=""><img class="logo__image" src="img/logo.svg"></a></div>
+        </div>
+        <div class="header__wrapper-middle"><a class="header__btn d-flex align-items-center" href="#" title="" hamburger-js>
+            <p>Menu</p><span class="d-flex align-items-center">
+              <div class="hamburger hamburger--squeeze" role="button">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div></span></a></div>
+        <div class="header__wrapper-bottom position-relative">
+          <h1 class="header__title">tim roUtledge</h1>
+        </div>
+      </div>
+      <div class="header__menu d-flex align-items-center" mobile-block-js>
+        <div class="header__menu-wrapper">
+          <ul class="nav nav--main flex-column">
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="About">About</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Portfolio">Portfolio</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="News">News</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Press">Press</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Contact">Contact</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Showreel">Showreel</a></li>
+          </ul>
+          <div class="header__menu-line"></div>
+          <ul class="nav nav--additional flex-column">
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Concerts">Concerts</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Television">Television</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Events">Events</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Sports">Sports</a></li>
+            <li class="nav-item pb-3 d-flex"><a class="nav-link p-0 d-flex align-items-center" href="#" title="" data-hover="Corporate">Corporate</a></li>
+          </ul>
+          <div class="header__social d-flex align-center"><a class="header__social-btn" href="#" title=""><i class="icon-font icon-facebook"></i></a><a class="header__social-btn" href="#" title=""><i class="icon-font icon-instagram"></i></a></div>
+        </div>
       </div>
     </header>
     <!-- HEADER :: END-->
@@ -47,6 +80,7 @@
       </div>
     </footer>
     <!-- FOOTER :: END-->
+    <div class="overlay"></div>
   </body>
   <!-- SCRIPT :: START-->
   <script src="js/vendor.js"></script>

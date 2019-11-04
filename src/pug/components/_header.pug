@@ -1,7 +1,59 @@
 // HEADER :: START
 
 header#header.header
-  .c-grid
-    .header__wrapper
+
+  .header__wrapper.d-flex.flex-column.justify-content-between.position-relative
+    .header__wrapper-top.d-flex.justify-content-center
+
+      .logo.logo--header
+        a.logo__btn(href='/' title='')
+          img.logo__image(src='img/logo.svg')
+
+    .header__wrapper-middle
+
+      a.header__btn.d-flex.align-items-center(href='#' title='' hamburger-js)
+        p Menu
+        span.d-flex.align-items-center
+          +hamburger()
+
+    .header__wrapper-bottom.position-relative
+      h1.header__title tim roUtledge
+
+  .header__menu.d-flex.align-items-center(mobile-block-js)
+    .header__menu-wrapper
+
+      ul.nav.nav--main.flex-column
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='About') About
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Portfolio') Portfolio
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='News') News
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Press') Press
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Contact') Contact
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Showreel') Showreel
+
+      .header__menu-line
+
+      ul.nav.nav--additional.flex-column
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Concerts') Concerts
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Television') Television
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Events') Events
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Sports') Sports
+        li.nav-item.pb-3.d-flex
+          a.nav-link.p-0.d-flex.align-items-center(href='#' title='' data-hover='Corporate') Corporate
+
+      .header__social.d-flex.align-center
+        a.header__social-btn(href='#' title='')
+          i.icon-font.icon-facebook
+        a.header__social-btn(href='#' title='')
+          i.icon-font.icon-instagram
 
 // HEADER :: END

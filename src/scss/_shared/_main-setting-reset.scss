@@ -4,8 +4,8 @@ body {
   min-height: 100vh;
 
   &.is-hideScroll {
-    width: 100%;
     overflow: hidden !important;
+    width: 100%;
   }
 }
 
@@ -17,12 +17,14 @@ html {
 
 
 body {
+  user-select: none;
   overflow-x: hidden;
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: rgba(#010101, 0);
   line-height: 1.42857143;
+  color: #ffffff;
   font-size: 14px;
   font-weight: normal;
   font-family: "AktivGrotesk", sans-serif;
@@ -34,6 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-left: 96px;
 
   > .body {
     display: flex;

@@ -1,3 +1,25 @@
 // COMMON :: START
 
+// overlay
+.overlay {
+  z-index: 990;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#050505, 0.8);
+  @include transition(opacity, visibility);
+
+  .is-hideScroll & {
+    opacity: 1;
+    visibility: visible;
+    @include transition(opacity, visibility);
+  }
+}
+// overlay :: end
+
 // COMMON :: END
