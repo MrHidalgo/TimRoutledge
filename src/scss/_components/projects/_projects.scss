@@ -46,8 +46,19 @@
     }
 
     &-body {
+      position: relative;
       z-index: 2;
       flex: unset;
+
+      &__bg {
+        z-index: -1;
+        position: absolute;
+        bottom: 50%;
+        left: -40px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
     }
 
     &-title {
