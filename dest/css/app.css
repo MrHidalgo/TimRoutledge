@@ -1270,14 +1270,30 @@ picture {
 }
 
 /* line 11, src/scss/_components/projects/_projects.scss */
+.projects__title {
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+/* line 16, src/scss/_components/projects/_projects.scss */
+.projects__title span {
+  left: -15px;
+  width: 80px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+/* line 23, src/scss/_components/projects/_projects.scss */
+.projects__title p {
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+/* line 31, src/scss/_components/projects/_projects.scss */
 .projects .card {
-  overflow: hidden;
-  position: relative;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
   height: 100vh;
   padding: 73px 90px;
   border: none;
@@ -1286,7 +1302,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 22, src/scss/_components/projects/_projects.scss */
+/* line 38, src/scss/_components/projects/_projects.scss */
 .projects .card:after {
   content: '';
   position: absolute;
@@ -1299,30 +1315,16 @@ picture {
   background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
 }
 
-/* line 32, src/scss/_components/projects/_projects.scss */
+/* line 48, src/scss/_components/projects/_projects.scss */
 .projects .card-body {
   z-index: 2;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100%;
   -webkit-box-flex: unset;
   -webkit-flex: unset;
       -ms-flex: unset;
           flex: unset;
 }
 
-/* line 42, src/scss/_components/projects/_projects.scss */
+/* line 53, src/scss/_components/projects/_projects.scss */
 .projects .card-title {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 60px;
@@ -1331,7 +1333,7 @@ picture {
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* line 50, src/scss/_components/projects/_projects.scss */
+/* line 61, src/scss/_components/projects/_projects.scss */
 .projects .card-text {
   padding-bottom: 15px;
   font-size: 20px;
@@ -1339,13 +1341,13 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 57, src/scss/_components/projects/_projects.scss */
+/* line 68, src/scss/_components/projects/_projects.scss */
 .projects .card .icon-font {
   color: #ffffff;
   font-size: 14px;
 }
 
-/* line 62, src/scss/_components/projects/_projects.scss */
+/* line 73, src/scss/_components/projects/_projects.scss */
 .projects .card__bg {
   position: absolute;
   top: 0;
@@ -1358,7 +1360,7 @@ picture {
      object-position: center;
 }
 
-/* line 72, src/scss/_components/projects/_projects.scss */
+/* line 83, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
@@ -1371,7 +1373,7 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 82, src/scss/_components/projects/_projects.scss */
+/* line 93, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge {
   overflow: hidden;
   position: relative;
@@ -1382,7 +1384,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 90, src/scss/_components/projects/_projects.scss */
+/* line 101, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge img {
   position: absolute;
   top: 0;
@@ -1395,20 +1397,8 @@ picture {
      object-position: center;
 }
 
-/* line 101, src/scss/_components/projects/_projects.scss */
+/* line 112, src/scss/_components/projects/_projects.scss */
 .projects .card .btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 120px;
   height: 30px;
   -webkit-border-radius: 0;
@@ -1421,7 +1411,7 @@ picture {
   color: #000000;
 }
 
-/* line 115, src/scss/_components/projects/_projects.scss */
+/* line 123, src/scss/_components/projects/_projects.scss */
 .projects .card .btn:hover, .projects .card .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;

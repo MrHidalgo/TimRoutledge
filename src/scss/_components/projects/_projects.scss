@@ -8,11 +8,27 @@
 
   &__wrapper {}
 
+  &__title {
+    position: absolute;
+    top: 50px;
+    left: 0;
+
+    span {
+      left: -15px;
+      width: 80px;
+      height: 2px;
+      background-color: #FFFFFF;
+    }
+
+    p {
+      font-family: 'Aktiv Grotesk Ex', sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      color: #FFFFFF;
+    }
+  }
+
   .card {
-    overflow: hidden;
-    position: relative;
-    justify-content: flex-end;
-    width: 100%;
     height: 100vh;
     padding: 73px 90px;
     border: none;
@@ -31,11 +47,6 @@
 
     &-body {
       z-index: 2;
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      width: 100%;
       flex: unset;
     }
 
@@ -99,9 +110,6 @@
     }
 
     .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 120px;
       height: 30px;
       border-radius: 0;

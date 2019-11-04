@@ -5,10 +5,15 @@ section#projects.projects
   .container-fluid
 
     .projects__wrapper.projects__wrapper-1
-      .card
+      .card.justify-content-end.w-100.position-relative.overflow-hidden
         img.card__bg(src='img/img-projects-1.jpg')
         img.card__overlay(src='img/text-stormzy.svg')
-        .card-body
+
+        h1.projects__title.d-flex.align-items-center
+          span.position-relative
+          p Projects
+
+        .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
           div
             .card__iamge
               img(src='img/ava-stormzy.png')
@@ -16,13 +21,13 @@ section#projects.projects
             p.card-text!= "Headline Production Show <br>Glastonbury Festival"
             i.icon-font.icon-arrow
           div
-            a.btn(href='#' title='') Featured
+            a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
 
     .projects__wrapper.projects__wrapper-2
-      .card
+      .card.justify-content-end.w-100.position-relative.overflow-hidden
         img.card__bg(src='img/img-projects-2.jpg')
         img.card__overlay(src='img/text-rita-ora.svg')
-        .card-body
+        .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
           div
             .card__iamge
               img(src='img/ava-rita-ora.png')
@@ -30,13 +35,13 @@ section#projects.projects
             p.card-text!= "GIRLS Tour <br>Brixton Academy"
             i.icon-font.icon-arrow
           div
-            a.btn(href='#' title='') Featured
+            a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
 
     .projects__wrapper.projects__wrapper-3
-      .card
+      .card.justify-content-end.w-100.position-relative.overflow-hidden
         img.card__bg(src='img/img-projects-3.jpg')
         img.card__overlay(src='img/text-spice-girls.svg')
-        .card-body
+        .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
           div
             .card__iamge
               img(src='img/ava-spice-girls.png')
@@ -44,7 +49,7 @@ section#projects.projects
             p.card-text!= "Spiceworld 2019 <br>Opening night in Dublin"
             i.icon-font.icon-arrow
           div
-            a.btn(href='#' title='') Featured
+            a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
 
 
 // SECTION projects :: END
