@@ -1,0 +1,24 @@
+ProjectTitle: Tim Routledge
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 1
+- file: showreel.html
+  titleName: Showreel
+  ready: 1
+- file: projects.html
+  titleName: Projects
+  ready: 1
+- file: single-project.html
+  titleName: Single Project
+  ready: 1
+- file: catagory.html
+  titleName: Catagory
+  ready: 1
+- file: about.html
+  titleName: About
+  ready: 1
+- file: press.html
+  titleName: Press
+  ready: 1
