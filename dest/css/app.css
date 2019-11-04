@@ -760,7 +760,7 @@ picture {
 .concerts {
   position: relative;
   padding-top: 80px;
-  padding-bottom: 65px;
+  padding-bottom: 25px;
 }
 
 /* line 8, src/scss/_components/category/_concerts.scss */
@@ -927,17 +927,18 @@ picture {
 
 /* line 3, src/scss/_components/category/_television.scss */
 .television {
-  padding-bottom: 130px;
+  padding-top: 40px;
+  padding-bottom: 90px;
 }
 
-/* line 6, src/scss/_components/category/_television.scss */
+/* line 7, src/scss/_components/category/_television.scss */
 .television__wrapper {
   z-index: 2;
   width: 100%;
   max-width: 1180px;
 }
 
-/* line 12, src/scss/_components/category/_television.scss */
+/* line 13, src/scss/_components/category/_television.scss */
 .television__line {
   z-index: 0;
   position: absolute;
@@ -948,7 +949,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 22, src/scss/_components/category/_television.scss */
+/* line 23, src/scss/_components/category/_television.scss */
 .television__title {
   padding-bottom: 44px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -958,14 +959,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 32, src/scss/_components/category/_television.scss */
+/* line 33, src/scss/_components/category/_television.scss */
 .television__box-wrapper {
   left: -20px;
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
 }
 
-/* line 36, src/scss/_components/category/_television.scss */
+/* line 37, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
@@ -974,12 +975,13 @@ picture {
   padding-bottom: 25px;
 }
 
-/* line 44, src/scss/_components/category/_television.scss */
+/* line 45, src/scss/_components/category/_television.scss */
 .television__box-head {
   height: 505px;
+  background-color: #000000;
 }
 
-/* line 47, src/scss/_components/category/_television.scss */
+/* line 49, src/scss/_components/category/_television.scss */
 .television__box-head img {
   position: absolute;
   top: 0;
@@ -1000,7 +1002,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 61, src/scss/_components/category/_television.scss */
+/* line 63, src/scss/_components/category/_television.scss */
 .television .card {
   border: none;
   -webkit-border-radius: 0;
@@ -1008,7 +1010,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 67, src/scss/_components/category/_television.scss */
+/* line 69, src/scss/_components/category/_television.scss */
 .television .card:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1020,25 +1022,94 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 73, src/scss/_components/category/_television.scss */
-.television .card-body {
-  padding: 15px 20px 15px 0;
+/* line 75, src/scss/_components/category/_television.scss */
+.television .card:hover .card__more .icon-font {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 77, src/scss/_components/category/_television.scss */
-.television .card-title {
-  margin-bottom: 0;
+/* line 82, src/scss/_components/category/_television.scss */
+.television .card__overlay {
+  white-space: nowrap;
+  z-index: 0;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  color: #000000;
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transform-origin: 0 center;
+      -ms-transform-origin: 0 center;
+          transform-origin: 0 center;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* line 97, src/scss/_components/category/_television.scss */
+.television .card__more {
+  z-index: 2;
+  position: absolute;
+  left: 36px;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 105, src/scss/_components/category/_television.scss */
+.television .card__more span {
+  padding-bottom: 12px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
 
-/* line 85, src/scss/_components/category/_television.scss */
+/* line 113, src/scss/_components/category/_television.scss */
+.television .card__more .icon-font {
+  font-size: 14px;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 120, src/scss/_components/category/_television.scss */
+.television .card-body {
+  padding: 15px 20px 15px 0;
+}
+
+/* line 124, src/scss/_components/category/_television.scss */
+.television .card-title {
+  margin-bottom: 5px;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+/* line 132, src/scss/_components/category/_television.scss */
 .television .card-text {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 18px;
   color: #FFFFFF;
 }
 
@@ -1190,6 +1261,170 @@ picture {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+/* line 4, src/scss/_components/projects/_projects.scss */
+.projects .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 11, src/scss/_components/projects/_projects.scss */
+.projects .card {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  padding: 73px 90px;
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+}
+
+/* line 22, src/scss/_components/projects/_projects.scss */
+.projects .card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
+  background: -o-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
+  background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
+}
+
+/* line 32, src/scss/_components/projects/_projects.scss */
+.projects .card-body {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -webkit-box-flex: unset;
+  -webkit-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+}
+
+/* line 42, src/scss/_components/projects/_projects.scss */
+.projects .card-title {
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 60px;
+  line-height: 77px;
+  color: #ffffff;
+  text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* line 50, src/scss/_components/projects/_projects.scss */
+.projects .card-text {
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+/* line 57, src/scss/_components/projects/_projects.scss */
+.projects .card .icon-font {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* line 62, src/scss/_components/projects/_projects.scss */
+.projects .card__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 72, src/scss/_components/projects/_projects.scss */
+.projects .card__overlay {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: -60px;
+  width: 210px;
+  height: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 82, src/scss/_components/projects/_projects.scss */
+.projects .card__iamge {
+  overflow: hidden;
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin-bottom: 15px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 90, src/scss/_components/projects/_projects.scss */
+.projects .card__iamge img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 101, src/scss/_components/projects/_projects.scss */
+.projects .card .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 30px;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: #FFFFFF;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+/* line 115, src/scss/_components/projects/_projects.scss */
+.projects .card .btn:hover, .projects .card .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

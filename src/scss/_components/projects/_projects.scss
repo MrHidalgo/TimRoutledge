@@ -1,0 +1,123 @@
+// projects :: START
+
+.projects {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__wrapper {}
+
+  .card {
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100vh;
+    padding: 73px 90px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
+    }
+
+    &-body {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+      flex: unset;
+    }
+
+    &-title {
+      font-family: 'Aktiv Grotesk Ex', sans-serif;
+      font-size: 60px;
+      line-height: 77px;
+      color: #ffffff;
+      text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+    }
+
+    &-text {
+      padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+
+    .icon-font {
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &__overlay {
+      opacity: 0.5;
+      position: absolute;
+      top: 50%;
+      left: -60px;
+      width: 210px;
+      height: 100%;
+      transform: translateY(-50%);
+    }
+
+    &__iamge {
+      overflow: hidden;
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 30px;
+      border-radius: 0;
+      background-color: #FFFFFF;
+      font-family: 'Aktiv Grotesk Ex', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #000000;
+
+      &:hover,
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+// projects :: END
