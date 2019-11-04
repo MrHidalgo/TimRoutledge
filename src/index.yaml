@@ -6,15 +6,15 @@ PageList:
   ready: 1
 - file: showreel.html
   titleName: Showreel
-  ready: 1
+  ready: 25
 - file: projects.html
   titleName: Projects
   ready: 1
 - file: single-project.html
   titleName: Single Project
   ready: 1
-- file: catagory.html
-  titleName: Catagory
+- file: category.html
+  titleName: Category
   ready: 1
 - file: about.html
   titleName: About

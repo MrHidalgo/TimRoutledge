@@ -162,7 +162,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before, .icon-instagram:before, .icon-play:before {
+.icon-arrow:before, .icon-facebook:before, .icon-instagram:before, .icon-play:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,19 +173,24 @@
   text-transform: none;
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-arrow:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-instagram:before {
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 44, src/scss/_generated/_spriteFont.scss */
-.icon-play:before {
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
   content: "";
+}
+
+/* line 47, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
+  content: "";
 }
 
 @font-face {
@@ -751,6 +756,175 @@ picture {
   position: relative;
 }
 
+/* line 3, src/scss/_components/category/_concerts.scss */
+.concerts {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 65px;
+}
+
+/* line 8, src/scss/_components/category/_concerts.scss */
+.concerts__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/category/_concerts.scss */
+.concerts__bg img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 22, src/scss/_components/category/_concerts.scss */
+.concerts__bg img:nth-of-type(1) {
+  top: 123px;
+  left: 42px;
+}
+
+/* line 27, src/scss/_components/category/_concerts.scss */
+.concerts__bg img:nth-of-type(2) {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/* line 35, src/scss/_components/category/_concerts.scss */
+.concerts__wrapper {
+  z-index: 2;
+  width: 100%;
+  max-width: 1180px;
+}
+
+/* line 41, src/scss/_components/category/_concerts.scss */
+.concerts__title {
+  padding-bottom: 52px;
+}
+
+/* line 44, src/scss/_components/category/_concerts.scss */
+.concerts__title:before {
+  display: none;
+}
+
+/* line 50, src/scss/_components/category/_concerts.scss */
+.concerts__box-wrapper {
+  left: -20px;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+}
+
+/* line 54, src/scss/_components/category/_concerts.scss */
+.concerts__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+/* line 62, src/scss/_components/category/_concerts.scss */
+.concerts__box-head {
+  height: 285px;
+}
+
+/* line 65, src/scss/_components/category/_concerts.scss */
+.concerts__box-head img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 79, src/scss/_components/category/_concerts.scss */
+.concerts .card {
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+}
+
+/* line 85, src/scss/_components/category/_concerts.scss */
+.concerts .card:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+/* line 90, src/scss/_components/category/_concerts.scss */
+.concerts .card:hover .icon-font {
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 96, src/scss/_components/category/_concerts.scss */
+.concerts .card-body {
+  padding: 15px 20px 15px 0;
+}
+
+/* line 100, src/scss/_components/category/_concerts.scss */
+.concerts .card-body > div:nth-of-type(2) {
+  padding-left: 20px;
+}
+
+/* line 105, src/scss/_components/category/_concerts.scss */
+.concerts .card-body .icon-font {
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 112, src/scss/_components/category/_concerts.scss */
+.concerts .card-title {
+  margin-bottom: 0;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+/* line 120, src/scss/_components/category/_concerts.scss */
+.concerts .card-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
 /* line 3, src/scss/_components/showreel/_showreel.scss */
 .showreel {
   overflow: hidden;
@@ -785,30 +959,24 @@ picture {
   position: relative;
   width: 100%;
   max-width: 1146px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* line 36, src/scss/_components/showreel/_showreel.scss */
+/* line 34, src/scss/_components/showreel/_showreel.scss */
 .showreel__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   padding-bottom: 101px;
 }
 
-/* line 40, src/scss/_components/showreel/_showreel.scss */
+/* line 37, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div {
   width: 100%;
 }
 
-/* line 43, src/scss/_components/showreel/_showreel.scss */
+/* line 40, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(1) {
   max-width: 541px;
 }
 
-/* line 47, src/scss/_components/showreel/_showreel.scss */
+/* line 44, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -819,7 +987,7 @@ picture {
   padding-top: 12px;
 }
 
-/* line 60, src/scss/_components/showreel/_showreel.scss */
+/* line 57, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc {
   padding-bottom: 23px;
   font-weight: 300;
@@ -828,22 +996,20 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 67, src/scss/_components/showreel/_showreel.scss */
+/* line 64, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 72, src/scss/_components/showreel/_showreel.scss */
+/* line 69, src/scss/_components/showreel/_showreel.scss */
 .showreel__video {
-  position: relative;
   width: 100%;
   height: 641px;
 }
 
-/* line 77, src/scss/_components/showreel/_showreel.scss */
+/* line 73, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-line {
   z-index: 2;
-  position: absolute;
   right: 99px;
   top: -78px;
   width: 2px;
@@ -851,26 +1017,13 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 87, src/scss/_components/showreel/_showreel.scss */
+/* line 82, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn {
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 72px;
   height: 72px;
   -webkit-border-radius: 50%;
@@ -878,7 +1031,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 101, src/scss/_components/showreel/_showreel.scss */
+/* line 92, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -890,7 +1043,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 107, src/scss/_components/showreel/_showreel.scss */
+/* line 98, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -908,7 +1061,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_components/showreel/_showreel.scss */
+/* line 109, src/scss/_components/showreel/_showreel.scss */
 .showreel__video iframe,
 .showreel__video video {
   position: absolute;
