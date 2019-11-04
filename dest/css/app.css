@@ -925,6 +925,123 @@ picture {
   color: #FFFFFF;
 }
 
+/* line 3, src/scss/_components/category/_television.scss */
+.television {
+  padding-bottom: 130px;
+}
+
+/* line 6, src/scss/_components/category/_television.scss */
+.television__wrapper {
+  z-index: 2;
+  width: 100%;
+  max-width: 1180px;
+}
+
+/* line 12, src/scss/_components/category/_television.scss */
+.television__line {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 41px;
+  width: 2px;
+  height: 303px;
+  background-color: #FFFFFF;
+}
+
+/* line 22, src/scss/_components/category/_television.scss */
+.television__title {
+  padding-bottom: 44px;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+/* line 32, src/scss/_components/category/_television.scss */
+.television__box-wrapper {
+  left: -20px;
+  width: -webkit-calc(100% + 20px);
+  width: calc(100% + 20px);
+}
+
+/* line 36, src/scss/_components/category/_television.scss */
+.television__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 5);
+  max-width: calc(100% / 5);
+  padding-left: 20px;
+  padding-bottom: 25px;
+}
+
+/* line 44, src/scss/_components/category/_television.scss */
+.television__box-head {
+  height: 505px;
+}
+
+/* line 47, src/scss/_components/category/_television.scss */
+.television__box-head img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+/* line 61, src/scss/_components/category/_television.scss */
+.television .card {
+  border: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  background-color: transparent;
+}
+
+/* line 67, src/scss/_components/category/_television.scss */
+.television .card:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+/* line 73, src/scss/_components/category/_television.scss */
+.television .card-body {
+  padding: 15px 20px 15px 0;
+}
+
+/* line 77, src/scss/_components/category/_television.scss */
+.television .card-title {
+  margin-bottom: 0;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+/* line 85, src/scss/_components/category/_television.scss */
+.television .card-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
 /* line 3, src/scss/_components/showreel/_showreel.scss */
 .showreel {
   overflow: hidden;
