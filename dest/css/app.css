@@ -488,7 +488,7 @@ picture {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  max-width: 1146px;
+  max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 49px;
@@ -505,11 +505,12 @@ picture {
 /* line 46, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #0c0c0c;
+  letter-spacing: -0.3px;
 }
 
-/* line 50, src/scss/_shared/_common.scss */
+/* line 51, src/scss/_shared/_common.scss */
 .copyright__info {
-  padding-right: 100px;
+  padding-right: 240px;
   color: #ffffff;
 }
 
@@ -817,10 +818,11 @@ picture {
 /* line 7, src/scss/_components/_footer.scss */
 .footer__bg {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: -webkit-calc(100% + 1px);
+  height: calc(100% + 1px);
 }
 
 /* line 14, src/scss/_components/_footer.scss */
@@ -833,14 +835,16 @@ picture {
 /* line 21, src/scss/_components/_footer.scss */
 .footer__bg-left {
   left: 0;
-  width: 65%;
+  width: -webkit-calc(65% - 2px);
+  width: calc(65% - 2px);
   background-color: #ffffff;
 }
 
 /* line 27, src/scss/_components/_footer.scss */
 .footer__bg-right {
   right: 0;
-  width: 35%;
+  width: -webkit-calc(35% + 2px);
+  width: calc(35% + 2px);
 }
 
 /* line 32, src/scss/_components/_footer.scss */
@@ -859,7 +863,7 @@ picture {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1146px;
+  max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
@@ -870,9 +874,9 @@ picture {
 .footer__wrapper-line {
   position: absolute;
   top: 0;
+  left: 5px;
   width: 2px;
   height: 80px;
-  left: 0;
   background-color: #0C0C0C;
 }
 
@@ -888,6 +892,7 @@ picture {
 
 /* line 71, src/scss/_components/_footer.scss */
 .footer__title {
+  letter-spacing: 0.6px;
   padding-bottom: 56px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 30px;
@@ -895,7 +900,7 @@ picture {
   color: #0C0C0C;
 }
 
-/* line 79, src/scss/_components/_footer.scss */
+/* line 80, src/scss/_components/_footer.scss */
 .footer__awards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -905,22 +910,23 @@ picture {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   padding-bottom: 40px;
+  padding-left: 1px;
 }
 
-/* line 84, src/scss/_components/_footer.scss */
+/* line 86, src/scss/_components/_footer.scss */
 .footer__awards li {
-  padding-right: 34px;
-  padding-bottom: 54px;
+  padding-right: 33px;
+  padding-bottom: 53px;
 }
 
-/* line 88, src/scss/_components/_footer.scss */
+/* line 90, src/scss/_components/_footer.scss */
 .footer__awards li img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 96, src/scss/_components/_footer.scss */
+/* line 98, src/scss/_components/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -932,7 +938,7 @@ picture {
           align-items: center;
 }
 
-/* line 100, src/scss/_components/_footer.scss */
+/* line 102, src/scss/_components/_footer.scss */
 .footer__nav-line {
   position: relative;
   display: block;
@@ -944,7 +950,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 110, src/scss/_components/_footer.scss */
+/* line 112, src/scss/_components/_footer.scss */
 .footer__nav-line:after {
   content: '';
   position: absolute;
@@ -955,12 +961,12 @@ picture {
   background-color: #000000;
 }
 
-/* line 121, src/scss/_components/_footer.scss */
+/* line 123, src/scss/_components/_footer.scss */
 .footer__nav li {
   padding-right: 30px;
 }
 
-/* line 125, src/scss/_components/_footer.scss */
+/* line 127, src/scss/_components/_footer.scss */
 .footer__nav a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -971,7 +977,12 @@ picture {
   color: #0c0c0c;
 }
 
-/* line 134, src/scss/_components/_footer.scss */
+/* line 135, src/scss/_components/_footer.scss */
+.footer__user {
+  padding-right: 21px;
+}
+
+/* line 138, src/scss/_components/_footer.scss */
 .footer__user-image {
   display: block;
   max-width: 100%;
@@ -980,7 +991,7 @@ picture {
   margin-bottom: 27px;
 }
 
-/* line 142, src/scss/_components/_footer.scss */
+/* line 146, src/scss/_components/_footer.scss */
 .footer__user-name {
   padding-bottom: 13px;
   text-align: right;
@@ -990,9 +1001,9 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 151, src/scss/_components/_footer.scss */
+/* line 155, src/scss/_components/_footer.scss */
 .footer__user-desc {
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 22px;
@@ -1000,15 +1011,16 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 161, src/scss/_components/_footer.scss */
+/* line 165, src/scss/_components/_footer.scss */
 .footer__video {
   position: relative;
+  right: 2px;
   width: 540px;
   height: 304px;
   margin-left: auto;
 }
 
-/* line 167, src/scss/_components/_footer.scss */
+/* line 172, src/scss/_components/_footer.scss */
 .footer__video-btn {
   top: 50%;
   left: 50%;
@@ -1022,7 +1034,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 177, src/scss/_components/_footer.scss */
+/* line 182, src/scss/_components/_footer.scss */
 .footer__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1034,7 +1046,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 183, src/scss/_components/_footer.scss */
+/* line 188, src/scss/_components/_footer.scss */
 .footer__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1052,7 +1064,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 194, src/scss/_components/_footer.scss */
+/* line 199, src/scss/_components/_footer.scss */
 .footer__video iframe,
 .footer__video video {
   position: absolute;
@@ -1066,7 +1078,7 @@ picture {
      object-position: center;
 }
 
-/* line 206, src/scss/_components/_footer.scss */
+/* line 211, src/scss/_components/_footer.scss */
 .footer__info {
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
