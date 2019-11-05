@@ -162,7 +162,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-arrow:before, .icon-facebook:before, .icon-instagram:before, .icon-play:before {
+.icon-arrow:before, .icon-facebook:before, .icon-instagram:before, .icon-line-arrow:before, .icon-play:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,24 +173,29 @@
   text-transform: none;
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 50, src/scss/_generated/_spriteFont.scss */
 .icon-arrow:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 50, src/scss/_generated/_spriteFont.scss */
 .icon-facebook:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
+/* line 50, src/scss/_generated/_spriteFont.scss */
 .icon-instagram:before {
   content: "";
 }
 
-/* line 47, src/scss/_generated/_spriteFont.scss */
-.icon-play:before {
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-line-arrow:before {
   content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-play:before {
+  content: "";
 }
 
 @font-face {
@@ -766,6 +771,73 @@ picture {
   position: relative;
 }
 
+/* line 3, src/scss/_components/about/_about.scss */
+.about {
+  overflow: hidden;
+  position: relative;
+  padding-top: 82px;
+  padding-bottom: 63px;
+  background-color: #ffffff;
+}
+
+/* line 10, src/scss/_components/about/_about.scss */
+.about__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, src/scss/_components/about/_about.scss */
+.about__bg img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 24, src/scss/_components/about/_about.scss */
+.about__bg img:nth-of-type(1) {
+  top: 82px;
+  left: 65px;
+}
+
+/* line 28, src/scss/_components/about/_about.scss */
+.about__bg img:nth-of-type(2) {
+  right: -30px;
+  bottom: 63px;
+}
+
+/* line 35, src/scss/_components/about/_about.scss */
+.about__wrapper {
+  z-index: 2;
+  position: relative;
+  max-width: 1180px;
+}
+
+/* line 41, src/scss/_components/about/_about.scss */
+.about__wrapper > div:nth-of-type(2) {
+  padding-left: 68px;
+}
+
+/* line 47, src/scss/_components/about/_about.scss */
+.about__desc {
+  max-width: 537px;
+  padding-bottom: 60px;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  color: #0C0C0C;
+}
+
+/* line 56, src/scss/_components/about/_about.scss */
+.about .icon-line-arrow {
+  color: #0c0c0c;
+  font-size: 62px;
+}
+
 /* line 3, src/scss/_components/category/_concerts.scss */
 .concerts {
   position: relative;
@@ -942,6 +1014,12 @@ picture {
 }
 
 /* line 7, src/scss/_components/category/_television.scss */
+.television.television--featured {
+  padding-top: 109px;
+  padding-bottom: 125px;
+}
+
+/* line 12, src/scss/_components/category/_television.scss */
 .television.television--bg {
   height: 100vh;
   -webkit-background-size: cover;
@@ -950,32 +1028,32 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 14, src/scss/_components/category/_television.scss */
+/* line 19, src/scss/_components/category/_television.scss */
 .television.television--bg .television__title {
   padding-top: 60px;
   padding-bottom: 55px;
 }
 
-/* line 22, src/scss/_components/category/_television.scss */
+/* line 27, src/scss/_components/category/_television.scss */
 .television.television--bg .television__box-wrapper > div {
   width: 100%;
   padding-left: 20px;
   padding-bottom: 25px;
 }
 
-/* line 27, src/scss/_components/category/_television.scss */
+/* line 32, src/scss/_components/category/_television.scss */
 .television.television--bg .television__box-wrapper > div:nth-of-type(1), .television.television--bg .television__box-wrapper > div:nth-of-type(2), .television.television--bg .television__box-wrapper > div:nth-of-type(3), .television.television--bg .television__box-wrapper > div:nth-of-type(5) {
   max-width: -webkit-calc((100% - ((100% / 5) * 2)) / 4);
   max-width: calc((100% - ((100% / 5) * 2)) / 4);
 }
 
-/* line 34, src/scss/_components/category/_television.scss */
+/* line 39, src/scss/_components/category/_television.scss */
 .television.television--bg .television__box-wrapper > div:nth-of-type(4) {
   max-width: -webkit-calc((100% / 5) * 2);
   max-width: calc((100% / 5) * 2);
 }
 
-/* line 45, src/scss/_components/category/_television.scss */
+/* line 50, src/scss/_components/category/_television.scss */
 .television.television--bg .card.card--split .card-body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -991,7 +1069,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 50, src/scss/_components/category/_television.scss */
+/* line 55, src/scss/_components/category/_television.scss */
 .television.television--bg .card.card--split .card-body .icon-font {
   -webkit-transform: translateX(20px);
       -ms-transform: translateX(20px);
@@ -1000,26 +1078,26 @@ picture {
   color: #ffffff;
 }
 
-/* line 57, src/scss/_components/category/_television.scss */
+/* line 62, src/scss/_components/category/_television.scss */
 .television.television--bg .card.card--split .card-title {
   font-size: 20px;
   line-height: 26px;
 }
 
-/* line 62, src/scss/_components/category/_television.scss */
+/* line 67, src/scss/_components/category/_television.scss */
 .television.television--bg .card.card--split .card-text {
   font-size: 20px;
   line-height: 23px;
 }
 
-/* line 71, src/scss/_components/category/_television.scss */
+/* line 76, src/scss/_components/category/_television.scss */
 .television__wrapper {
   z-index: 2;
   width: 100%;
   max-width: 1180px;
 }
 
-/* line 77, src/scss/_components/category/_television.scss */
+/* line 82, src/scss/_components/category/_television.scss */
 .television__line {
   z-index: 0;
   position: absolute;
@@ -1030,7 +1108,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 87, src/scss/_components/category/_television.scss */
+/* line 92, src/scss/_components/category/_television.scss */
 .television__title {
   padding-bottom: 44px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -1040,14 +1118,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 97, src/scss/_components/category/_television.scss */
+/* line 102, src/scss/_components/category/_television.scss */
 .television__box-wrapper {
   left: -20px;
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
 }
 
-/* line 101, src/scss/_components/category/_television.scss */
+/* line 106, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 5);
@@ -1056,13 +1134,13 @@ picture {
   padding-bottom: 25px;
 }
 
-/* line 109, src/scss/_components/category/_television.scss */
+/* line 114, src/scss/_components/category/_television.scss */
 .television__box-head {
   height: 505px;
   background-color: #000000;
 }
 
-/* line 113, src/scss/_components/category/_television.scss */
+/* line 118, src/scss/_components/category/_television.scss */
 .television__box-head img {
   position: absolute;
   top: 0;
@@ -1083,7 +1161,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 127, src/scss/_components/category/_television.scss */
+/* line 132, src/scss/_components/category/_television.scss */
 .television .card {
   border: none;
   -webkit-border-radius: 0;
@@ -1091,7 +1169,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 133, src/scss/_components/category/_television.scss */
+/* line 138, src/scss/_components/category/_television.scss */
 .television .card:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1103,7 +1181,7 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 139, src/scss/_components/category/_television.scss */
+/* line 144, src/scss/_components/category/_television.scss */
 .television .card:hover .card__more .icon-font {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -1115,7 +1193,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 146, src/scss/_components/category/_television.scss */
+/* line 151, src/scss/_components/category/_television.scss */
 .television .card__overlay {
   white-space: nowrap;
   z-index: 0;
@@ -1135,7 +1213,7 @@ picture {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 161, src/scss/_components/category/_television.scss */
+/* line 166, src/scss/_components/category/_television.scss */
 .television .card__more {
   z-index: 2;
   position: absolute;
@@ -1152,7 +1230,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 169, src/scss/_components/category/_television.scss */
+/* line 174, src/scss/_components/category/_television.scss */
 .television .card__more span {
   padding-bottom: 12px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -1161,7 +1239,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 177, src/scss/_components/category/_television.scss */
+/* line 182, src/scss/_components/category/_television.scss */
 .television .card__more .icon-font {
   font-size: 14px;
   color: #ffffff;
@@ -1172,12 +1250,12 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 184, src/scss/_components/category/_television.scss */
+/* line 189, src/scss/_components/category/_television.scss */
 .television .card-body {
   padding: 15px 20px 15px 0;
 }
 
-/* line 188, src/scss/_components/category/_television.scss */
+/* line 193, src/scss/_components/category/_television.scss */
 .television .card-title {
   margin-bottom: 5px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -1186,7 +1264,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 196, src/scss/_components/category/_television.scss */
+/* line 201, src/scss/_components/category/_television.scss */
 .television .card-text {
   font-weight: 300;
   font-size: 16px;

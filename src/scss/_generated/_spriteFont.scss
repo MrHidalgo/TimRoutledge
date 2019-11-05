@@ -36,8 +36,11 @@
 	@if $filename == instagram {
 		$char: "\E003";
 	}
-	@if $filename == play {
+	@if $filename == line-arrow {
 		$char: "\E004";
+	}
+	@if $filename == play {
+		$char: "\E005";
 	}
 
 	@return $char;
@@ -64,6 +67,10 @@
 }
 .icon-instagram {
 	@include icon(instagram);
+
+}
+.icon-line-arrow {
+	@include icon(line-arrow);
 
 }
 .icon-play {

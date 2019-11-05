@@ -1,0 +1,44 @@
+// SECTION television :: START
+
+section#television.television.television--featured
+
+  .container-fluid
+
+    .television__wrapper.position-relative.ml-auto.mr-auto
+
+      .television__line
+
+      h3.television__title Featured Projects
+
+      .television__box-wrapper.position-relative.d-flex.flex-wrap
+        each val, idx in [1,2,3,4,5]
+          div
+            a.card.television__box.d-flex.flex-column(href='#' title='')
+              .television__box-head.overflow-hidden.position-relative.w-100
+                if(idx === 0 || idx === 3)
+                  img.card-img-top(src='img/img-concerts-1.jpg', srcset='img/img-concerts-1@2x.jpg 2x', alt='')
+                else if (idx === 1 || idx === 4)
+                  img.card-img-top(src='img/img-concerts-2.jpg', srcset='img/img-concerts-2@2x.jpg 2x', alt='')
+                else
+                  img.card-img-top(src='img/img-concerts-3.jpg', srcset='img/img-concerts-3@2x.jpg 2x', alt='')
+              .card-body
+                if(idx === 0)
+                  h5.card-title Sam Smith
+                  p.card-text The Thrill of It All
+                else if(idx === 1)
+                  h5.card-title Spice Girls
+                  p.card-text Spiceworld
+                else if(idx === 2)
+                  h5.card-title Dave
+                  p.card-text Psychodrama
+                else if(idx === 3)
+                  h5.card-title Florance & The Machine
+                  p.card-text High As Hope
+                else if(idx === 4)
+                  h5.card-title Explore More
+                else
+                  h5.card-title Christine & The Queens - Apple Music
+                  p.card-text Iconic Headline Performance
+
+
+// SECTION television :: END
