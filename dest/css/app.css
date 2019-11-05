@@ -1133,7 +1133,7 @@ picture {
 .about {
   overflow: hidden;
   position: relative;
-  padding-top: 82px;
+  padding-top: 129px;
   padding-bottom: 63px;
   background-color: #ffffff;
 }
@@ -1164,15 +1164,15 @@ picture {
 
 /* line 28, src/scss/_components/about/_about.scss */
 .about__bg img:nth-of-type(2) {
-  right: -30px;
-  bottom: 63px;
+  right: -50px;
+  bottom: 58px;
 }
 
 /* line 35, src/scss/_components/about/_about.scss */
 .about__wrapper {
   z-index: 2;
   position: relative;
-  max-width: 1180px;
+  max-width: 1245px;
 }
 
 /* line 41, src/scss/_components/about/_about.scss */
@@ -1183,15 +1183,18 @@ picture {
 /* line 47, src/scss/_components/about/_about.scss */
 .about__desc {
   max-width: 537px;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 30px;
   line-height: 39px;
   color: #0C0C0C;
+  letter-spacing: -0.4px;
 }
 
-/* line 56, src/scss/_components/about/_about.scss */
+/* line 57, src/scss/_components/about/_about.scss */
 .about .icon-line-arrow {
+  position: relative;
+  top: -5px;
   color: #0c0c0c;
   font-size: 62px;
 }
