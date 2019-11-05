@@ -1556,14 +1556,20 @@ picture {
   padding-right: 0;
 }
 
-/* line 11, src/scss/_components/projects/_projects.scss */
+/* line 12, src/scss/_components/projects/_projects.scss */
+.projects__wrapper-2 .card__line {
+  left: auto;
+  right: 90px;
+}
+
+/* line 20, src/scss/_components/projects/_projects.scss */
 .projects__title {
   position: absolute;
   top: 50px;
   left: 0;
 }
 
-/* line 16, src/scss/_components/projects/_projects.scss */
+/* line 25, src/scss/_components/projects/_projects.scss */
 .projects__title span {
   left: -15px;
   width: 80px;
@@ -1571,7 +1577,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 23, src/scss/_components/projects/_projects.scss */
+/* line 32, src/scss/_components/projects/_projects.scss */
 .projects__title p {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 30px;
@@ -1579,7 +1585,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 31, src/scss/_components/projects/_projects.scss */
+/* line 40, src/scss/_components/projects/_projects.scss */
 .projects .card {
   height: 100vh;
   padding: 73px 90px;
@@ -1589,7 +1595,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 38, src/scss/_components/projects/_projects.scss */
+/* line 47, src/scss/_components/projects/_projects.scss */
 .projects .card:after {
   content: '';
   position: absolute;
@@ -1602,7 +1608,7 @@ picture {
   background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
 }
 
-/* line 48, src/scss/_components/projects/_projects.scss */
+/* line 57, src/scss/_components/projects/_projects.scss */
 .projects .card-body {
   position: relative;
   z-index: 2;
@@ -1612,7 +1618,7 @@ picture {
           flex: unset;
 }
 
-/* line 53, src/scss/_components/projects/_projects.scss */
+/* line 62, src/scss/_components/projects/_projects.scss */
 .projects .card-body__bg {
   z-index: -1;
   position: absolute;
@@ -1623,7 +1629,7 @@ picture {
   height: auto;
 }
 
-/* line 64, src/scss/_components/projects/_projects.scss */
+/* line 73, src/scss/_components/projects/_projects.scss */
 .projects .card-title {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 60px;
@@ -1632,7 +1638,7 @@ picture {
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* line 72, src/scss/_components/projects/_projects.scss */
+/* line 81, src/scss/_components/projects/_projects.scss */
 .projects .card-text {
   padding-bottom: 15px;
   font-size: 20px;
@@ -1640,13 +1646,13 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 79, src/scss/_components/projects/_projects.scss */
+/* line 88, src/scss/_components/projects/_projects.scss */
 .projects .card .icon-font {
   color: #ffffff;
   font-size: 14px;
 }
 
-/* line 84, src/scss/_components/projects/_projects.scss */
+/* line 93, src/scss/_components/projects/_projects.scss */
 .projects .card__bg {
   position: absolute;
   top: 0;
@@ -1659,7 +1665,7 @@ picture {
      object-position: center;
 }
 
-/* line 94, src/scss/_components/projects/_projects.scss */
+/* line 103, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
@@ -1672,7 +1678,7 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 104, src/scss/_components/projects/_projects.scss */
+/* line 113, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge {
   overflow: hidden;
   position: relative;
@@ -1683,7 +1689,7 @@ picture {
           border-radius: 50%;
 }
 
-/* line 112, src/scss/_components/projects/_projects.scss */
+/* line 121, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge img {
   position: absolute;
   top: 0;
@@ -1696,7 +1702,17 @@ picture {
      object-position: center;
 }
 
-/* line 123, src/scss/_components/projects/_projects.scss */
+/* line 132, src/scss/_components/projects/_projects.scss */
+.projects .card__line {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 2px;
+  height: 80px;
+  background-color: #FFFFFF;
+}
+
+/* line 141, src/scss/_components/projects/_projects.scss */
 .projects .card .btn {
   width: 120px;
   height: 30px;
@@ -1710,7 +1726,7 @@ picture {
   color: #000000;
 }
 
-/* line 134, src/scss/_components/projects/_projects.scss */
+/* line 152, src/scss/_components/projects/_projects.scss */
 .projects .card .btn:hover, .projects .card .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;

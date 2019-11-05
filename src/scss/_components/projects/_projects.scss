@@ -6,7 +6,16 @@
     padding-right: 0;
   }
 
-  &__wrapper {}
+  &__wrapper {
+    &-1 {}
+    &-2 {
+      .card__line {
+        left: auto;
+        right: 90px;
+      }
+    }
+    &-3 {}
+  }
 
   &__title {
     position: absolute;
@@ -118,6 +127,15 @@
         object-fit: cover;
         object-position: center;
       }
+    }
+
+    &__line {
+      position: absolute;
+      top: 0;
+      left: 90px;
+      width: 2px;
+      height: 80px;
+      background-color: #FFFFFF;
     }
 
     .btn {

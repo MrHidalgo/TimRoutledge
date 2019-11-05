@@ -3,7 +3,7 @@ ProjectTitle: Tim Routledge
 PageList:
 - file: index.html
   titleName: Home
-  ready: 1
+  ready: 10
 - file: showreel.html
   titleName: Showreel
   ready: 25
