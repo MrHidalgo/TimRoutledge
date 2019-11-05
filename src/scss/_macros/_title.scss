@@ -21,7 +21,11 @@
   }
 
   &--dark {
+    color: #202020;
 
+    &:before {
+      background-color: #202020;
+    }
   }
 }
 
