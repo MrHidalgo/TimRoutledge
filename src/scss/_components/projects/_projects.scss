@@ -10,7 +10,7 @@
     &-1 {}
     &-2 {
       .card__line {
-        left: auto;
+        left: auto !important;
         right: 90px;
       }
     }
