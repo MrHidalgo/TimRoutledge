@@ -12,7 +12,7 @@ PageList:
   ready: 25
 - file: single-project.html
   titleName: Single Project
-  ready: 1
+  ready: 25
 - file: category.html
   titleName: Category
   ready: 25

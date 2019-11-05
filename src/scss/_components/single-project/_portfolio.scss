@@ -1,0 +1,69 @@
+// SECTION portfolio :: START
+
+.portfolio {
+  position: relative;
+  top: -64px;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  &__box {
+    overflow: hidden;
+    position: relative;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    &-wrapper {
+      padding-bottom: 80px;
+    }
+
+    &-line {
+      width: 2px;
+      height: 80px;
+      background-color: #FFFFFF;
+
+      &-1 {
+        margin-left: auto;
+        margin-right: 79px;
+      }
+      &-2 {
+        margin-left: 79px;
+      }
+    }
+  }
+
+  &__list {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 505px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      > div {
+        width: 100%;
+        max-width: calc((100% - 80px) / 5);
+      }
+    }
+  }
+}
+
+// SECTION portfolio :: END
