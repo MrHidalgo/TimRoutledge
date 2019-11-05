@@ -3,22 +3,22 @@ ProjectTitle: Tim Routledge
 PageList:
 - file: index.html
   titleName: Home
-  ready: 10
+  ready: 20
 - file: showreel.html
   titleName: Showreel
-  ready: 25
+  ready: 35
 - file: projects.html
   titleName: Projects
-  ready: 25
+  ready: 35
 - file: single-project.html
   titleName: Single Project
-  ready: 25
+  ready: 35
 - file: category.html
   titleName: Category
-  ready: 25
+  ready: 35
 - file: about.html
   titleName: About
-  ready: 25
+  ready: 35
 - file: press.html
   titleName: Press
-  ready: 25
+  ready: 35

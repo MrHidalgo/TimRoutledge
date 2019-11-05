@@ -2244,8 +2244,8 @@ picture {
 .press {
   overflow: hidden;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 96px;
+  padding-top: 56px;
+  padding-bottom: 97px;
   background-color: #ffffff;
 }
 
@@ -2275,8 +2275,9 @@ picture {
 
 /* line 28, src/scss/_components/press/_press.scss */
 .press__bg img:nth-of-type(2) {
-  right: -30px;
-  top: 30%;
+  right: -50px;
+  top: -webkit-calc(20% - 10px);
+  top: calc(20% - 10px);
 }
 
 /* line 35, src/scss/_components/press/_press.scss */
@@ -2287,30 +2288,36 @@ picture {
 
 /* line 40, src/scss/_components/press/_press.scss */
 .press__title {
-  padding-left: 30px;
-  padding-bottom: 83px;
+  padding-left: 29px;
+  padding-bottom: 86px;
+  letter-spacing: -0.8px;
   text-shadow: none;
 }
 
-/* line 45, src/scss/_components/press/_press.scss */
+/* line 46, src/scss/_components/press/_press.scss */
 .press__title:before {
   position: relative;
-  top: 0;
-  left: -45px;
+  top: 3px;
+  left: -44px;
 }
 
-/* line 53, src/scss/_components/press/_press.scss */
+/* line 54, src/scss/_components/press/_press.scss */
 .press__box-wrapper {
   width: 100%;
-  max-width: 931px;
+  max-width: 1023px;
 }
 
-/* line 57, src/scss/_components/press/_press.scss */
+/* line 58, src/scss/_components/press/_press.scss */
 .press__box-wrapper > div {
   padding-bottom: 80px;
 }
 
-/* line 63, src/scss/_components/press/_press.scss */
+/* line 61, src/scss/_components/press/_press.scss */
+.press__box-wrapper > div:last-of-type {
+  padding-bottom: 0;
+}
+
+/* line 68, src/scss/_components/press/_press.scss */
 .press__infinite {
   height: 80px;
   font-size: 20px;
@@ -2319,14 +2326,14 @@ picture {
   color: #202020;
 }
 
-/* line 70, src/scss/_components/press/_press.scss */
+/* line 75, src/scss/_components/press/_press.scss */
 .press__infinite:hover, .press__infinite:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #202020;
 }
 
-/* line 77, src/scss/_components/press/_press.scss */
+/* line 82, src/scss/_components/press/_press.scss */
 .press .card {
   border: none;
   -webkit-border-radius: 0;
@@ -2334,13 +2341,21 @@ picture {
   background-color: transparent;
 }
 
-/* line 84, src/scss/_components/press/_press.scss */
-.press .card--reverse .card-body {
-  padding-left: 0;
-  padding-right: 67px;
+/* line 87, src/scss/_components/press/_press.scss */
+.press .card--reverse {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* line 91, src/scss/_components/press/_press.scss */
+.press .card--reverse .card-body {
+  padding-left: 0;
+  padding-right: 90px;
+}
+
+/* line 98, src/scss/_components/press/_press.scss */
 .press .card-head {
   overflow: hidden;
   position: relative;
@@ -2349,7 +2364,7 @@ picture {
   height: 302px;
 }
 
-/* line 98, src/scss/_components/press/_press.scss */
+/* line 105, src/scss/_components/press/_press.scss */
 .press .card-head img {
   position: absolute;
   top: 0;
@@ -2364,24 +2379,22 @@ picture {
      object-position: center;
 }
 
-/* line 110, src/scss/_components/press/_press.scss */
+/* line 117, src/scss/_components/press/_press.scss */
 .press .card-body {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
+  -webkit-box-flex: unset;
+  -webkit-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
   padding: 0;
   padding-left: 67px;
 }
 
-/* line 118, src/scss/_components/press/_press.scss */
+/* line 126, src/scss/_components/press/_press.scss */
 .press .card-text {
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
-/* line 121, src/scss/_components/press/_press.scss */
+/* line 129, src/scss/_components/press/_press.scss */
 .press .card-text p {
   min-width: 58px;
   height: 30px;
@@ -2390,6 +2403,7 @@ picture {
   background: -webkit-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
   background: -o-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
   background: linear-gradient(270deg, #4A00A8 0%, #AF0189 100%);
+  letter-spacing: 0.5px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -2397,18 +2411,18 @@ picture {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
 }
 
-/* line 134, src/scss/_components/press/_press.scss */
+/* line 143, src/scss/_components/press/_press.scss */
 .press .card-title {
   width: 100%;
   max-width: 383px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 30px;
   line-height: 33px;
   color: #0C0C0C;
 }
 
-/* line 144, src/scss/_components/press/_press.scss */
+/* line 153, src/scss/_components/press/_press.scss */
 .press .card a {
   color: #0c0c0c;
   font-size: 14px;
