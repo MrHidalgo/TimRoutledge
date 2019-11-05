@@ -39,7 +39,7 @@
 
   .card {
     height: 100vh;
-    padding: 73px 90px;
+    padding: 73px 66px 54px;
     border: none;
     border-radius: 0;
     background-color: transparent;
@@ -62,8 +62,8 @@
       &__bg {
         z-index: -1;
         position: absolute;
-        bottom: 50%;
-        left: -40px;
+        bottom: 44%;
+        left: -32px;
         display: block;
         max-width: 100%;
         height: auto;
@@ -71,6 +71,9 @@
     }
 
     &-title {
+      padding-left: 4px;
+      letter-spacing: 1.5px;
+      margin-bottom: 0;
       font-family: 'Aktiv Grotesk Ex', sans-serif;
       font-size: 60px;
       line-height: 77px;
@@ -79,13 +82,15 @@
     }
 
     &-text {
-      padding-bottom: 15px;
+      padding-left: 8px;
+      padding-bottom: 18px;
       font-size: 20px;
-      line-height: 23px;
+      line-height: 24px;
       color: #FFFFFF;
     }
 
     .icon-font {
+      margin-left: 10px;
       color: #ffffff;
       font-size: 14px;
     }
@@ -115,7 +120,8 @@
       position: relative;
       width: 110px;
       height: 110px;
-      margin-bottom: 15px;
+      margin-left: 6px;
+      margin-bottom: 5px;
       border-radius: 50%;
 
       img {
@@ -148,6 +154,7 @@
       line-height: 20px;
       text-align: center;
       color: #000000;
+      letter-spacing: 0.3px;
 
       &:hover,
       &:focus {

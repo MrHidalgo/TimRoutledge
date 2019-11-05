@@ -1967,7 +1967,7 @@ picture {
 /* line 40, src/scss/_components/projects/_projects.scss */
 .projects .card {
   height: 100vh;
-  padding: 73px 90px;
+  padding: 73px 66px 54px;
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -2001,8 +2001,8 @@ picture {
 .projects .card-body__bg {
   z-index: -1;
   position: absolute;
-  bottom: 50%;
-  left: -40px;
+  bottom: 44%;
+  left: -32px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -2010,6 +2010,9 @@ picture {
 
 /* line 73, src/scss/_components/projects/_projects.scss */
 .projects .card-title {
+  padding-left: 4px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 60px;
   line-height: 77px;
@@ -2017,21 +2020,23 @@ picture {
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* line 81, src/scss/_components/projects/_projects.scss */
+/* line 84, src/scss/_components/projects/_projects.scss */
 .projects .card-text {
-  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-bottom: 18px;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   color: #FFFFFF;
 }
 
-/* line 88, src/scss/_components/projects/_projects.scss */
+/* line 92, src/scss/_components/projects/_projects.scss */
 .projects .card .icon-font {
+  margin-left: 10px;
   color: #ffffff;
   font-size: 14px;
 }
 
-/* line 93, src/scss/_components/projects/_projects.scss */
+/* line 98, src/scss/_components/projects/_projects.scss */
 .projects .card__bg {
   position: absolute;
   top: 0;
@@ -2044,7 +2049,7 @@ picture {
      object-position: center;
 }
 
-/* line 103, src/scss/_components/projects/_projects.scss */
+/* line 108, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
@@ -2057,18 +2062,19 @@ picture {
           transform: translateY(-50%);
 }
 
-/* line 113, src/scss/_components/projects/_projects.scss */
+/* line 118, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge {
   overflow: hidden;
   position: relative;
   width: 110px;
   height: 110px;
-  margin-bottom: 15px;
+  margin-left: 6px;
+  margin-bottom: 5px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
 }
 
-/* line 121, src/scss/_components/projects/_projects.scss */
+/* line 127, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge img {
   position: absolute;
   top: 0;
@@ -2081,7 +2087,7 @@ picture {
      object-position: center;
 }
 
-/* line 132, src/scss/_components/projects/_projects.scss */
+/* line 138, src/scss/_components/projects/_projects.scss */
 .projects .card__line {
   position: absolute;
   top: 0;
@@ -2091,7 +2097,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 141, src/scss/_components/projects/_projects.scss */
+/* line 147, src/scss/_components/projects/_projects.scss */
 .projects .card .btn {
   width: 120px;
   height: 30px;
@@ -2103,9 +2109,10 @@ picture {
   line-height: 20px;
   text-align: center;
   color: #000000;
+  letter-spacing: 0.3px;
 }
 
-/* line 152, src/scss/_components/projects/_projects.scss */
+/* line 159, src/scss/_components/projects/_projects.scss */
 .projects .card .btn:hover, .projects .card .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
