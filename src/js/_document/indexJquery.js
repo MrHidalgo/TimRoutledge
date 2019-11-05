@@ -22,20 +22,21 @@ $(document).ready((ev) => {
 
     if (vid) {
       $('[play-video-js]').on('click', (ev) => {
-        const elem = $(ev.currentTarget);
+        const elem = $(ev.currentTarget),
+          _vid = elem.prev('#video')[0];
 
-        if (!vid.paused) {
-          vid.pause();
+        if (!_vid.paused) {
+          _vid.pause();
         } else {
-          vid.play();
+          _vid.play();
           elem.fadeOut(300);
         }
       });
 
-      $(vid).on('click', () => {
-        if (!vid.paused) {
-          vid.pause();
-          $('[play-video-js]').fadeIn(300);
+      $(vid).on('click', (ev) => {
+        if (!$(ev.currentTarget)[0].paused) {
+          $(ev.currentTarget)[0].pause();
+          $(ev.currentTarget).siblings('[play-video-js]').fadeIn(300).css({'display':'flex'});
         }
       });
     }

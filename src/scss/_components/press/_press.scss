@@ -67,22 +67,85 @@
 
   &__infinite {
     height: 80px;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #202020;
 
     &:hover,
     &:focus {
-      box-shadow: none;
-      color: #202020;
+      a {
+        box-shadow: none;
+        color: #202020;
+      }
     }
+
+    &:hover {
+      a {
+        &:before,
+        &:after {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0px);
+          @include transition(opacity, visibility, transform);
+        }
+      }
+    }
+
+    a {
+      position: relative;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #202020;
+
+      &:before,
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        position: absolute;
+        top: -1px;
+        display: inline-block;
+        vertical-align: middle;
+        @include transition(opacity, visibility, transform);
+      }
+
+      &:before {
+        content: '[';
+        left: -15px;
+        transform: translateX(20px);
+      }
+
+      &:after {
+        content: ']';
+        right: -15px;
+        transform: translateX(-20px);
+      }
+    }
+
   }
 
   .card {
     border: none;
     border-radius: 0;
     background-color: transparent;
+    @include transition(transform);
+
+    &:hover {
+      transform: translateY(-15px);
+      @include transition(transform);
+
+      .card {
+        &-head {
+          img {
+            transform: scale(1.1);
+            @include transition(transform 0.45s);
+          }
+        }
+      }
+
+      .icon-font {
+        transform: translateX(50%);
+        @include transition(transform);
+      }
+    }
 
     &--reverse {
       justify-content: flex-end;
@@ -111,14 +174,12 @@
         border-radius: 0;
         object-fit: cover;
         object-position: center;
+        @include transition(transform 0.55s);
       }
     }
 
     &-body {
       flex: unset;
-      //flex: 1;
-      //min-width: 1px;
-      //max-width: 100%;
       padding: 0;
       padding-left: 67px;
     }
@@ -130,13 +191,27 @@
         min-width: 58px;
         height: 30px;
         padding: 5px 14px;
-        background: linear-gradient(270deg, #4A00A8 0%, #AF0189 100%);
         letter-spacing: 0.5px;
         font-size: 16px;
         line-height: 20px;
         text-align: center;
         color: #FFFFFF;
         font-family: 'Aktiv Grotesk Ex', sans-serif;
+        background: linear-gradient(270deg, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
+        background-size: 200% 200%;
+        animation: animatedGradient 5s ease-in-out alternate infinite;
+      }
+
+      @keyframes animatedGradient {
+        0% {
+          background-position: 0 25%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 25%;
+        }
       }
     }
 
@@ -150,9 +225,10 @@
       color: #0C0C0C;
     }
 
-    a {
+    .icon-font {
       color: #0c0c0c;
       font-size: 14px;
+      @include transition(transform);
     }
   }
 }

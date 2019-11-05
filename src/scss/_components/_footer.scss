@@ -121,14 +121,37 @@
     }
 
     li {
-      padding-right: 30px;
+      padding-right: 25px;
     }
 
     a {
+      overflow: hidden;
+      position: relative;
       display: flex;
+      padding-right: 5px;
       font-size: 16px;
       line-height: 19px;
       color: #0c0c0c;
+
+      &:hover {
+        span {
+          transform: translateY(-100%);
+        }
+      }
+
+      span {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s;
+
+        &:before {
+          content: attr(data-hover);
+          position: absolute;
+          top: 100%;
+          font-weight: bold;
+          transform: translate3d(0,0,0);
+        }
+      }
     }
   }
 
@@ -170,6 +193,7 @@
     margin-left: auto;
 
     &-btn {
+      display: flex;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);

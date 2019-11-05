@@ -510,7 +510,9 @@ picture {
 
 /* line 51, src/scss/_shared/_common.scss */
 .copyright__info {
-  padding-right: 240px;
+  -webkit-transform: translateX(-150%);
+      -ms-transform: translateX(-150%);
+          transform: translateX(-150%);
   color: #ffffff;
 }
 
@@ -963,26 +965,57 @@ picture {
 
 /* line 123, src/scss/_components/_footer.scss */
 .footer__nav li {
-  padding-right: 30px;
+  padding-right: 25px;
 }
 
 /* line 127, src/scss/_components/_footer.scss */
 .footer__nav a {
+  overflow: hidden;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 5px;
   font-size: 16px;
   line-height: 19px;
   color: #0c0c0c;
 }
 
-/* line 135, src/scss/_components/_footer.scss */
+/* line 137, src/scss/_components/_footer.scss */
+.footer__nav a:hover span {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+/* line 142, src/scss/_components/_footer.scss */
+.footer__nav a span {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+/* line 147, src/scss/_components/_footer.scss */
+.footer__nav a span:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 100%;
+  font-weight: bold;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/* line 158, src/scss/_components/_footer.scss */
 .footer__user {
   padding-right: 21px;
 }
 
-/* line 138, src/scss/_components/_footer.scss */
+/* line 161, src/scss/_components/_footer.scss */
 .footer__user-image {
   display: block;
   max-width: 100%;
@@ -991,7 +1024,7 @@ picture {
   margin-bottom: 27px;
 }
 
-/* line 146, src/scss/_components/_footer.scss */
+/* line 169, src/scss/_components/_footer.scss */
 .footer__user-name {
   padding-bottom: 13px;
   text-align: right;
@@ -1001,7 +1034,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 155, src/scss/_components/_footer.scss */
+/* line 178, src/scss/_components/_footer.scss */
 .footer__user-desc {
   padding-bottom: 21px;
   text-align: right;
@@ -1011,7 +1044,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 165, src/scss/_components/_footer.scss */
+/* line 188, src/scss/_components/_footer.scss */
 .footer__video {
   position: relative;
   right: 2px;
@@ -1020,8 +1053,12 @@ picture {
   margin-left: auto;
 }
 
-/* line 172, src/scss/_components/_footer.scss */
+/* line 195, src/scss/_components/_footer.scss */
 .footer__video-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1034,7 +1071,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 182, src/scss/_components/_footer.scss */
+/* line 206, src/scss/_components/_footer.scss */
 .footer__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1046,7 +1083,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 188, src/scss/_components/_footer.scss */
+/* line 212, src/scss/_components/_footer.scss */
 .footer__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1064,7 +1101,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 199, src/scss/_components/_footer.scss */
+/* line 223, src/scss/_components/_footer.scss */
 .footer__video iframe,
 .footer__video video {
   position: absolute;
@@ -1078,7 +1115,7 @@ picture {
      object-position: center;
 }
 
-/* line 211, src/scss/_components/_footer.scss */
+/* line 235, src/scss/_components/_footer.scss */
 .footer__info {
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -1815,6 +1852,10 @@ picture {
 
 /* line 82, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1827,7 +1868,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 92, src/scss/_components/showreel/_showreel.scss */
+/* line 93, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1839,7 +1880,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 98, src/scss/_components/showreel/_showreel.scss */
+/* line 99, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1857,7 +1898,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 109, src/scss/_components/showreel/_showreel.scss */
+/* line 110, src/scss/_components/showreel/_showreel.scss */
 .showreel__video iframe,
 .showreel__video video {
   position: absolute;
@@ -2332,28 +2373,122 @@ picture {
 /* line 68, src/scss/_components/press/_press.scss */
 .press__infinite {
   height: 80px;
+}
+
+/* line 73, src/scss/_components/press/_press.scss */
+.press__infinite:hover a, .press__infinite:focus a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #202020;
+}
+
+/* line 81, src/scss/_components/press/_press.scss */
+.press__infinite:hover a:before, .press__infinite:hover a:after {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 91, src/scss/_components/press/_press.scss */
+.press__infinite a {
+  position: relative;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
   color: #202020;
 }
 
-/* line 75, src/scss/_components/press/_press.scss */
-.press__infinite:hover, .press__infinite:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: #202020;
+/* line 98, src/scss/_components/press/_press.scss */
+.press__infinite a:before, .press__infinite a:after {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 82, src/scss/_components/press/_press.scss */
+/* line 110, src/scss/_components/press/_press.scss */
+.press__infinite a:before {
+  content: '[';
+  left: -15px;
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+/* line 116, src/scss/_components/press/_press.scss */
+.press__infinite a:after {
+  content: ']';
+  right: -15px;
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+
+/* line 125, src/scss/_components/press/_press.scss */
 .press .card {
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
   background-color: transparent;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 87, src/scss/_components/press/_press.scss */
+/* line 131, src/scss/_components/press/_press.scss */
+.press .card:hover {
+  -webkit-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 137, src/scss/_components/press/_press.scss */
+.press .card:hover .card-head img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.45s ease-in-out;
+  transition: -webkit-transform 0.45s ease-in-out;
+  -o-transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out;
+  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
+}
+
+/* line 144, src/scss/_components/press/_press.scss */
+.press .card:hover .icon-font {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 150, src/scss/_components/press/_press.scss */
 .press .card--reverse {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
@@ -2361,13 +2496,13 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 91, src/scss/_components/press/_press.scss */
+/* line 154, src/scss/_components/press/_press.scss */
 .press .card--reverse .card-body {
   padding-left: 0;
   padding-right: 90px;
 }
 
-/* line 98, src/scss/_components/press/_press.scss */
+/* line 161, src/scss/_components/press/_press.scss */
 .press .card-head {
   overflow: hidden;
   position: relative;
@@ -2376,7 +2511,7 @@ picture {
   height: 302px;
 }
 
-/* line 105, src/scss/_components/press/_press.scss */
+/* line 168, src/scss/_components/press/_press.scss */
 .press .card-head img {
   position: absolute;
   top: 0;
@@ -2389,9 +2524,14 @@ picture {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-transition: -webkit-transform 0.55s ease-in-out;
+  transition: -webkit-transform 0.55s ease-in-out;
+  -o-transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out;
+  transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 117, src/scss/_components/press/_press.scss */
+/* line 181, src/scss/_components/press/_press.scss */
 .press .card-body {
   -webkit-box-flex: unset;
   -webkit-flex: unset;
@@ -2401,29 +2541,57 @@ picture {
   padding-left: 67px;
 }
 
-/* line 126, src/scss/_components/press/_press.scss */
+/* line 187, src/scss/_components/press/_press.scss */
 .press .card-text {
   padding-bottom: 17px;
 }
 
-/* line 129, src/scss/_components/press/_press.scss */
+/* line 190, src/scss/_components/press/_press.scss */
 .press .card-text p {
   min-width: 58px;
   height: 30px;
   padding: 5px 14px;
-  background: -webkit-gradient(linear, right top, left top, from(#4A00A8), to(#AF0189));
-  background: -webkit-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
-  background: -o-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
-  background: linear-gradient(270deg, #4A00A8 0%, #AF0189 100%);
   letter-spacing: 0.5px;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #FFFFFF;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
+  background: -webkit-gradient(linear, right top, left top, from(#4A00A8), color-stop(25%, #AF0189), color-stop(50%, #4A00A8), to(#AF0189));
+  background: -webkit-linear-gradient(right, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
+  background: -o-linear-gradient(right, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
+  background: linear-gradient(270deg, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
+  -webkit-background-size: 200% 200%;
+          background-size: 200% 200%;
+  -webkit-animation: animatedGradient 5s ease-in-out alternate infinite;
+          animation: animatedGradient 5s ease-in-out alternate infinite;
 }
 
-/* line 143, src/scss/_components/press/_press.scss */
+@-webkit-keyframes animatedGradient {
+  0% {
+    background-position: 0 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 25%;
+  }
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0 25%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 25%;
+  }
+}
+
+/* line 218, src/scss/_components/press/_press.scss */
 .press .card-title {
   width: 100%;
   max-width: 383px;
@@ -2434,10 +2602,15 @@ picture {
   color: #0C0C0C;
 }
 
-/* line 153, src/scss/_components/press/_press.scss */
-.press .card a {
+/* line 228, src/scss/_components/press/_press.scss */
+.press .card .icon-font {
   color: #0c0c0c;
   font-size: 14px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
