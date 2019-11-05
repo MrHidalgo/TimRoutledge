@@ -1,7 +1,79 @@
 // FOOTER :: START
 
 footer#footer.footer
-  .c-grid
+
+  .footer__bg
+    .footer__bg-left
+    .footer__bg-right
+    img.footer__bg-img(src='img/text-tim-routledge.svg')
+
+  .container-fluid
+
     .footer__wrapper
+      .footer__wrapper-line
+
+      .footer__wrapper-left
+
+        h2.footer__title Awards & Nominations
+
+        ul.footer__awards
+          li
+            img(src='img/img-awards-1.png')
+          li
+            img(src='img/img-awards-2.png')
+          li
+            img(src='img/img-awards-3.png')
+          li
+            img(src='img/img-awards-4.png')
+          li
+            img(src='img/img-awards-5.png')
+
+        ul.footer__nav
+          li
+            a(href='#' title='') About
+          li
+            a(href='#' title='') Portfolio
+          li
+            a(href='#' title='') News
+          li
+            a(href='#' title='') Press
+          li
+            a(href='#' title='') Showreel
+          li
+            a(href='#' title='') Contact
+
+        .footer__nav-line
+
+        ul.footer__nav
+          li
+            a(href='#' title='') Concerts
+          li
+            a(href='#' title='') Television
+          li
+            a(href='#' title='') Events
+          li
+            a(href='#' title='') Sports
+          li
+            a(href='#' title='') Corporate
+
+      .footer__wrapper-right
+
+        .footer__user
+          img.footer__user-image(src='img/img-tim.png' srcset='img/img-tim@2x.png 2x')
+          p.footer__user-name Tim Routledge
+          p.footer__user-desc Showreel
+
+        .footer__video
+          video#video(poster='img/img-video-poster.jpg')
+            source(src="media/video.mp4" type="video/mp4")
+
+          a.footer__video-btn.position-absolute.d-flex.align-items-center.justify-content-center(href='#' title='' play-video-js)
+            i.icon-font.icon-play
+
+    .copyright
+      div
+        p.copyright__text 1994-2019 All rights reserved. Tim Routledge - Lighting Designer, Lighting Director, Lighting Programmer.
+      div
+        p.copyright__info!= "Site by <strong>Pony.</strong>"
 
 // FOOTER :: END

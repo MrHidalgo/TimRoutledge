@@ -471,6 +471,48 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
+/* line 26, src/scss/_shared/_common.scss */
+.copyright {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 49px;
+  padding-bottom: 45px;
+}
+
+/* line 39, src/scss/_shared/_common.scss */
+.copyright__text, .copyright__info {
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+/* line 46, src/scss/_shared/_common.scss */
+.copyright__text {
+  color: #0c0c0c;
+}
+
+/* line 50, src/scss/_shared/_common.scss */
+.copyright__info {
+  padding-right: 100px;
+  color: #ffffff;
+}
+
 /* line 1, src/scss/_shared/_iconFont.scss */
 .icon-font {
   display: -webkit-box;
@@ -764,6 +806,273 @@ picture {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+/* line 3, src/scss/_components/_footer.scss */
+.footer {
+  position: relative;
+  min-height: 900px;
+}
+
+/* line 7, src/scss/_components/_footer.scss */
+.footer__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, src/scss/_components/_footer.scss */
+.footer__bg-left, .footer__bg-right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+/* line 21, src/scss/_components/_footer.scss */
+.footer__bg-left {
+  left: 0;
+  width: 65%;
+  background-color: #ffffff;
+}
+
+/* line 27, src/scss/_components/_footer.scss */
+.footer__bg-right {
+  right: 0;
+  width: 35%;
+}
+
+/* line 32, src/scss/_components/_footer.scss */
+.footer__bg-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 39, src/scss/_components/_footer.scss */
+.footer__wrapper {
+  z-index: 2;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+
+/* line 50, src/scss/_components/_footer.scss */
+.footer__wrapper-line {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 80px;
+  left: 0;
+  background-color: #0C0C0C;
+}
+
+/* line 59, src/scss/_components/_footer.scss */
+.footer__wrapper-left, .footer__wrapper-right {
+  width: 50%;
+}
+
+/* line 64, src/scss/_components/_footer.scss */
+.footer__wrapper-left {
+  padding-top: 49px;
+}
+
+/* line 71, src/scss/_components/_footer.scss */
+.footer__title {
+  padding-bottom: 56px;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 30px;
+  line-height: 38px;
+  color: #0C0C0C;
+}
+
+/* line 79, src/scss/_components/_footer.scss */
+.footer__awards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+/* line 84, src/scss/_components/_footer.scss */
+.footer__awards li {
+  padding-right: 34px;
+  padding-bottom: 54px;
+}
+
+/* line 88, src/scss/_components/_footer.scss */
+.footer__awards li img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 96, src/scss/_components/_footer.scss */
+.footer__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 100, src/scss/_components/_footer.scss */
+.footer__nav-line {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 572px;
+  height: 1px;
+  margin-top: 29px;
+  margin-bottom: 29px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 110, src/scss/_components/_footer.scss */
+.footer__nav-line:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 2px;
+  background-color: #000000;
+}
+
+/* line 121, src/scss/_components/_footer.scss */
+.footer__nav li {
+  padding-right: 30px;
+}
+
+/* line 125, src/scss/_components/_footer.scss */
+.footer__nav a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0c0c0c;
+}
+
+/* line 134, src/scss/_components/_footer.scss */
+.footer__user-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-bottom: 27px;
+}
+
+/* line 142, src/scss/_components/_footer.scss */
+.footer__user-name {
+  padding-bottom: 13px;
+  text-align: right;
+  font-size: 30px;
+  line-height: 38px;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  color: #FFFFFF;
+}
+
+/* line 151, src/scss/_components/_footer.scss */
+.footer__user-desc {
+  padding-bottom: 23px;
+  text-align: right;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+/* line 161, src/scss/_components/_footer.scss */
+.footer__video {
+  position: relative;
+  width: 540px;
+  height: 304px;
+  margin-left: auto;
+}
+
+/* line 167, src/scss/_components/_footer.scss */
+.footer__video-btn {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 177, src/scss/_components/_footer.scss */
+.footer__video-btn:hover .icon-font {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 183, src/scss/_components/_footer.scss */
+.footer__video-btn .icon-font {
+  position: relative;
+  left: 2px;
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 194, src/scss/_components/_footer.scss */
+.footer__video iframe,
+.footer__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 206, src/scss/_components/_footer.scss */
+.footer__info {
+  text-align: right;
+  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 
 /* line 3, src/scss/_components/homepage/_main.scss */

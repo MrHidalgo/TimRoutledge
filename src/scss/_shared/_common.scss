@@ -22,4 +22,36 @@
 }
 // overlay :: end
 
+// copyright
+.copyright {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 49px;
+  padding-bottom: 45px;
+
+  &__text,
+  &__info {
+    font-family: 'Aktiv Grotesk Ex', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &__text {
+    color: #0c0c0c;
+  }
+
+  &__info {
+    padding-right: 100px;
+    color: #ffffff;
+  }
+}
+// copyright :: end
+
 // COMMON :: END
