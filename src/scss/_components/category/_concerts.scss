@@ -2,8 +2,10 @@
 
 .concerts {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 25px;
+  padding: 80px 15px 25px;
+  @include adaptive(1023) {
+    padding-top: 60px;
+  }
 
   &__bg {
     z-index: 0;
@@ -56,6 +58,11 @@
         max-width: calc(100% / 3);
         padding-left: 20px;
         padding-bottom: 25px;
+        @include adaptive(1023) {
+          max-width: calc(100% / 2);
+          padding-left: 15px;
+          padding-bottom: 30px;
+        }
       }
     }
 
