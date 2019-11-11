@@ -6,7 +6,7 @@ PageList:
   ready: 20
 - file: showreel.html
   titleName: Showreel
-  ready: 50
+  ready: 55
 - file: projects.html
   titleName: Projects
   ready: 35
@@ -15,10 +15,10 @@ PageList:
   ready: 35
 - file: category.html
   titleName: Category
-  ready: 50
+  ready: 55
 - file: about.html
   titleName: About
   ready: 35
 - file: press.html
   titleName: Press
-  ready: 50
+  ready: 55

@@ -648,37 +648,39 @@ picture {
 
 /* line 10, src/scss/_components/_header.scss */
 .header__bg {
+  z-index: 0;
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
 }
 
-/* line 16, src/scss/_components/_header.scss */
+/* line 17, src/scss/_components/_header.scss */
 .header__bg img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 23, src/scss/_components/_header.scss */
+/* line 24, src/scss/_components/_header.scss */
 .header__wrapper {
   z-index: 992;
   width: 96px;
   height: 100vh;
+  background-color: #010101;
 }
 
-/* line 28, src/scss/_components/_header.scss */
+/* line 30, src/scss/_components/_header.scss */
 .header__wrapper-top, .header__wrapper-bottom {
   height: 250px;
 }
 
-/* line 33, src/scss/_components/_header.scss */
+/* line 35, src/scss/_components/_header.scss */
 .header__wrapper-top {
   padding-top: 34px;
 }
 
-/* line 37, src/scss/_components/_header.scss */
+/* line 39, src/scss/_components/_header.scss */
 .header__wrapper-middle {
   position: relative;
   -webkit-box-flex: 1;
@@ -689,7 +691,7 @@ picture {
   max-height: 100%;
 }
 
-/* line 47, src/scss/_components/_header.scss */
+/* line 49, src/scss/_components/_header.scss */
 .header__btn {
   position: absolute;
   left: 50%;
@@ -710,12 +712,12 @@ picture {
           backface-visibility: hidden;
 }
 
-/* line 59, src/scss/_components/_header.scss */
+/* line 61, src/scss/_components/_header.scss */
 .header__btn:hover, .header__btn:focus {
   color: #ffffff;
 }
 
-/* line 64, src/scss/_components/_header.scss */
+/* line 66, src/scss/_components/_header.scss */
 .header__btn p {
   padding-right: 15px;
   color: #ffffff;
@@ -726,13 +728,13 @@ picture {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
 }
 
-/* line 74, src/scss/_components/_header.scss */
+/* line 76, src/scss/_components/_header.scss */
 .header__btn span {
   width: 24px;
   height: 24px;
 }
 
-/* line 80, src/scss/_components/_header.scss */
+/* line 82, src/scss/_components/_header.scss */
 .header__title {
   white-space: nowrap;
   position: absolute;
@@ -756,7 +758,7 @@ picture {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
 }
 
-/* line 98, src/scss/_components/_header.scss */
+/* line 100, src/scss/_components/_header.scss */
 .header__menu {
   z-index: 991;
   opacity: 0;
@@ -778,7 +780,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 112, src/scss/_components/_header.scss */
+/* line 114, src/scss/_components/_header.scss */
 .header__menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -792,12 +794,12 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 119, src/scss/_components/_header.scss */
+/* line 121, src/scss/_components/_header.scss */
 .header__menu-wrapper {
   padding: 15px 15px 15px 86px;
 }
 
-/* line 123, src/scss/_components/_header.scss */
+/* line 125, src/scss/_components/_header.scss */
 .header__menu-line {
   width: 80px;
   height: 2px;
@@ -806,13 +808,13 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 133, src/scss/_components/_header.scss */
+/* line 135, src/scss/_components/_header.scss */
 .header__menu .nav.nav--additional .nav-link {
   font-size: 16px;
   line-height: 22px;
 }
 
-/* line 139, src/scss/_components/_header.scss */
+/* line 141, src/scss/_components/_header.scss */
 .header__menu .nav-link {
   position: relative;
   color: #FFFFFF;
@@ -820,7 +822,7 @@ picture {
   line-height: 26px;
 }
 
-/* line 146, src/scss/_components/_header.scss */
+/* line 148, src/scss/_components/_header.scss */
 .header__menu .nav-link:hover:before, .header__menu .nav-link:hover:after {
   opacity: 1;
   visibility: visible;
@@ -834,7 +836,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 155, src/scss/_components/_header.scss */
+/* line 157, src/scss/_components/_header.scss */
 .header__menu .nav-link:before, .header__menu .nav-link:after {
   opacity: 0;
   visibility: hidden;
@@ -850,7 +852,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 167, src/scss/_components/_header.scss */
+/* line 169, src/scss/_components/_header.scss */
 .header__menu .nav-link:before {
   content: '[';
   left: -15px;
@@ -859,7 +861,7 @@ picture {
           transform: translateX(20px);
 }
 
-/* line 173, src/scss/_components/_header.scss */
+/* line 175, src/scss/_components/_header.scss */
 .header__menu .nav-link:after {
   content: ']';
   right: -15px;
@@ -868,34 +870,34 @@ picture {
           transform: translateX(-20px);
 }
 
-/* line 182, src/scss/_components/_header.scss */
+/* line 184, src/scss/_components/_header.scss */
 .header__social {
   padding-top: 165px;
 }
 
-/* line 186, src/scss/_components/_header.scss */
+/* line 188, src/scss/_components/_header.scss */
 .header__social-btn:nth-of-type(1) {
   margin-right: 30px;
 }
 
-/* line 191, src/scss/_components/_header.scss */
+/* line 193, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 195, src/scss/_components/_header.scss */
+/* line 197, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font.icon-facebook {
   color: #3b5998;
 }
 
-/* line 198, src/scss/_components/_header.scss */
+/* line 200, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font.icon-instagram {
   color: #c13584;
 }
 
-/* line 206, src/scss/_components/_header.scss */
+/* line 208, src/scss/_components/_header.scss */
 .header__social .icon-font {
   color: #ffffff;
   font-size: 21px;

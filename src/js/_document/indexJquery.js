@@ -41,6 +41,11 @@ $(document).ready((ev) => {
       });
     }
   };
+
+
+  const initCustomScrollbar = () => {
+    $('body').overlayScrollbars({});
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -60,6 +65,7 @@ $(document).ready((ev) => {
 		// ==========================================
 
     // callback
+    initCustomScrollbar();
     initVideo();
 		// ==========================================
   };

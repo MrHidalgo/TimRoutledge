@@ -103,6 +103,10 @@ $(document).ready(function (ev) {
       });
     }
   };
+
+  var initCustomScrollbar = function initCustomScrollbar() {
+    $('body').overlayScrollbars({});
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -120,6 +124,7 @@ $(document).ready(function (ev) {
     // ==========================================
 
     // callback
+    initCustomScrollbar();
     initVideo();
     // ==========================================
   };
