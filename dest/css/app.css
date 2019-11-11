@@ -445,7 +445,13 @@ picture {
   height: 100%;
 }
 
-/* line 4, src/scss/_shared/_common.scss */
+/* line 3, src/scss/_shared/_common.scss */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 9, src/scss/_shared/_common.scss */
 .overlay {
   z-index: 990;
   opacity: 0;
@@ -462,7 +468,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 17, src/scss/_shared/_common.scss */
+/* line 22, src/scss/_shared/_common.scss */
 .is-hideScroll .overlay {
   opacity: 1;
   visibility: visible;
@@ -471,7 +477,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 26, src/scss/_shared/_common.scss */
+/* line 31, src/scss/_shared/_common.scss */
 .copyright {
   z-index: 2;
   position: relative;
@@ -491,12 +497,11 @@ picture {
   max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 49px;
-  padding-bottom: 45px;
+  padding: 49px 15px 45px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 40, src/scss/_shared/_common.scss */
+  /* line 44, src/scss/_shared/_common.scss */
   .copyright > div:nth-of-type(1) {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -508,27 +513,34 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 47, src/scss/_shared/_common.scss */
+  /* line 51, src/scss/_shared/_common.scss */
   .copyright > div:nth-of-type(2) {
     width: -webkit-calc(35% + 2px);
     width: calc(35% + 2px);
   }
 }
 
-/* line 54, src/scss/_shared/_common.scss */
+@media screen and (max-width: 1023px) {
+  /* line 51, src/scss/_shared/_common.scss */
+  .copyright > div:nth-of-type(2) {
+    width: 43%;
+  }
+}
+
+/* line 61, src/scss/_shared/_common.scss */
 .copyright__text, .copyright__info {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 12px;
   line-height: 15px;
 }
 
-/* line 61, src/scss/_shared/_common.scss */
+/* line 68, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #0c0c0c;
   letter-spacing: -0.3px;
 }
 
-/* line 66, src/scss/_shared/_common.scss */
+/* line 73, src/scss/_shared/_common.scss */
 .copyright__info {
   -webkit-transform: translateX(-150%);
       -ms-transform: translateX(-150%);
@@ -537,7 +549,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 66, src/scss/_shared/_common.scss */
+  /* line 73, src/scss/_shared/_common.scss */
   .copyright__info {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
@@ -958,8 +970,7 @@ picture {
   max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
-  padding-bottom: 45px;
+  padding: 80px 15px 45px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -969,7 +980,7 @@ picture {
   }
 }
 
-/* line 65, src/scss/_components/_footer.scss */
+/* line 64, src/scss/_components/_footer.scss */
 .footer__wrapper-line {
   position: absolute;
   top: 0;
@@ -979,32 +990,46 @@ picture {
   background-color: #0C0C0C;
 }
 
-/* line 74, src/scss/_components/_footer.scss */
+@media screen and (max-width: 1023px) {
+  /* line 64, src/scss/_components/_footer.scss */
+  .footer__wrapper-line {
+    left: 15px;
+  }
+}
+
+/* line 76, src/scss/_components/_footer.scss */
 .footer__wrapper-left, .footer__wrapper-right {
   width: 50%;
 }
 
-/* line 79, src/scss/_components/_footer.scss */
+/* line 81, src/scss/_components/_footer.scss */
 .footer__wrapper-left {
   padding-top: 49px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 79, src/scss/_components/_footer.scss */
+  /* line 81, src/scss/_components/_footer.scss */
   .footer__wrapper-left {
     width: 57%;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 86, src/scss/_components/_footer.scss */
+  /* line 81, src/scss/_components/_footer.scss */
+  .footer__wrapper-left {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 91, src/scss/_components/_footer.scss */
   .footer__wrapper-right {
     width: 43%;
     padding-left: 15px;
   }
 }
 
-/* line 94, src/scss/_components/_footer.scss */
+/* line 99, src/scss/_components/_footer.scss */
 .footer__title {
   letter-spacing: 0.6px;
   padding-bottom: 56px;
@@ -1015,20 +1040,20 @@ picture {
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 94, src/scss/_components/_footer.scss */
+  /* line 99, src/scss/_components/_footer.scss */
   .footer__title {
     font-size: 27px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 94, src/scss/_components/_footer.scss */
+  /* line 99, src/scss/_components/_footer.scss */
   .footer__title {
     font-size: 24px;
   }
 }
 
-/* line 109, src/scss/_components/_footer.scss */
+/* line 114, src/scss/_components/_footer.scss */
 .footer__awards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1042,40 +1067,40 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 109, src/scss/_components/_footer.scss */
+  /* line 114, src/scss/_components/_footer.scss */
   .footer__awards {
     padding-bottom: 0;
   }
 }
 
-/* line 118, src/scss/_components/_footer.scss */
+/* line 123, src/scss/_components/_footer.scss */
 .footer__awards li {
   padding-right: 33px;
   padding-bottom: 53px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 118, src/scss/_components/_footer.scss */
+  /* line 123, src/scss/_components/_footer.scss */
   .footer__awards li {
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 118, src/scss/_components/_footer.scss */
+  /* line 123, src/scss/_components/_footer.scss */
   .footer__awards li {
     max-width: 50%;
   }
 }
 
-/* line 128, src/scss/_components/_footer.scss */
+/* line 133, src/scss/_components/_footer.scss */
 .footer__awards li img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 136, src/scss/_components/_footer.scss */
+/* line 141, src/scss/_components/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1088,13 +1113,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 136, src/scss/_components/_footer.scss */
+  /* line 141, src/scss/_components/_footer.scss */
   .footer__nav {
     display: none;
   }
 }
 
-/* line 143, src/scss/_components/_footer.scss */
+/* line 148, src/scss/_components/_footer.scss */
 .footer__nav-line {
   position: relative;
   display: block;
@@ -1107,20 +1132,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 143, src/scss/_components/_footer.scss */
+  /* line 148, src/scss/_components/_footer.scss */
   .footer__nav-line {
     max-width: 95%;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 143, src/scss/_components/_footer.scss */
+  /* line 148, src/scss/_components/_footer.scss */
   .footer__nav-line {
     display: none;
   }
 }
 
-/* line 159, src/scss/_components/_footer.scss */
+/* line 164, src/scss/_components/_footer.scss */
 .footer__nav-line:after {
   content: '';
   position: absolute;
@@ -1131,19 +1156,19 @@ picture {
   background-color: #000000;
 }
 
-/* line 170, src/scss/_components/_footer.scss */
+/* line 175, src/scss/_components/_footer.scss */
 .footer__nav li {
   padding-right: 25px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 170, src/scss/_components/_footer.scss */
+  /* line 175, src/scss/_components/_footer.scss */
   .footer__nav li {
     padding-right: 15px;
   }
 }
 
-/* line 177, src/scss/_components/_footer.scss */
+/* line 182, src/scss/_components/_footer.scss */
 .footer__nav a {
   overflow: hidden;
   position: relative;
@@ -1157,14 +1182,14 @@ picture {
   color: #0c0c0c;
 }
 
-/* line 187, src/scss/_components/_footer.scss */
+/* line 192, src/scss/_components/_footer.scss */
 .footer__nav a:hover span {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-/* line 192, src/scss/_components/_footer.scss */
+/* line 197, src/scss/_components/_footer.scss */
 .footer__nav a span {
   position: relative;
   display: inline-block;
@@ -1175,7 +1200,7 @@ picture {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-/* line 197, src/scss/_components/_footer.scss */
+/* line 202, src/scss/_components/_footer.scss */
 .footer__nav a span:before {
   content: attr(data-hover);
   position: absolute;
@@ -1185,12 +1210,12 @@ picture {
           transform: translate3d(0, 0, 0);
 }
 
-/* line 208, src/scss/_components/_footer.scss */
+/* line 213, src/scss/_components/_footer.scss */
 .footer__user {
   padding-right: 21px;
 }
 
-/* line 211, src/scss/_components/_footer.scss */
+/* line 216, src/scss/_components/_footer.scss */
 .footer__user-image {
   display: block;
   max-width: 100%;
@@ -1199,7 +1224,7 @@ picture {
   margin-bottom: 27px;
 }
 
-/* line 219, src/scss/_components/_footer.scss */
+/* line 224, src/scss/_components/_footer.scss */
 .footer__user-name {
   padding-bottom: 13px;
   text-align: right;
@@ -1209,7 +1234,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 228, src/scss/_components/_footer.scss */
+/* line 233, src/scss/_components/_footer.scss */
 .footer__user-desc {
   padding-bottom: 21px;
   text-align: right;
@@ -1219,7 +1244,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 238, src/scss/_components/_footer.scss */
+/* line 243, src/scss/_components/_footer.scss */
 .footer__video {
   position: relative;
   right: 2px;
@@ -1229,7 +1254,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 238, src/scss/_components/_footer.scss */
+  /* line 243, src/scss/_components/_footer.scss */
   .footer__video {
     width: 100%;
     max-width: 540px;
@@ -1237,13 +1262,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 238, src/scss/_components/_footer.scss */
+  /* line 243, src/scss/_components/_footer.scss */
   .footer__video {
     display: none;
   }
 }
 
-/* line 252, src/scss/_components/_footer.scss */
+/* line 257, src/scss/_components/_footer.scss */
 .footer__video-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1261,7 +1286,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 263, src/scss/_components/_footer.scss */
+/* line 268, src/scss/_components/_footer.scss */
 .footer__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1273,7 +1298,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 269, src/scss/_components/_footer.scss */
+/* line 274, src/scss/_components/_footer.scss */
 .footer__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1291,7 +1316,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 280, src/scss/_components/_footer.scss */
+/* line 285, src/scss/_components/_footer.scss */
 .footer__video iframe,
 .footer__video video {
   position: absolute;
@@ -1305,7 +1330,7 @@ picture {
      object-position: center;
 }
 
-/* line 292, src/scss/_components/_footer.scss */
+/* line 297, src/scss/_components/_footer.scss */
 .footer__info {
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -2011,33 +2036,35 @@ picture {
 /* line 37, src/scss/_components/showreel/_showreel.scss */
 .showreel__content {
   padding-bottom: 101px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* line 40, src/scss/_components/showreel/_showreel.scss */
+/* line 42, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div {
   width: 100%;
 }
 
-/* line 43, src/scss/_components/showreel/_showreel.scss */
+/* line 45, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(1) {
   max-width: 541px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 43, src/scss/_components/showreel/_showreel.scss */
+  /* line 45, src/scss/_components/showreel/_showreel.scss */
   .showreel__content > div:nth-of-type(1) {
     max-width: 441px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 43, src/scss/_components/showreel/_showreel.scss */
+  /* line 45, src/scss/_components/showreel/_showreel.scss */
   .showreel__content > div:nth-of-type(1) {
     max-width: 50%;
   }
 }
 
-/* line 53, src/scss/_components/showreel/_showreel.scss */
+/* line 55, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2048,7 +2075,7 @@ picture {
   padding-top: 12px;
 }
 
-/* line 62, src/scss/_components/showreel/_showreel.scss */
+/* line 64, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc {
   padding-bottom: 23px;
   font-weight: 300;
@@ -2057,25 +2084,25 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 69, src/scss/_components/showreel/_showreel.scss */
+/* line 71, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 74, src/scss/_components/showreel/_showreel.scss */
+/* line 76, src/scss/_components/showreel/_showreel.scss */
 .showreel__video {
   width: 100%;
   height: 641px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 74, src/scss/_components/showreel/_showreel.scss */
+  /* line 76, src/scss/_components/showreel/_showreel.scss */
   .showreel__video {
     height: 541px;
   }
 }
 
-/* line 81, src/scss/_components/showreel/_showreel.scss */
+/* line 83, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-line {
   z-index: 2;
   right: 99px;
@@ -2085,7 +2112,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 90, src/scss/_components/showreel/_showreel.scss */
+/* line 92, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2103,7 +2130,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 101, src/scss/_components/showreel/_showreel.scss */
+/* line 103, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -2115,7 +2142,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 107, src/scss/_components/showreel/_showreel.scss */
+/* line 109, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -2133,7 +2160,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 118, src/scss/_components/showreel/_showreel.scss */
+/* line 120, src/scss/_components/showreel/_showreel.scss */
 .showreel__video iframe,
 .showreel__video video {
   position: absolute;

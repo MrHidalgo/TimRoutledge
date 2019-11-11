@@ -1,5 +1,10 @@
 // COMMON :: START
 
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 // overlay
 .overlay {
   z-index: 990;
@@ -33,8 +38,7 @@
   max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 49px;
-  padding-bottom: 45px;
+  padding: 49px 15px 45px;
 
   > div {
     &:nth-of-type(1) {
@@ -47,6 +51,9 @@
     &:nth-of-type(2) {
       @include adaptive(1279) {
         width: calc(35% + 2px);
+      }
+      @include adaptive(1023) {
+        width: 43%;
       }
     }
   }

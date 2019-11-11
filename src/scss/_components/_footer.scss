@@ -56,8 +56,7 @@
     max-width: 1171px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px;
-    padding-bottom: 45px;
+    padding: 80px 15px 45px;
     @include adaptive(1023) {
       padding-top: 60px;
     }
@@ -69,6 +68,9 @@
       width: 2px;
       height: 80px;
       background-color: #0C0C0C;
+      @include adaptive(1023) {
+        left: 15px;
+      }
     }
 
     &-left,
@@ -80,6 +82,9 @@
       padding-top: 49px;
       @include adaptive(1023) {
         width: 57%;
+      }
+      @include adaptive(1023) {
+        padding-right: 15px;
       }
     }
 
