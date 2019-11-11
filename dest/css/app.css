@@ -1556,104 +1556,177 @@ picture {
   height: auto;
 }
 
-/* line 24, src/scss/_components/about/_description.scss */
+@media screen and (max-width: 1279px) {
+  /* line 14, src/scss/_components/about/_description.scss */
+  .description__bg img {
+    display: none;
+  }
+}
+
+/* line 27, src/scss/_components/about/_description.scss */
 .description__bg > div {
   position: absolute;
   left: 0;
   width: 100%;
 }
 
-/* line 29, src/scss/_components/about/_description.scss */
+/* line 32, src/scss/_components/about/_description.scss */
 .description__bg > div:nth-of-type(1) {
   top: 0;
   height: 45%;
   background-color: #ffffff;
 }
 
-/* line 34, src/scss/_components/about/_description.scss */
+@media screen and (max-width: 1279px) {
+  /* line 32, src/scss/_components/about/_description.scss */
+  .description__bg > div:nth-of-type(1) {
+    height: 55%;
+  }
+}
+
+/* line 40, src/scss/_components/about/_description.scss */
 .description__bg > div:nth-of-type(2) {
   bottom: 0;
   height: 55%;
 }
 
-/* line 41, src/scss/_components/about/_description.scss */
+@media screen and (max-width: 1279px) {
+  /* line 40, src/scss/_components/about/_description.scss */
+  .description__bg > div:nth-of-type(2) {
+    height: 45%;
+  }
+}
+
+/* line 50, src/scss/_components/about/_description.scss */
 .description__row {
   z-index: 2;
   width: 100%;
   max-width: 1162px;
 }
 
-/* line 47, src/scss/_components/about/_description.scss */
+/* line 56, src/scss/_components/about/_description.scss */
 .description__wrapper {
   position: relative;
 }
 
-/* line 50, src/scss/_components/about/_description.scss */
+/* line 59, src/scss/_components/about/_description.scss */
 .description__wrapper-1 {
   padding-bottom: 67px;
 }
 
-/* line 53, src/scss/_components/about/_description.scss */
-.description__wrapper-1 .description__wrapper-left {
-  padding-top: 13px;
+@media screen and (max-width: 1023px) {
+  /* line 59, src/scss/_components/about/_description.scss */
+  .description__wrapper-1 {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
-/* line 57, src/scss/_components/about/_description.scss */
+/* line 66, src/scss/_components/about/_description.scss */
+.description__wrapper-1 .description__wrapper-left {
+  padding-top: 13px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 66, src/scss/_components/about/_description.scss */
+  .description__wrapper-1 .description__wrapper-left {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 76, src/scss/_components/about/_description.scss */
+.description__wrapper-1 .description__wrapper-right {
+  position: relative;
+  right: -15px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 76, src/scss/_components/about/_description.scss */
+  .description__wrapper-1 .description__wrapper-right {
+    right: 0;
+  }
+}
+
+/* line 84, src/scss/_components/about/_description.scss */
 .description__wrapper-1 .description__text {
   color: #0c0c0c;
 }
 
-/* line 62, src/scss/_components/about/_description.scss */
+@media screen and (max-width: 1023px) {
+  /* line 84, src/scss/_components/about/_description.scss */
+  .description__wrapper-1 .description__text {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 93, src/scss/_components/about/_description.scss */
 .description__wrapper-2 {
   padding-bottom: 77px;
 }
 
-/* line 65, src/scss/_components/about/_description.scss */
+/* line 96, src/scss/_components/about/_description.scss */
 .description__wrapper-2 .description__line {
   position: absolute;
   top: -150px;
   left: 0;
 }
 
-/* line 71, src/scss/_components/about/_description.scss */
+/* line 102, src/scss/_components/about/_description.scss */
 .description__wrapper-2 .description__wrapper-right {
   padding-left: 51px;
 }
 
-/* line 76, src/scss/_components/about/_description.scss */
+/* line 107, src/scss/_components/about/_description.scss */
 .description__wrapper-left {
   width: -webkit-calc(50% - 39px);
   width: calc(50% - 39px);
 }
 
-/* line 80, src/scss/_components/about/_description.scss */
+/* line 111, src/scss/_components/about/_description.scss */
 .description__wrapper-right {
   width: -webkit-calc(50% + 39px);
   width: calc(50% + 39px);
 }
 
-/* line 85, src/scss/_components/about/_description.scss */
+/* line 116, src/scss/_components/about/_description.scss */
 .description__wrapper > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 93, src/scss/_components/about/_description.scss */
+/* line 124, src/scss/_components/about/_description.scss */
 .description__line {
   width: 2px;
   height: 80px;
   background-color: #F5F5F5;
 }
 
-/* line 98, src/scss/_components/about/_description.scss */
+@media screen and (max-width: 1023px) {
+  /* line 124, src/scss/_components/about/_description.scss */
+  .description__line {
+    display: none;
+  }
+}
+
+/* line 132, src/scss/_components/about/_description.scss */
 .description__line--dark {
   margin-top: 0;
   margin-bottom: 36px;
   background-color: #050505;
 }
 
-/* line 105, src/scss/_components/about/_description.scss */
+/* line 139, src/scss/_components/about/_description.scss */
 .description__text {
   width: 100%;
   max-width: 474px;
@@ -1664,7 +1737,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 114, src/scss/_components/about/_description.scss */
+/* line 148, src/scss/_components/about/_description.scss */
 .description__text:last-of-type {
   padding-bottom: 0;
 }
