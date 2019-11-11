@@ -2,7 +2,7 @@
 
 .concerts {
   position: relative;
-  padding: 80px 15px 25px;
+  padding: 86px 15px 25px;
   @include adaptive(1023) {
     padding-top: 60px;
   }
@@ -41,7 +41,7 @@
   }
 
   &__title {
-    padding-bottom: 52px;
+    padding-bottom: 55px;
 
     &:before {
       display: none;
@@ -50,6 +50,7 @@
 
   &__box {
     &-wrapper {
+      position: relative;
       left: -20px;
       width: calc(100% + 20px);
 
@@ -101,7 +102,7 @@
     }
 
     &-body {
-      padding: 15px 20px 15px 0;
+      padding: 18px 20px 15px 0;
 
       > div {
         &:nth-of-type(2) {

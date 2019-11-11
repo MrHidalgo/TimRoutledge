@@ -1,7 +1,7 @@
 // SECTION television :: START
 
 .television {
-  padding: 40px 15px 90px;
+  padding: 40px 15px 91px;
 
   &.television--featured {
     padding-top: 109px;
@@ -81,8 +81,8 @@
   &__line {
     z-index: 0;
     position: absolute;
-    top: 0;
-    right: 41px;
+    top: 7px;
+    right: 57px;
     width: 2px;
     height: 303px;
     background-color: #FFFFFF;
@@ -95,6 +95,7 @@
     font-size: 30px;
     line-height: 38px;
     color: #FFFFFF;
+    letter-spacing: -1.1px;
     @include adaptive(767) {
       font-size: 26px;
       line-height: 30px;
@@ -207,7 +208,7 @@
     }
 
     &-body {
-      padding: 15px 20px 15px 0;
+      padding: 23px 20px 15px 0;
     }
 
     &-title {
