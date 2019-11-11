@@ -9,6 +9,19 @@
   line-height: 59px;
   color: #FFFFFF;
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  @include adaptive(1335) {
+    font-size: 49px;
+  }
+  @include adaptive(1023) {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  @include adaptive(767) {
+    font-size: 35px;
+  }
+  @include adaptive(575) {
+    font-size: 29px;
+  }
 
   &:before {
     content: '';
@@ -18,6 +31,9 @@
     width: 80px;
     height: 2px;
     background-color: #FFFFFF;
+    @include adaptive(1365) {
+      left: -51px;
+    }
   }
 
   &--dark {

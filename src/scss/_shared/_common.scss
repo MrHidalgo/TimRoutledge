@@ -36,6 +36,21 @@
   padding-top: 49px;
   padding-bottom: 45px;
 
+  > div {
+    &:nth-of-type(1) {
+      @include adaptive(1279) {
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+      }
+    }
+    &:nth-of-type(2) {
+      @include adaptive(1279) {
+        width: calc(35% + 2px);
+      }
+    }
+  }
+
   &__text,
   &__info {
     font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -51,6 +66,10 @@
   &__info {
     transform: translateX(-150%);
     color: #ffffff;
+    @include adaptive(1279) {
+      transform: translate(-50%);
+      text-align: right;
+    }
   }
 }
 // copyright :: end
