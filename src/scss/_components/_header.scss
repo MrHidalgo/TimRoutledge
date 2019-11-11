@@ -7,11 +7,23 @@
   left: 0;
   background-color: #010101;
 
+  &__bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
   &__wrapper {
     z-index: 992;
     width: 96px;
     height: 100vh;
-    background-color: #010101;
 
     &-top,
     &-bottom {
