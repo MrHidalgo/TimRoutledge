@@ -3,9 +3,11 @@
 .about {
   overflow: hidden;
   position: relative;
-  padding-top: 129px;
-  padding-bottom: 63px;
+  padding: 129px 15px 63px;
   background-color: #ffffff;
+  @include adaptive(1023) {
+    padding-top: 90px;
+  }
 
   &__bg {
     z-index: 0;
@@ -28,6 +30,9 @@
       &:nth-of-type(2) {
         right: -50px;
         bottom: 58px;
+        @include adaptive(1279) {
+          display: none;
+        }
       }
     }
   }
@@ -36,10 +41,41 @@
     z-index: 2;
     position: relative;
     max-width: 1245px;
+    @include adaptive(1023) {
+      flex-wrap: wrap;
+    }
 
     > div {
+      &:nth-of-type(1) {
+        @include adaptive(1279) {
+          position: relative;
+          width: 50%;
+          right: -15px;
+        }
+        @include adaptive(1023) {
+          width: 100%;
+          padding-bottom: 30px;
+        }
+      }
       &:nth-of-type(2) {
         padding-left: 68px;
+        @include adaptive(1279) {
+          width: 50%;
+          padding-left: 30px;
+        }
+        @include adaptive(1023) {
+          width: 100%;
+          padding-left: 0;
+        }
+      }
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      @include adaptive(1023) {
+        margin-left: auto;
       }
     }
   }
@@ -52,6 +88,15 @@
     line-height: 39px;
     color: #0C0C0C;
     letter-spacing: -0.4px;
+    @include adaptive(1279) {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    @include adaptive(1023) {
+      max-width: 100%;
+      font-size: 24px;
+      line-height: 33px;
+    }
   }
 
   .icon-line-arrow {
@@ -59,6 +104,9 @@
     top: -5px;
     color: #0c0c0c;
     font-size: 62px;
+    @include adaptive(1023) {
+      display: none;
+    }
   }
 }
 
