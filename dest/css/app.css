@@ -2571,7 +2571,14 @@ picture {
   background-color: #ffffff;
 }
 
-/* line 10, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 3, src/scss/_components/press/_press.scss */
+  .press {
+    padding-bottom: 55px;
+  }
+}
+
+/* line 13, src/scss/_components/press/_press.scss */
 .press__bg {
   z-index: 0;
   position: absolute;
@@ -2581,7 +2588,7 @@ picture {
   height: 100%;
 }
 
-/* line 18, src/scss/_components/press/_press.scss */
+/* line 21, src/scss/_components/press/_press.scss */
 .press__bg img {
   position: absolute;
   display: block;
@@ -2589,26 +2596,26 @@ picture {
   height: auto;
 }
 
-/* line 24, src/scss/_components/press/_press.scss */
+/* line 27, src/scss/_components/press/_press.scss */
 .press__bg img:nth-of-type(1) {
   top: 230px;
   left: 53px;
 }
 
-/* line 28, src/scss/_components/press/_press.scss */
+/* line 31, src/scss/_components/press/_press.scss */
 .press__bg img:nth-of-type(2) {
   right: -50px;
   top: -webkit-calc(20% - 10px);
   top: calc(20% - 10px);
 }
 
-/* line 35, src/scss/_components/press/_press.scss */
+/* line 38, src/scss/_components/press/_press.scss */
 .press__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 40, src/scss/_components/press/_press.scss */
+/* line 43, src/scss/_components/press/_press.scss */
 .press__title {
   padding-left: 29px;
   padding-bottom: 86px;
@@ -2616,42 +2623,56 @@ picture {
   text-shadow: none;
 }
 
-/* line 46, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 43, src/scss/_components/press/_press.scss */
+  .press__title {
+    padding-bottom: 56px;
+  }
+}
+
+/* line 52, src/scss/_components/press/_press.scss */
 .press__title:before {
   position: relative;
   top: 3px;
   left: -44px;
 }
 
-/* line 54, src/scss/_components/press/_press.scss */
+/* line 60, src/scss/_components/press/_press.scss */
 .press__box-wrapper {
   width: 100%;
   max-width: 1023px;
 }
 
-/* line 58, src/scss/_components/press/_press.scss */
+/* line 64, src/scss/_components/press/_press.scss */
 .press__box-wrapper > div {
   padding-bottom: 80px;
 }
 
-/* line 61, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 67, src/scss/_components/press/_press.scss */
+  .press__box-wrapper > div:nth-last-of-type(2) {
+    padding-bottom: 40px;
+  }
+}
+
+/* line 72, src/scss/_components/press/_press.scss */
 .press__box-wrapper > div:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 68, src/scss/_components/press/_press.scss */
+/* line 79, src/scss/_components/press/_press.scss */
 .press__infinite {
   height: 80px;
 }
 
-/* line 73, src/scss/_components/press/_press.scss */
+/* line 84, src/scss/_components/press/_press.scss */
 .press__infinite:hover a, .press__infinite:focus a {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #202020;
 }
 
-/* line 81, src/scss/_components/press/_press.scss */
+/* line 92, src/scss/_components/press/_press.scss */
 .press__infinite:hover a:before, .press__infinite:hover a:after {
   opacity: 1;
   visibility: visible;
@@ -2665,7 +2686,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 91, src/scss/_components/press/_press.scss */
+/* line 102, src/scss/_components/press/_press.scss */
 .press__infinite a {
   position: relative;
   font-size: 20px;
@@ -2674,7 +2695,7 @@ picture {
   color: #202020;
 }
 
-/* line 98, src/scss/_components/press/_press.scss */
+/* line 109, src/scss/_components/press/_press.scss */
 .press__infinite a:before, .press__infinite a:after {
   opacity: 0;
   visibility: hidden;
@@ -2690,7 +2711,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 110, src/scss/_components/press/_press.scss */
+/* line 121, src/scss/_components/press/_press.scss */
 .press__infinite a:before {
   content: '[';
   left: -15px;
@@ -2699,7 +2720,7 @@ picture {
           transform: translateX(20px);
 }
 
-/* line 116, src/scss/_components/press/_press.scss */
+/* line 127, src/scss/_components/press/_press.scss */
 .press__infinite a:after {
   content: ']';
   right: -15px;
@@ -2708,8 +2729,9 @@ picture {
           transform: translateX(-20px);
 }
 
-/* line 125, src/scss/_components/press/_press.scss */
+/* line 136, src/scss/_components/press/_press.scss */
 .press .card {
+  padding-right: 15px;
   border: none;
   -webkit-border-radius: 0;
           border-radius: 0;
@@ -2721,7 +2743,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 131, src/scss/_components/press/_press.scss */
+/* line 143, src/scss/_components/press/_press.scss */
 .press .card:hover {
   -webkit-transform: translateY(-15px);
       -ms-transform: translateY(-15px);
@@ -2733,7 +2755,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 137, src/scss/_components/press/_press.scss */
+/* line 149, src/scss/_components/press/_press.scss */
 .press .card:hover .card-head img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -2745,7 +2767,7 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 144, src/scss/_components/press/_press.scss */
+/* line 156, src/scss/_components/press/_press.scss */
 .press .card:hover .icon-font {
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -2757,21 +2779,30 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 150, src/scss/_components/press/_press.scss */
+/* line 162, src/scss/_components/press/_press.scss */
 .press .card--reverse {
+  padding-right: 0;
+  padding-left: 15px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-/* line 154, src/scss/_components/press/_press.scss */
+/* line 168, src/scss/_components/press/_press.scss */
 .press .card--reverse .card-body {
   padding-left: 0;
   padding-right: 90px;
 }
 
-/* line 161, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 168, src/scss/_components/press/_press.scss */
+  .press .card--reverse .card-body {
+    padding-right: 30px;
+  }
+}
+
+/* line 178, src/scss/_components/press/_press.scss */
 .press .card-head {
   overflow: hidden;
   position: relative;
@@ -2780,7 +2811,14 @@ picture {
   height: 302px;
 }
 
-/* line 168, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 178, src/scss/_components/press/_press.scss */
+  .press .card-head {
+    max-width: 55%;
+  }
+}
+
+/* line 188, src/scss/_components/press/_press.scss */
 .press .card-head img {
   position: absolute;
   top: 0;
@@ -2800,7 +2838,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 181, src/scss/_components/press/_press.scss */
+/* line 201, src/scss/_components/press/_press.scss */
 .press .card-body {
   -webkit-box-flex: unset;
   -webkit-flex: unset;
@@ -2810,12 +2848,29 @@ picture {
   padding-left: 67px;
 }
 
-/* line 187, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1279px) {
+  /* line 201, src/scss/_components/press/_press.scss */
+  .press .card-body {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 201, src/scss/_components/press/_press.scss */
+  .press .card-body {
+    padding-left: 30px;
+  }
+}
+
+/* line 213, src/scss/_components/press/_press.scss */
 .press .card-text {
   padding-bottom: 17px;
 }
 
-/* line 190, src/scss/_components/press/_press.scss */
+/* line 216, src/scss/_components/press/_press.scss */
 .press .card-text p {
   min-width: 58px;
   height: 30px;
@@ -2834,6 +2889,13 @@ picture {
           background-size: 200% 200%;
   -webkit-animation: animatedGradient 5s ease-in-out alternate infinite;
           animation: animatedGradient 5s ease-in-out alternate infinite;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 216, src/scss/_components/press/_press.scss */
+  .press .card-text p {
+    font-size: 14px;
+  }
 }
 
 @-webkit-keyframes animatedGradient {
@@ -2860,7 +2922,7 @@ picture {
   }
 }
 
-/* line 218, src/scss/_components/press/_press.scss */
+/* line 247, src/scss/_components/press/_press.scss */
 .press .card-title {
   width: 100%;
   max-width: 383px;
@@ -2871,7 +2933,15 @@ picture {
   color: #0C0C0C;
 }
 
-/* line 228, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 1023px) {
+  /* line 247, src/scss/_components/press/_press.scss */
+  .press .card-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+/* line 261, src/scss/_components/press/_press.scss */
 .press .card .icon-font {
   color: #0c0c0c;
   font-size: 14px;

@@ -6,6 +6,9 @@
   padding-top: 56px;
   padding-bottom: 97px;
   background-color: #ffffff;
+  @include adaptive(1023) {
+    padding-bottom: 55px;
+  }
 
   &__bg {
     z-index: 0;
@@ -42,6 +45,9 @@
     padding-bottom: 86px;
     letter-spacing: -0.8px;
     text-shadow: none;
+    @include adaptive(1023) {
+      padding-bottom: 56px;
+    }
 
     &:before {
       position: relative;
@@ -58,6 +64,11 @@
       > div {
         padding-bottom: 80px;
 
+        &:nth-last-of-type(2) {
+          @include adaptive(1023) {
+            padding-bottom: 40px;
+          }
+        }
         &:last-of-type {
           padding-bottom: 0;
         }
@@ -123,6 +134,7 @@
   }
 
   .card {
+    padding-right: 15px;
     border: none;
     border-radius: 0;
     background-color: transparent;
@@ -148,12 +160,17 @@
     }
 
     &--reverse {
+      padding-right: 0;
+      padding-left: 15px;
       justify-content: flex-end;
 
       .card {
         &-body {
           padding-left: 0;
           padding-right: 90px;
+          @include adaptive(1023) {
+            padding-right: 30px;
+          }
         }
       }
     }
@@ -164,6 +181,9 @@
       width: 100%;
       max-width: 453px;
       height: 302px;
+      @include adaptive(1023) {
+        max-width: 55%;
+      }
 
       img {
         position: absolute;
@@ -182,6 +202,12 @@
       flex: unset;
       padding: 0;
       padding-left: 67px;
+      @include adaptive(1279) {
+        flex: 1;
+      }
+      @include adaptive(1023) {
+        padding-left: 30px;
+      }
     }
 
     &-text {
@@ -200,6 +226,9 @@
         background: linear-gradient(270deg, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
         background-size: 200% 200%;
         animation: animatedGradient 5s ease-in-out alternate infinite;
+        @include adaptive(1023) {
+          font-size: 14px;
+        }
       }
 
       @keyframes animatedGradient {
@@ -223,6 +252,10 @@
       font-size: 30px;
       line-height: 33px;
       color: #0C0C0C;
+      @include adaptive(1023) {
+        font-size: 26px;
+        line-height: 30px;
+      }
     }
 
     .icon-font {
