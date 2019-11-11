@@ -4,8 +4,14 @@
   padding: 40px 15px 91px;
 
   &.television--featured {
-    padding-top: 109px;
-    padding-bottom: 125px;
+    padding-top: 111px;
+    padding-bottom: 122px;
+
+    .television {
+      &__title {
+        padding-bottom: 62px;
+      }
+    }
   }
 
   &.television--bg {
