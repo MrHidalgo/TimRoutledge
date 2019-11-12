@@ -6,6 +6,10 @@
   top: 0;
   left: 0;
   background-color: #010101;
+  @include adaptive(767) {
+    width: 100%;
+    height: 72px;
+  }
 
   &__bg {
     z-index: 0;
@@ -13,6 +17,9 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    @include adaptive(767) {
+      display: none;
+    }
 
     img {
       display: block;
@@ -26,14 +33,28 @@
     width: 96px;
     height: 100vh;
     background-color: #010101;
+    @include adaptive(767) {
+      flex-direction: row !important;
+      align-items: center;
+      width: 100%;
+      height: 72px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
     &-top,
     &-bottom {
       height: 250px;
+      @include adaptive(767) {
+        height: auto;
+      }
     }
 
     &-top {
       padding-top: 34px;
+      @include adaptive(767) {
+        padding-top: 0;
+      }
     }
 
     &-middle {
@@ -41,9 +62,16 @@
       flex: 1;
       min-height: 1px;
       max-height: 100%;
+      @include adaptive(767) {
+        flex: unset;
+      }
     }
 
-    &-bottom {}
+    &-bottom {
+      @include adaptive(767) {
+        display: none;
+      }
+    }
   }
 
   &__btn {
@@ -57,6 +85,12 @@
     transform-origin: 0 0;
     transform: rotate(-90deg);
     backface-visibility: hidden;
+    @include adaptive(767) {
+      position: static;
+      width: auto;
+      margin: 0;
+      transform: rotate(0);
+    }
 
     &:hover,
     &:focus {
@@ -71,6 +105,9 @@
       font-weight: 500;
       letter-spacing: 2px;
       font-family: 'Aktiv Grotesk Ex', sans-serif;
+      @include adaptive(767) {
+        display: none;
+      }
     }
 
     span {
@@ -104,12 +141,23 @@
     overflow-y: auto;
     position: fixed;
     top: 0;
-    left: 97px;
+    left: 96px;
     width: 376px;
     height: 100vh;
+    border-left: 1px solid rgba(#fff, 0.1);
     background-color: #050505;
     transform: translateX(-100%);
     @include transition(opacity, visibility, transform);
+    @include adaptive(767) {
+      display: block !important;
+      top: 72px;
+      left: 0;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-left: 0;
+      border-top: 1px solid rgba(#fff, 0.1);
+    }
 
     &.is-open {
       opacity: 1;
@@ -120,6 +168,9 @@
 
     &-wrapper {
       padding: 15px 15px 15px 86px;
+      @include adaptive(767) {
+        padding-left: 61px;
+      }
     }
 
     &-line {
@@ -128,6 +179,9 @@
       margin-top: 15px;
       margin-bottom: 30px;
       background-color: #FFFFFF;
+      @include adaptive(767) {
+        transform: translateX(-61px);
+      }
     }
 
     .nav {
@@ -183,6 +237,9 @@
 
   &__social {
     padding-top: 165px;
+    @include adaptive(767) {
+      padding-top: 50px;
+    }
 
     &-btn {
       &:nth-of-type(1) {
