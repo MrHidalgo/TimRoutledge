@@ -2421,7 +2421,7 @@ picture {
   /* line 90, src/scss/_components/category/_television.scss */
   .television__box-wrapper {
     overflow-x: auto;
-    display: block;
+    display: block !important;
     left: -15px;
     width: -webkit-calc(100% + 30px);
     width: calc(100% + 30px);
@@ -2474,7 +2474,14 @@ picture {
   }
 }
 
-/* line 127, src/scss/_components/category/_television.scss */
+@media screen and (max-width: 767px) {
+  /* line 104, src/scss/_components/category/_television.scss */
+  .television__box-wrapper > div {
+    max-width: 215px;
+  }
+}
+
+/* line 130, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div:hover {
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -2487,7 +2494,7 @@ picture {
   transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out, -ms-flex-positive 0.3s ease-in-out;
 }
 
-/* line 132, src/scss/_components/category/_television.scss */
+/* line 135, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div:hover .card-body .icon-font {
   opacity: 1;
   visibility: visible;
@@ -2501,13 +2508,13 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 143, src/scss/_components/category/_television.scss */
+/* line 146, src/scss/_components/category/_television.scss */
 .television__box-head {
   height: 505px;
   background-color: #000000;
 }
 
-/* line 147, src/scss/_components/category/_television.scss */
+/* line 150, src/scss/_components/category/_television.scss */
 .television__box-head img {
   position: absolute;
   top: 0;
@@ -2528,7 +2535,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 161, src/scss/_components/category/_television.scss */
+/* line 164, src/scss/_components/category/_television.scss */
 .television .card {
   overflow: hidden;
   border: none;
@@ -2537,7 +2544,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 168, src/scss/_components/category/_television.scss */
+/* line 171, src/scss/_components/category/_television.scss */
 .television .card:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -2549,7 +2556,7 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 174, src/scss/_components/category/_television.scss */
+/* line 177, src/scss/_components/category/_television.scss */
 .television .card:hover .card__more .icon-font {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -2561,7 +2568,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 181, src/scss/_components/category/_television.scss */
+/* line 184, src/scss/_components/category/_television.scss */
 .television .card__overlay {
   white-space: nowrap;
   z-index: 0;
@@ -2581,7 +2588,7 @@ picture {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 196, src/scss/_components/category/_television.scss */
+/* line 199, src/scss/_components/category/_television.scss */
 .television .card__more {
   z-index: 2;
   position: absolute;
@@ -2598,7 +2605,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 204, src/scss/_components/category/_television.scss */
+/* line 207, src/scss/_components/category/_television.scss */
 .television .card__more span {
   padding-bottom: 12px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -2607,7 +2614,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 212, src/scss/_components/category/_television.scss */
+/* line 215, src/scss/_components/category/_television.scss */
 .television .card__more .icon-font {
   font-size: 14px;
   color: #ffffff;
@@ -2618,13 +2625,13 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 219, src/scss/_components/category/_television.scss */
+/* line 222, src/scss/_components/category/_television.scss */
 .television .card-body {
   position: relative;
   padding: 23px 20px 15px 0;
 }
 
-/* line 223, src/scss/_components/category/_television.scss */
+/* line 226, src/scss/_components/category/_television.scss */
 .television .card-body .icon-font {
   opacity: 0;
   visibility: hidden;
@@ -2643,7 +2650,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 236, src/scss/_components/category/_television.scss */
+/* line 239, src/scss/_components/category/_television.scss */
 .television .card-title {
   margin-bottom: 5px;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -2652,7 +2659,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 244, src/scss/_components/category/_television.scss */
+/* line 247, src/scss/_components/category/_television.scss */
 .television .card-text {
   font-weight: 300;
   font-size: 16px;
@@ -2936,7 +2943,15 @@ picture {
   }
 }
 
-/* line 55, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 767px) {
+  /* line 40, src/scss/_components/projects/_projects.scss */
+  .projects .card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 59, src/scss/_components/projects/_projects.scss */
 .projects .card:after {
   content: '';
   position: absolute;
@@ -2949,7 +2964,7 @@ picture {
   background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
 }
 
-/* line 65, src/scss/_components/projects/_projects.scss */
+/* line 69, src/scss/_components/projects/_projects.scss */
 .projects .card-body {
   position: relative;
   z-index: 2;
@@ -2959,7 +2974,22 @@ picture {
           flex: unset;
 }
 
-/* line 70, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 767px) {
+  /* line 69, src/scss/_components/projects/_projects.scss */
+  .projects .card-body {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 78, src/scss/_components/projects/_projects.scss */
 .projects .card-body__bg {
   z-index: -1;
   position: absolute;
@@ -2970,7 +3000,7 @@ picture {
   height: auto;
 }
 
-/* line 81, src/scss/_components/projects/_projects.scss */
+/* line 89, src/scss/_components/projects/_projects.scss */
 .projects .card-title {
   padding-left: 4px;
   letter-spacing: 1.5px;
@@ -2982,7 +3012,35 @@ picture {
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
 }
 
-/* line 92, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 1365px) {
+  /* line 89, src/scss/_components/projects/_projects.scss */
+  .projects .card-title {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 89, src/scss/_components/projects/_projects.scss */
+  .projects .card-title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 89, src/scss/_components/projects/_projects.scss */
+  .projects .card-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 89, src/scss/_components/projects/_projects.scss */
+  .projects .card-title {
+    font-size: 30px;
+  }
+}
+
+/* line 112, src/scss/_components/projects/_projects.scss */
 .projects .card-text {
   padding-left: 8px;
   padding-bottom: 18px;
@@ -2991,14 +3049,28 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 100, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 1279px) {
+  /* line 112, src/scss/_components/projects/_projects.scss */
+  .projects .card-text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 112, src/scss/_components/projects/_projects.scss */
+  .projects .card-text {
+    font-size: 16px;
+  }
+}
+
+/* line 126, src/scss/_components/projects/_projects.scss */
 .projects .card .icon-font {
   margin-left: 10px;
   color: #ffffff;
   font-size: 14px;
 }
 
-/* line 106, src/scss/_components/projects/_projects.scss */
+/* line 132, src/scss/_components/projects/_projects.scss */
 .projects .card__bg {
   position: absolute;
   top: 0;
@@ -3011,7 +3083,7 @@ picture {
           background-size: cover;
 }
 
-/* line 117, src/scss/_components/projects/_projects.scss */
+/* line 143, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
@@ -3021,7 +3093,16 @@ picture {
   height: 100%;
 }
 
-/* line 126, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 767px) {
+  /* line 143, src/scss/_components/projects/_projects.scss */
+  .projects .card__overlay {
+    max-width: -webkit-calc(210px / 2);
+    max-width: calc(210px / 2);
+    left: -20px;
+  }
+}
+
+/* line 156, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge {
   overflow: hidden;
   position: relative;
@@ -3033,7 +3114,15 @@ picture {
           border-radius: 50%;
 }
 
-/* line 135, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 767px) {
+  /* line 156, src/scss/_components/projects/_projects.scss */
+  .projects .card__iamge {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* line 169, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge img {
   position: absolute;
   top: 0;
@@ -3046,7 +3135,7 @@ picture {
      object-position: center;
 }
 
-/* line 146, src/scss/_components/projects/_projects.scss */
+/* line 180, src/scss/_components/projects/_projects.scss */
 .projects .card__line {
   position: absolute;
   top: 0;
@@ -3056,7 +3145,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 155, src/scss/_components/projects/_projects.scss */
+/* line 189, src/scss/_components/projects/_projects.scss */
 .projects .card .btn {
   width: 120px;
   height: 30px;
@@ -3071,7 +3160,14 @@ picture {
   letter-spacing: 0.3px;
 }
 
-/* line 167, src/scss/_components/projects/_projects.scss */
+@media screen and (max-width: 767px) {
+  /* line 189, src/scss/_components/projects/_projects.scss */
+  .projects .card .btn {
+    margin-top: 30px;
+  }
+}
+
+/* line 204, src/scss/_components/projects/_projects.scss */
 .projects .card .btn:hover, .projects .card .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;

@@ -95,7 +95,7 @@
       font-size: 0;
       @include adaptive(1023) {
         overflow-x: auto;
-        display: block;
+        display: block !important;
         left: -15px;
         width: calc(100% + 30px);
         padding-right: 15px;
@@ -122,6 +122,9 @@
           max-width: 240px;
           padding-left: 15px;
           padding-bottom: 30px;
+        }
+        @include adaptive(767) {
+          max-width: 215px;
         }
 
         &:hover {
