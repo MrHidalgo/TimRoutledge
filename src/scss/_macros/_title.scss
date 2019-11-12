@@ -3,7 +3,7 @@
 .c-title {
   position: relative;
   padding-left: 64px;
-  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 53px;
   font-weight: bold;
@@ -14,14 +14,21 @@
     font-size: 49px;
   }
   @include adaptive(1023) {
+    padding-left: 54px;
     font-size: 40px;
     line-height: 50px;
   }
   @include adaptive(767) {
+    padding-left: 44px;
     font-size: 35px;
   }
   @include adaptive(575) {
+    padding-left: 34px;
     font-size: 29px;
+    line-height: 40px;
+  }
+  @include adaptive(424) {
+    font-size: 24px;
   }
 
   &:before {
@@ -34,6 +41,9 @@
     background-color: #FFFFFF;
     @include adaptive(1365) {
       left: -51px;
+    }
+    @include adaptive(767) {
+      width: 60px;
     }
   }
 
