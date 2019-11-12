@@ -3249,12 +3249,33 @@ picture {
   padding-left: 64px;
 }
 
-/* line 59, src/scss/_components/single-project/_single.scss */
+@media screen and (max-width: 1023px) {
+  /* line 54, src/scss/_components/single-project/_single.scss */
+  .single__wrapper-left > div:nth-of-type(1) .single__list {
+    padding-left: 54px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/_components/single-project/_single.scss */
+  .single__wrapper-left > div:nth-of-type(1) .single__list {
+    padding-left: 44px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 54, src/scss/_components/single-project/_single.scss */
+  .single__wrapper-left > div:nth-of-type(1) .single__list {
+    padding-left: 34px;
+  }
+}
+
+/* line 68, src/scss/_components/single-project/_single.scss */
 .single__wrapper-left > div:nth-of-type(2) {
   padding-left: 64px;
 }
 
-/* line 65, src/scss/_components/single-project/_single.scss */
+/* line 74, src/scss/_components/single-project/_single.scss */
 .single__wrapper-right {
   padding-top: 10px;
   -webkit-box-flex: 1;
@@ -3265,50 +3286,50 @@ picture {
   max-width: 100%;
 }
 
-/* line 73, src/scss/_components/single-project/_single.scss */
+/* line 82, src/scss/_components/single-project/_single.scss */
 .single .icon-line-arrow {
   color: #ffffff;
   font-size: 63px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 73, src/scss/_components/single-project/_single.scss */
+  /* line 82, src/scss/_components/single-project/_single.scss */
   .single .icon-line-arrow {
     display: none;
   }
 }
 
-/* line 81, src/scss/_components/single-project/_single.scss */
+/* line 90, src/scss/_components/single-project/_single.scss */
 .single__title {
   padding-bottom: 22px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 84, src/scss/_components/single-project/_single.scss */
+  /* line 93, src/scss/_components/single-project/_single.scss */
   .single__title br {
     display: none;
   }
 }
 
-/* line 90, src/scss/_components/single-project/_single.scss */
+/* line 99, src/scss/_components/single-project/_single.scss */
 .single__list {
   padding-bottom: 22px;
 }
 
-/* line 95, src/scss/_components/single-project/_single.scss */
+/* line 102, src/scss/_components/single-project/_single.scss */
 .single__list li {
   padding-right: 45px;
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 95, src/scss/_components/single-project/_single.scss */
+  /* line 102, src/scss/_components/single-project/_single.scss */
   .single__list li {
     padding-right: 25px;
   }
 }
 
-/* line 102, src/scss/_components/single-project/_single.scss */
+/* line 109, src/scss/_components/single-project/_single.scss */
 .single__list li p {
   font-size: 16px;
   line-height: 20px;
@@ -3316,7 +3337,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 109, src/scss/_components/single-project/_single.scss */
+@media screen and (max-width: 767px) {
+  /* line 109, src/scss/_components/single-project/_single.scss */
+  .single__list li p {
+    font-size: 14px;
+  }
+}
+
+/* line 119, src/scss/_components/single-project/_single.scss */
 .single__list li span {
   font-weight: 300;
   font-size: 16px;
@@ -3324,7 +3352,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 118, src/scss/_components/single-project/_single.scss */
+@media screen and (max-width: 767px) {
+  /* line 119, src/scss/_components/single-project/_single.scss */
+  .single__list li span {
+    font-size: 14px;
+  }
+}
+
+/* line 131, src/scss/_components/single-project/_single.scss */
 .single__desc {
   padding-bottom: 30px;
   font-weight: 300;

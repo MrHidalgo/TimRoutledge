@@ -53,6 +53,15 @@
 
           .single__list {
             padding-left: 64px;
+            @include adaptive(1023) {
+              padding-left: 54px;
+            }
+            @include adaptive(767) {
+              padding-left: 44px;
+            }
+            @include adaptive(575) {
+              padding-left: 34px;
+            }
           }
         }
 
@@ -90,8 +99,6 @@
   &__list {
     padding-bottom: 22px;
 
-    &.single__list--hor {}
-
     li {
       padding-right: 45px;
       padding-bottom: 20px;
@@ -104,6 +111,9 @@
         line-height: 20px;
         font-family: 'Aktiv Grotesk Ex', sans-serif;
         color: #FFFFFF;
+        @include adaptive(767) {
+          font-size: 14px;
+        }
       }
 
       span {
@@ -111,6 +121,9 @@
         font-size: 16px;
         line-height: 18px;
         color: #FFFFFF;
+        @include adaptive(767) {
+          font-size: 14px;
+        }
       }
     }
   }
