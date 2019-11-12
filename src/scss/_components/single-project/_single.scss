@@ -6,6 +6,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-right: 15px;
+  padding-left: 15px;
 
   &__bg {
     z-index: 0;
@@ -31,11 +33,23 @@
     min-height: 100vh;
     padding-top: 143px;
     padding-bottom: 98px;
+    @include adaptive(1023) {
+      flex-wrap: wrap;
+      padding-top: 103px;
+      padding-bottom: 68px;
+    }
 
     &-left {
+      @include adaptive(1023) {
+        width: 100%;
+      }
+
       > div {
         &:nth-of-type(1) {
           padding-right: 124px;
+          @include adaptive(1279) {
+            padding-right: 64px;
+          }
 
           .single__list {
             padding-left: 64px;
@@ -59,10 +73,18 @@
   .icon-line-arrow {
     color: #ffffff;
     font-size: 63px;
+    @include adaptive(1023) {
+      display: none;
+    }
   }
 
   &__title {
     padding-bottom: 22px;
+    @include adaptive(1023) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &__list {
@@ -73,6 +95,9 @@
     li {
       padding-right: 45px;
       padding-bottom: 20px;
+      @include adaptive(1279) {
+        padding-right: 25px;
+      }
 
       p {
         font-size: 16px;

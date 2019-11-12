@@ -105,7 +105,7 @@ $(document).ready(function (ev) {
   };
 
   var initCustomScrollbar = function initCustomScrollbar() {
-    $('body').overlayScrollbars({});
+    // $('body').overlayScrollbars({});
   };
   /*
   * CALLBACK :: end

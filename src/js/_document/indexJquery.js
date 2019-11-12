@@ -44,7 +44,7 @@ $(document).ready((ev) => {
 
 
   const initCustomScrollbar = () => {
-    $('body').overlayScrollbars({});
+    // $('body').overlayScrollbars({});
   };
 	/*
 	* CALLBACK :: end
