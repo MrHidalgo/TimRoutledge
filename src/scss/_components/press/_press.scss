@@ -48,11 +48,17 @@
     @include adaptive(1023) {
       padding-bottom: 56px;
     }
+    @include adaptive(767) {
+      padding-left: 15px;
+    }
 
     &:before {
       position: relative;
       top: 3px;
       left: -44px;
+      @include adaptive(767) {
+        left: -24px;
+      }
     }
   }
 
@@ -60,13 +66,22 @@
     &-wrapper {
       width: 100%;
       max-width: 1023px;
+      @include adaptive(767) {
+        flex-direction: column;
+      }
 
       > div {
         padding-bottom: 80px;
+        @include adaptive(767) {
+          padding-bottom: 50px;
+        }
 
         &:nth-last-of-type(2) {
           @include adaptive(1023) {
             padding-bottom: 40px;
+          }
+          @include adaptive(767) {
+            padding-bottom: 50px;
           }
         }
         &:last-of-type {
@@ -139,6 +154,10 @@
     border-radius: 0;
     background-color: transparent;
     @include transition(transform);
+    @include adaptive(767) {
+      flex-direction: column !important;
+      padding-right: 0;
+    }
 
     &:hover {
       transform: translateY(-15px);
@@ -163,6 +182,9 @@
       padding-right: 0;
       padding-left: 15px;
       justify-content: flex-end;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
 
       .card {
         &-body {
@@ -170,6 +192,10 @@
           padding-right: 90px;
           @include adaptive(1023) {
             padding-right: 30px;
+          }
+          @include adaptive(767) {
+            padding-left: 15px;
+            padding-right: 15px;
           }
         }
       }
@@ -183,6 +209,9 @@
       height: 302px;
       @include adaptive(1023) {
         max-width: 55%;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
       }
 
       img {
@@ -207,6 +236,11 @@
       }
       @include adaptive(1023) {
         padding-left: 30px;
+      }
+      @include adaptive(767) {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
 
@@ -255,6 +289,9 @@
       @include adaptive(1023) {
         font-size: 26px;
         line-height: 30px;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
       }
     }
 

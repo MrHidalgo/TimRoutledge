@@ -596,7 +596,7 @@ picture {
 .c-title {
   position: relative;
   padding-left: 64px;
-  text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 53px;
   font-weight: bold;
@@ -3157,49 +3157,88 @@ picture {
   }
 }
 
-/* line 52, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_components/press/_press.scss */
+  .press__title {
+    padding-left: 15px;
+  }
+}
+
+/* line 55, src/scss/_components/press/_press.scss */
 .press__title:before {
   position: relative;
   top: 3px;
   left: -44px;
 }
 
-/* line 60, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 55, src/scss/_components/press/_press.scss */
+  .press__title:before {
+    left: -24px;
+  }
+}
+
+/* line 66, src/scss/_components/press/_press.scss */
 .press__box-wrapper {
   width: 100%;
   max-width: 1023px;
 }
 
-/* line 64, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 66, src/scss/_components/press/_press.scss */
+  .press__box-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 73, src/scss/_components/press/_press.scss */
 .press__box-wrapper > div {
   padding-bottom: 80px;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 73, src/scss/_components/press/_press.scss */
+  .press__box-wrapper > div {
+    padding-bottom: 50px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
-  /* line 67, src/scss/_components/press/_press.scss */
+  /* line 79, src/scss/_components/press/_press.scss */
   .press__box-wrapper > div:nth-last-of-type(2) {
     padding-bottom: 40px;
   }
 }
 
-/* line 72, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/press/_press.scss */
+  .press__box-wrapper > div:nth-last-of-type(2) {
+    padding-bottom: 50px;
+  }
+}
+
+/* line 87, src/scss/_components/press/_press.scss */
 .press__box-wrapper > div:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 79, src/scss/_components/press/_press.scss */
+/* line 94, src/scss/_components/press/_press.scss */
 .press__infinite {
   height: 80px;
 }
 
-/* line 84, src/scss/_components/press/_press.scss */
+/* line 99, src/scss/_components/press/_press.scss */
 .press__infinite:hover a, .press__infinite:focus a {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #202020;
 }
 
-/* line 92, src/scss/_components/press/_press.scss */
+/* line 107, src/scss/_components/press/_press.scss */
 .press__infinite:hover a:before, .press__infinite:hover a:after {
   opacity: 1;
   visibility: visible;
@@ -3213,7 +3252,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 102, src/scss/_components/press/_press.scss */
+/* line 117, src/scss/_components/press/_press.scss */
 .press__infinite a {
   position: relative;
   font-size: 20px;
@@ -3222,7 +3261,7 @@ picture {
   color: #202020;
 }
 
-/* line 109, src/scss/_components/press/_press.scss */
+/* line 124, src/scss/_components/press/_press.scss */
 .press__infinite a:before, .press__infinite a:after {
   opacity: 0;
   visibility: hidden;
@@ -3238,7 +3277,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 121, src/scss/_components/press/_press.scss */
+/* line 136, src/scss/_components/press/_press.scss */
 .press__infinite a:before {
   content: '[';
   left: -15px;
@@ -3247,7 +3286,7 @@ picture {
           transform: translateX(20px);
 }
 
-/* line 127, src/scss/_components/press/_press.scss */
+/* line 142, src/scss/_components/press/_press.scss */
 .press__infinite a:after {
   content: ']';
   right: -15px;
@@ -3256,7 +3295,7 @@ picture {
           transform: translateX(-20px);
 }
 
-/* line 136, src/scss/_components/press/_press.scss */
+/* line 151, src/scss/_components/press/_press.scss */
 .press .card {
   padding-right: 15px;
   border: none;
@@ -3270,7 +3309,19 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 143, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 151, src/scss/_components/press/_press.scss */
+  .press .card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: column !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    padding-right: 0;
+  }
+}
+
+/* line 162, src/scss/_components/press/_press.scss */
 .press .card:hover {
   -webkit-transform: translateY(-15px);
       -ms-transform: translateY(-15px);
@@ -3282,7 +3333,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 149, src/scss/_components/press/_press.scss */
+/* line 168, src/scss/_components/press/_press.scss */
 .press .card:hover .card-head img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -3294,7 +3345,7 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 156, src/scss/_components/press/_press.scss */
+/* line 175, src/scss/_components/press/_press.scss */
 .press .card:hover .icon-font {
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -3306,7 +3357,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 162, src/scss/_components/press/_press.scss */
+/* line 181, src/scss/_components/press/_press.scss */
 .press .card--reverse {
   padding-right: 0;
   padding-left: 15px;
@@ -3316,20 +3367,35 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 168, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 181, src/scss/_components/press/_press.scss */
+  .press .card--reverse {
+    padding-left: 0;
+  }
+}
+
+/* line 190, src/scss/_components/press/_press.scss */
 .press .card--reverse .card-body {
   padding-left: 0;
   padding-right: 90px;
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 168, src/scss/_components/press/_press.scss */
+  /* line 190, src/scss/_components/press/_press.scss */
   .press .card--reverse .card-body {
     padding-right: 30px;
   }
 }
 
-/* line 178, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 190, src/scss/_components/press/_press.scss */
+  .press .card--reverse .card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 204, src/scss/_components/press/_press.scss */
 .press .card-head {
   overflow: hidden;
   position: relative;
@@ -3339,13 +3405,20 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 178, src/scss/_components/press/_press.scss */
+  /* line 204, src/scss/_components/press/_press.scss */
   .press .card-head {
     max-width: 55%;
   }
 }
 
-/* line 188, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 204, src/scss/_components/press/_press.scss */
+  .press .card-head {
+    max-width: 100%;
+  }
+}
+
+/* line 217, src/scss/_components/press/_press.scss */
 .press .card-head img {
   position: absolute;
   top: 0;
@@ -3365,7 +3438,7 @@ picture {
   transition: transform 0.55s ease-in-out, -webkit-transform 0.55s ease-in-out;
 }
 
-/* line 201, src/scss/_components/press/_press.scss */
+/* line 230, src/scss/_components/press/_press.scss */
 .press .card-body {
   -webkit-box-flex: unset;
   -webkit-flex: unset;
@@ -3376,7 +3449,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 201, src/scss/_components/press/_press.scss */
+  /* line 230, src/scss/_components/press/_press.scss */
   .press .card-body {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -3386,18 +3459,27 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 201, src/scss/_components/press/_press.scss */
+  /* line 230, src/scss/_components/press/_press.scss */
   .press .card-body {
     padding-left: 30px;
   }
 }
 
-/* line 213, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 230, src/scss/_components/press/_press.scss */
+  .press .card-body {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* line 247, src/scss/_components/press/_press.scss */
 .press .card-text {
   padding-bottom: 17px;
 }
 
-/* line 216, src/scss/_components/press/_press.scss */
+/* line 250, src/scss/_components/press/_press.scss */
 .press .card-text p {
   min-width: 58px;
   height: 30px;
@@ -3419,7 +3501,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 216, src/scss/_components/press/_press.scss */
+  /* line 250, src/scss/_components/press/_press.scss */
   .press .card-text p {
     font-size: 14px;
   }
@@ -3449,7 +3531,7 @@ picture {
   }
 }
 
-/* line 247, src/scss/_components/press/_press.scss */
+/* line 281, src/scss/_components/press/_press.scss */
 .press .card-title {
   width: 100%;
   max-width: 383px;
@@ -3461,14 +3543,21 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 247, src/scss/_components/press/_press.scss */
+  /* line 281, src/scss/_components/press/_press.scss */
   .press .card-title {
     font-size: 26px;
     line-height: 30px;
   }
 }
 
-/* line 261, src/scss/_components/press/_press.scss */
+@media screen and (max-width: 767px) {
+  /* line 281, src/scss/_components/press/_press.scss */
+  .press .card-title {
+    max-width: 100%;
+  }
+}
+
+/* line 298, src/scss/_components/press/_press.scss */
 .press .card .icon-font {
   color: #0c0c0c;
   font-size: 14px;
