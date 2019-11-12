@@ -43,6 +43,14 @@
     border: none;
     border-radius: 0;
     background-color: transparent;
+    @include adaptive(1279) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    @include adaptive(1023) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     &:after {
       content: '';

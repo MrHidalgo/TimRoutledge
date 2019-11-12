@@ -9,10 +9,10 @@ PageList:
   ready: 55
 - file: projects.html
   titleName: Projects
-  ready: 35
+  ready: 55
 - file: single-project.html
   titleName: Single Project
-  ready: 35
+  ready: 55
 - file: category.html
   titleName: Category
   ready: 55
