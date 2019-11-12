@@ -53,6 +53,10 @@
       position: relative;
       left: -20px;
       width: calc(100% + 20px);
+      @include adaptive(767) {
+        left: -15px;
+        width: calc(100% + 30px);
+      }
 
       > div {
         width: 100%;
@@ -63,6 +67,12 @@
           max-width: calc(100% / 2);
           padding-left: 15px;
           padding-bottom: 30px;
+        }
+        @include adaptive(575) {
+          max-width: calc(100%);
+          padding-bottom: 30px;
+          padding-left: 0;
+          padding-right: 0;
         }
       }
     }
@@ -103,6 +113,9 @@
 
     &-body {
       padding: 18px 20px 15px 0;
+      @include adaptive(767) {
+        padding-left: 15px;
+      }
 
       > div {
         &:nth-of-type(2) {
