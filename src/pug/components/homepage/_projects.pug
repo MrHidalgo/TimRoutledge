@@ -6,13 +6,13 @@ section#projects.projects
 
     .projects__wrapper.projects__wrapper-1
       .card.justify-content-end.w-100.position-relative.overflow-hidden
-        img.card__bg(src='img/img-projects-1.jpg')
-        img.card__overlay(src='img/text-stormzy.svg')
+        .card__bg(style='background-image:url("../img/img-projects-1.jpg");' parallax-js data-stellar-background-ratio="0.95")
+        img.card__overlay(src='img/text-stormzy.svg' parallax-js data-stellar-ratio="1.025")
 
         .card__line
 
         .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
-          img.card-body__bg(src='img/img-grid.svg')
+          img.card-body__bg(src='img/img-grid.svg' parallax-js data-stellar-ratio="1.1")
           div
             .card__iamge
               img(src='img/ava-stormzy.png')
@@ -20,17 +20,16 @@ section#projects.projects
             p.card-text!= "Headline Production Show <br>Glastonbury Festival"
             i.icon-font.icon-arrow
           div
-            //a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
 
     .projects__wrapper.projects__wrapper-2
       .card.justify-content-end.w-100.position-relative.overflow-hidden
-        img.card__bg(src='img/img-projects-2.jpg')
-        img.card__overlay(src='img/text-rita-ora.svg')
+        .card__bg(style='background-image:url("../img/img-projects-2.jpg");' parallax-js data-stellar-background-ratio="0.95")
+        img.card__overlay(src='img/text-rita-ora.svg' parallax-js data-stellar-ratio="1.025")
 
         .card__line
 
         .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
-          img.card-body__bg(src='img/img-grid.svg')
+          img.card-body__bg(src='img/img-grid.svg' parallax-js data-stellar-ratio="1.1")
           div
             .card__iamge
               img(src='img/ava-rita-ora.png')
@@ -38,15 +37,14 @@ section#projects.projects
             p.card-text!= "GIRLS Tour <br>Brixton Academy"
             i.icon-font.icon-arrow
           div
-            //a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
 
     .projects__wrapper.projects__wrapper-3
       .card.justify-content-end.w-100.position-relative.overflow-hidden
-        img.card__bg(src='img/img-projects-3.jpg')
-        img.card__overlay(src='img/text-spice-girls.svg')
+        .card__bg(style='background-image:url("../img/img-projects-3.jpg");' parallax-js data-stellar-background-ratio="0.95")
+        img.card__overlay(src='img/text-spice-girls.svg' parallax-js data-stellar-ratio="1.025")
 
         .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
-          img.card-body__bg(src='img/img-grid.svg')
+          img.card-body__bg(src='img/img-grid.svg' parallax-js data-stellar-ratio="1.1")
           div
             .card__iamge
               img(src='img/ava-spice-girls.png')
@@ -54,7 +52,5 @@ section#projects.projects
             p.card-text!= "Spiceworld 2019 <br>Opening night in Dublin"
             i.icon-font.icon-arrow
           div
-            //a.btn.d-flex.align-items-center.justify-content-center(href='#' title='') Featured
-
 
 // SECTION projects :: END

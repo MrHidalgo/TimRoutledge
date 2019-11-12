@@ -6,10 +6,11 @@ section#projects.projects
 
     .projects__wrapper.projects__wrapper-2
       .card.justify-content-end.w-100.position-relative.overflow-hidden
-        img.card__bg(src='img/img-projects-2.jpg')
-        img.card__overlay(src='img/text-rita-ora.svg')
+        .card__bg(style='background-image:url("../img/img-projects-2.jpg");' parallax-js data-stellar-background-ratio="0.95")
+        img.card__overlay(src='img/text-rita-ora.svg' parallax-js data-stellar-ratio="1.025")
+
         .card-body.position-relative.d-flex.justify-content-between.align-items-end.w-100
-          img.card-body__bg(src='img/img-grid.svg')
+          img.card-body__bg(src='img/img-grid.svg' parallax-js data-stellar-ratio="1.1")
           div
             .card__iamge
               img(src='img/ava-rita-ora.png')

@@ -57,6 +57,7 @@ $(document).ready((ev) => {
 
     // lib
     initHamburger();
+    initStellar();
 		// ==========================================
 
     // callback

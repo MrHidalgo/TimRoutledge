@@ -445,13 +445,30 @@ picture {
   height: 100%;
 }
 
-/* line 3, src/scss/_shared/_common.scss */
+/* line 4, src/scss/_shared/_common.scss */
+[parallax-js] {
+  will-change: transform;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition: -webkit-transform 2s cubic-bezier(0, 0, 0, 1) 0s;
+  transition: -webkit-transform 2s cubic-bezier(0, 0, 0, 1) 0s;
+  -o-transition: transform 2s cubic-bezier(0, 0, 0, 1) 0s;
+  transition: transform 2s cubic-bezier(0, 0, 0, 1) 0s;
+  transition: transform 2s cubic-bezier(0, 0, 0, 1) 0s, -webkit-transform 2s cubic-bezier(0, 0, 0, 1) 0s;
+}
+
+/* line 13, src/scss/_shared/_common.scss */
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 9, src/scss/_shared/_common.scss */
+/* line 19, src/scss/_shared/_common.scss */
 .overlay {
   z-index: 990;
   opacity: 0;
@@ -468,7 +485,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 22, src/scss/_shared/_common.scss */
+/* line 32, src/scss/_shared/_common.scss */
 .is-hideScroll .overlay {
   opacity: 1;
   visibility: visible;
@@ -477,7 +494,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-/* line 31, src/scss/_shared/_common.scss */
+/* line 41, src/scss/_shared/_common.scss */
 .copyright {
   z-index: 2;
   position: relative;
@@ -501,7 +518,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 44, src/scss/_shared/_common.scss */
+  /* line 54, src/scss/_shared/_common.scss */
   .copyright > div:nth-of-type(1) {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -513,7 +530,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 51, src/scss/_shared/_common.scss */
+  /* line 61, src/scss/_shared/_common.scss */
   .copyright > div:nth-of-type(2) {
     width: -webkit-calc(35% + 2px);
     width: calc(35% + 2px);
@@ -521,26 +538,26 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 51, src/scss/_shared/_common.scss */
+  /* line 61, src/scss/_shared/_common.scss */
   .copyright > div:nth-of-type(2) {
     width: 43%;
   }
 }
 
-/* line 61, src/scss/_shared/_common.scss */
+/* line 71, src/scss/_shared/_common.scss */
 .copyright__text, .copyright__info {
   font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 12px;
   line-height: 15px;
 }
 
-/* line 68, src/scss/_shared/_common.scss */
+/* line 78, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #0c0c0c;
   letter-spacing: -0.3px;
 }
 
-/* line 73, src/scss/_shared/_common.scss */
+/* line 83, src/scss/_shared/_common.scss */
 .copyright__info {
   -webkit-transform: translateX(-150%);
       -ms-transform: translateX(-150%);
@@ -549,7 +566,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 73, src/scss/_shared/_common.scss */
+  /* line 83, src/scss/_shared/_common.scss */
   .copyright__info {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
@@ -2560,23 +2577,20 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+          background-size: cover;
 }
 
-/* line 116, src/scss/_components/projects/_projects.scss */
+/* line 117, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: -60px;
   width: 210px;
   height: 100%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 /* line 126, src/scss/_components/projects/_projects.scss */
