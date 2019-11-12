@@ -2648,7 +2648,14 @@ picture {
   }
 }
 
-/* line 12, src/scss/_components/showreel/_showreel.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/showreel/_showreel.scss */
+  .showreel {
+    padding-top: 60px;
+  }
+}
+
+/* line 15, src/scss/_components/showreel/_showreel.scss */
 .showreel__bg {
   z-index: 0;
   position: absolute;
@@ -2658,7 +2665,7 @@ picture {
   height: 100%;
 }
 
-/* line 20, src/scss/_components/showreel/_showreel.scss */
+/* line 23, src/scss/_components/showreel/_showreel.scss */
 .showreel__bg img {
   position: absolute;
   top: 70px;
@@ -2668,7 +2675,7 @@ picture {
   height: auto;
 }
 
-/* line 30, src/scss/_components/showreel/_showreel.scss */
+/* line 33, src/scss/_components/showreel/_showreel.scss */
 .showreel__wrapper {
   z-index: 2;
   position: relative;
@@ -2676,38 +2683,55 @@ picture {
   max-width: 1146px;
 }
 
-/* line 37, src/scss/_components/showreel/_showreel.scss */
+/* line 40, src/scss/_components/showreel/_showreel.scss */
 .showreel__content {
   padding-bottom: 101px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-/* line 42, src/scss/_components/showreel/_showreel.scss */
+@media screen and (max-width: 767px) {
+  /* line 40, src/scss/_components/showreel/_showreel.scss */
+  .showreel__content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 48, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div {
   width: 100%;
 }
 
-/* line 45, src/scss/_components/showreel/_showreel.scss */
+/* line 51, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(1) {
   max-width: 541px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 45, src/scss/_components/showreel/_showreel.scss */
+  /* line 51, src/scss/_components/showreel/_showreel.scss */
   .showreel__content > div:nth-of-type(1) {
     max-width: 441px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 45, src/scss/_components/showreel/_showreel.scss */
+  /* line 51, src/scss/_components/showreel/_showreel.scss */
   .showreel__content > div:nth-of-type(1) {
     max-width: 50%;
   }
 }
 
-/* line 55, src/scss/_components/showreel/_showreel.scss */
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/showreel/_showreel.scss */
+  .showreel__content > div:nth-of-type(1) {
+    max-width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 65, src/scss/_components/showreel/_showreel.scss */
 .showreel__content > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -2718,7 +2742,7 @@ picture {
   padding-top: 12px;
 }
 
-/* line 64, src/scss/_components/showreel/_showreel.scss */
+/* line 74, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc {
   padding-bottom: 23px;
   font-weight: 300;
@@ -2727,25 +2751,32 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 71, src/scss/_components/showreel/_showreel.scss */
+/* line 81, src/scss/_components/showreel/_showreel.scss */
 .showreel__desc:last-of-type {
   padding-bottom: 0;
 }
 
-/* line 76, src/scss/_components/showreel/_showreel.scss */
+/* line 86, src/scss/_components/showreel/_showreel.scss */
 .showreel__video {
   width: 100%;
   height: 641px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 76, src/scss/_components/showreel/_showreel.scss */
+  /* line 86, src/scss/_components/showreel/_showreel.scss */
   .showreel__video {
     height: 541px;
   }
 }
 
-/* line 83, src/scss/_components/showreel/_showreel.scss */
+@media screen and (max-width: 767px) {
+  /* line 86, src/scss/_components/showreel/_showreel.scss */
+  .showreel__video {
+    height: 441px;
+  }
+}
+
+/* line 96, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-line {
   z-index: 2;
   right: 99px;
@@ -2755,7 +2786,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 92, src/scss/_components/showreel/_showreel.scss */
+/* line 105, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2773,7 +2804,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 103, src/scss/_components/showreel/_showreel.scss */
+/* line 116, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -2785,7 +2816,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 109, src/scss/_components/showreel/_showreel.scss */
+/* line 122, src/scss/_components/showreel/_showreel.scss */
 .showreel__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -2803,7 +2834,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 120, src/scss/_components/showreel/_showreel.scss */
+/* line 133, src/scss/_components/showreel/_showreel.scss */
 .showreel__video iframe,
 .showreel__video video {
   position: absolute;
