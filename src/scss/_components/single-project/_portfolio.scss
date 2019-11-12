@@ -57,10 +57,22 @@
     &-wrapper {
       display: flex;
       justify-content: space-between;
+      @include adaptive(1023) {
+        white-space: nowrap;
+        overflow-x: auto;
+        display: block;
+        position: relative;
+        font-size: 0;
+      }
 
       > div {
         width: 100%;
         max-width: calc((100% - 80px) / 5);
+        @include adaptive(1023) {
+          display: inline-block;
+          max-width: 239px;
+          padding-right: 15px;
+        }
       }
     }
   }

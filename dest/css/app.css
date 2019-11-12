@@ -2845,11 +2845,31 @@ picture {
           justify-content: space-between;
 }
 
-/* line 61, src/scss/_components/single-project/_portfolio.scss */
+@media screen and (max-width: 1023px) {
+  /* line 57, src/scss/_components/single-project/_portfolio.scss */
+  .portfolio__list-wrapper {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: block;
+    position: relative;
+    font-size: 0;
+  }
+}
+
+/* line 68, src/scss/_components/single-project/_portfolio.scss */
 .portfolio__list-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 80px) / 5);
   max-width: calc((100% - 80px) / 5);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 68, src/scss/_components/single-project/_portfolio.scss */
+  .portfolio__list-wrapper > div {
+    display: inline-block;
+    max-width: 239px;
+    padding-right: 15px;
+  }
 }
 
 /* line 3, src/scss/_components/press/_press.scss */
