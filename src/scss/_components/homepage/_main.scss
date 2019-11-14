@@ -1,7 +1,208 @@
 // SECTION main :: START
 
 .main {
+  overflow: hidden;
   position: relative;
+  background-image: url('../img/img-main-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 20.18%, rgba(0, 0, 0, 0) 45.96%);
+    @include adaptive(767) {
+      background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 55.96%);
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 120px;
+    @include adaptive(767) {
+      min-height: calc(100vh - 72px);
+      padding-bottom: 100px;
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0a0a0a;
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+
+    > div {
+      &:nth-of-type(1) {
+        width: 114px;
+        padding-top: 38px;
+        @include adaptive(767) {
+          width: 75px;
+          padding-top: 23px;
+        }
+        @include adaptive(767) {
+          padding-top: 20px;
+        }
+      }
+      &:nth-of-type(2) {
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+      }
+    }
+
+    &-line {
+      opacity: 0;
+      width: 0;
+      height: 2px;
+      background: #FFFFFF;
+    }
+
+    &-text {
+      display: flex;
+      flex-wrap: wrap;
+      font-family: 'Aktiv Grotesk Ex', sans-serif;
+      font-size: 60px;
+      line-height: 77px;
+      color: #FFFFFF;
+      @include adaptive(1439) {
+        font-size: 50px;
+        line-height: 66px;
+      }
+      @include adaptive(1279) {
+        font-size: 45px;
+        line-height: 55px;
+      }
+      @include adaptive(767) {
+        font-size: 35px;
+        line-height: 45px;
+      }
+      @include adaptive(575) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      span {
+        opacity: 0;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__box {
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    > div {
+      &:nth-of-type(1),
+      &:nth-of-type(3) {
+        width: 0;
+        height: 0;
+      }
+      &:nth-of-type(2) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .icon-font {
+        opacity: 0;
+        color: #ffffff;
+      }
+    }
+
+    &-wrapper {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 120px;
+      background: rgba(#040404, 0.8);
+      padding-left: 15px;
+      padding-right: 15px;
+      @include adaptive(767) {
+        height: 100px;
+      }
+
+      > div {
+        flex-grow: 1;
+      }
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex: 1;
+      min-width: 1px;
+      max-height: 100%;
+      height: 100%;
+
+      > div {
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-middle {
+      height: 100%;
+
+      > div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-photo {
+      overflow: hidden;
+      position: relative;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      transform: scale(0);
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-name {
+      white-space: nowrap;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFFFFF;
+    }
+  }
 }
 
 // SECTION main :: END

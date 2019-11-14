@@ -3,9 +3,166 @@
 section#main.main
 
   .container-fluid
-    .row
 
-      .main__wrapper
+    .main__wrapper
+
+      .main__wrapper-overlay(main-overlay-js)
+
+      .main__title(main-title-js)
+        div
+          .main__title-line(main-title-line-js)
+        div
+          .main__title-text(main-title-text-js)
+            p
+              span E
+              span x
+              span c
+              span e
+              span p
+              span t
+              span i
+              span o
+              span n
+              span a
+              span l
+              | &nbsp;
+            p
+              span l
+              span i
+              span g
+              span h
+              span t
+              span i
+              span n
+              span g
+              | &nbsp;
+            p
+              span e
+              span x
+              span p
+              span e
+              span r
+              span i
+              span e
+              span n
+              span c
+              span e
+              span s
+              | &nbsp;
+            p
+              span f
+              span o
+              span r
+              | &nbsp;
+            p
+              span s
+              span o
+              span m
+              span e
+              | &nbsp;
+            p
+              span o
+              span f
+              | &nbsp;
+            p
+              span t
+              span h
+              span e
+              | &nbsp;
+            p
+              span b
+              span i
+              span g
+              span g
+              span e
+              span s
+              span t
+              | &nbsp;
+            p
+              span e
+              span v
+              span e
+              span n
+              span t
+              span s
+              | &nbsp;
+            p
+              span i
+              span n
+              | &nbsp;
+            p
+              span t
+              span h
+              span e
+              | &nbsp;
+            p
+              span w
+              span o
+              span r
+              span l
+              span d
+              span .
+
+      .main__box-wrapper(main-boxWrapper-js)
+        -
+          const artistName = [
+            'Beyonce',
+            'Stormzy',
+            'Spice Girls',
+            'Rita Ora',
+            'Sam Smith',
+            'Take That',
+            'Katherine Jenkins',
+            'Gary Barlow'
+          ];
+          const artistNamePhoto = [
+            'img-beyonce.jpg',
+            'ava-stormzy.png',
+            'ava-spice-girls.png',
+            'ava-rita-ora.png',
+            'img-sam-smith.jpg',
+            'img-take-that.jpg',
+            'img-katherine-jenkins.jpg',
+            'img-gary-barlow.jpg'
+          ];
+        each val, idx in artistName
+          div
+            a.main__box(href='#' title='' class!='main__box-' + idx)
+              div
+                .main__box-photo
+                  img(src='img/' + artistNamePhoto[idx])
+              div
+                p.main__box-name!= artistName[idx]
+              div
+                i.icon-font.icon-arrow
+        //.main__box-left
+        //  -for(let idx = 0; idx < 4; idx++)
+        //
+        //
+        //.main__box-middle(main-box-js)
+        //  -for(let idx = 4; idx < 5; idx++)
+        //    div
+        //      a.main__box(href='#' title='' main-boxAniamte-js class!='main__box-' + idx)
+        //        div
+        //          .main__box-photo(main-boxAniamte-photo-js)
+        //            img(src='img/' + artistNamePhoto[idx])
+        //        div
+        //          p.main__box-name(main-boxAniamte-name-js)!= artistName[idx]
+        //        div
+        //          i.icon-font.icon-arrow(main-boxAniamte-arrow-js)
+        //
+        //.main__box-right
+        //  -for(let idx = 5; idx < artistName.length; idx++)
+        //    div
+        //      a.main__box(href='#' title='' class!='main__box-' + idx)
+        //        div
+        //          .main__box-photo
+        //            img(src='img/' + artistNamePhoto[idx])
+        //        div
+        //          p.main__box-name!= artistName[idx]
+        //        div
+        //          i.icon-font.icon-arrow
+
 
 
 // SECTION main :: END
