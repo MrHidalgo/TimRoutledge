@@ -93,7 +93,7 @@ $(document).ready((ev) => {
     if(_winW > 1279 && _winH > 767) {
       _titleOffsetY = '110%';
     } else if(_winW > 1023 && _winH > 767) {
-      _titleOffsetY = '100%';
+      _titleOffsetY = '105%';
     } else if(_winW < 375 && _winH < 569) {
       _titleOffsetY = '42%';
     } else if(_winW < 424 && _winH < 668) {

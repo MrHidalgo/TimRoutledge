@@ -30,7 +30,7 @@
     padding-bottom: 120px;
     @include adaptive(767) {
       min-height: calc(100vh - 72px);
-      padding-bottom: 100px;
+      padding-bottom: 115px;
     }
 
     &-overlay {
@@ -112,11 +112,15 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    //justify-content: center;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     transform: translateZ(0);
+    @include adaptive(1279) {
+      padding: 20px;
+    }
 
     &:after {
       opacity: 0;
@@ -130,6 +134,9 @@
       background-color: #FFFFFF;
       transform: translateY(100%);
       @include transition(opacity, transform);
+      @include adaptive(1279) {
+        opacity: 1;
+      }
     }
 
     &:before {
@@ -142,6 +149,9 @@
       width: 100%;
       height: 100%;
       @include transition(opacity);
+      @include adaptive(1279) {
+        opacity: 1;
+      }
     }
 
     &:hover {
@@ -205,6 +215,13 @@
     }
 
     > div {
+      &:nth-of-type(2) {
+        @include adaptive(1279) {
+          padding-left: 10px;
+          padding-right: 20px;
+        }
+      }
+
       .icon-font {
         opacity: 0;
         position: absolute;
@@ -212,6 +229,12 @@
         transform: translateY(-50%);
         right: 20px;
         color: #ffffff;
+        font-size: 14px;
+        @include adaptive(1279) {
+          opacity: 1;
+          position: static;
+          transform: translate(0);
+        }
       }
     }
 
@@ -224,17 +247,49 @@
       width: 100%;
       height: 120px;
       background: rgba(#040404, 0.8);
+      @include adaptive(1279) {
+        white-space: nowrap;
+        overflow-x: auto;
+        display: block;
+        font-size: 0;
+        padding-left: 15px;
+        padding-bottom: 15px;
+      }
       @include adaptive(767) {
-        height: 100px;
+        height: 115px;
       }
 
       > div {
         flex-grow: 1;
         @include transition(flex-grow);
+        @include adaptive(1279) {
+          flex-grow: unset;
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          max-width: 300px;
+          height: 100%;
+          margin-right: 15px;
+        }
+        @include adaptive(575) {
+          max-width: 250px;
+        }
 
         &:hover {
           flex-grow: 2;
           @include transition(flex-grow);
+          @include adaptive(1919) {
+            flex-grow: 4;
+          }
+          @include adaptive(1439) {
+            flex-grow: 5;
+          }
+          @include adaptive(1335) {
+            flex-grow: 7;
+          }
+          @include adaptive(1279) {
+            flex-grow: unset;
+          }
         }
       }
     }
@@ -249,6 +304,12 @@
       width: 72px;
       height: 72px;
       border-radius: 50%;
+      @include adaptive(1279) {
+        opacity: 1;
+        position: relative;
+        transform: translate(0);
+        left: 0;
+      }
 
       img {
         position: absolute;
@@ -266,6 +327,9 @@
       font-size: 20px;
       line-height: 23px;
       color: #FFFFFF;
+      @include adaptive(1279) {
+        white-space: normal;
+      }
     }
   }
 }
