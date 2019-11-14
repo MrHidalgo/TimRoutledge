@@ -1879,6 +1879,7 @@ picture {
 .main__box {
   overflow: hidden;
   cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1893,27 +1894,155 @@ picture {
           justify-content: center;
   width: 100%;
   height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
-/* line 119, src/scss/_components/homepage/_main.scss */
-.main__box > div:nth-of-type(1), .main__box > div:nth-of-type(3) {
-  width: 0;
-  height: 0;
-}
-
-/* line 124, src/scss/_components/homepage/_main.scss */
-.main__box > div:nth-of-type(2) {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* line 129, src/scss/_components/homepage/_main.scss */
-.main__box > div .icon-font {
+/* line 121, src/scss/_components/homepage/_main.scss */
+.main__box:after {
   opacity: 0;
-  color: #ffffff;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 /* line 135, src/scss/_components/homepage/_main.scss */
+.main__box:before {
+  opacity: 0;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 148, src/scss/_components/homepage/_main.scss */
+.main__box:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 154, src/scss/_components/homepage/_main.scss */
+.main__box:hover:before {
+  opacity: 1;
+  -webkit-transition: opacity 0.55s ease-in-out;
+  -o-transition: opacity 0.55s ease-in-out;
+  transition: opacity 0.55s ease-in-out;
+}
+
+/* line 159, src/scss/_components/homepage/_main.scss */
+.main__box:hover .main__box-photo,
+.main__box:hover .icon-font {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 167, src/scss/_components/homepage/_main.scss */
+.main__box-0:before {
+  background: -webkit-gradient(linear, left top, right top, from(#DE4DAA), color-stop(100.07%, #F6D327));
+  background: -webkit-linear-gradient(left, #DE4DAA 0%, #F6D327 100.07%);
+  background: -o-linear-gradient(left, #DE4DAA 0%, #F6D327 100.07%);
+  background: linear-gradient(90deg, #DE4DAA 0%, #F6D327 100.07%);
+}
+
+/* line 172, src/scss/_components/homepage/_main.scss */
+.main__box-1:before {
+  background: -webkit-gradient(linear, right top, left top, from(#09C6F9), to(#045DE9));
+  background: -webkit-linear-gradient(right, #09C6F9 0%, #045DE9 100%);
+  background: -o-linear-gradient(right, #09C6F9 0%, #045DE9 100%);
+  background: linear-gradient(270deg, #09C6F9 0%, #045DE9 100%);
+}
+
+/* line 177, src/scss/_components/homepage/_main.scss */
+.main__box-2:before {
+  background: -webkit-gradient(linear, left top, right top, from(#20BF55), to(#01BAEF));
+  background: -webkit-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
+  background: -o-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
+  background: linear-gradient(90deg, #20BF55 0%, #01BAEF 100%);
+}
+
+/* line 182, src/scss/_components/homepage/_main.scss */
+.main__box-3:before {
+  background: -webkit-gradient(linear, right top, left top, from(#647DEE), to(#7F53AC));
+  background: -webkit-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
+  background: -o-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
+  background: linear-gradient(270deg, #647DEE 0%, #7F53AC 100%);
+}
+
+/* line 187, src/scss/_components/homepage/_main.scss */
+.main__box-4:before {
+  background: -webkit-gradient(linear, right top, left top, from(#4A00A8), to(#AF0189));
+  background: -webkit-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
+  background: -o-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
+  background: linear-gradient(270deg, #4A00A8 0%, #AF0189 100%);
+}
+
+/* line 192, src/scss/_components/homepage/_main.scss */
+.main__box-5:before {
+  background: -webkit-gradient(linear, right top, left top, from(#FBD72B), to(#F9484A));
+  background: -webkit-linear-gradient(right, #FBD72B 0%, #F9484A 100%);
+  background: -o-linear-gradient(right, #FBD72B 0%, #F9484A 100%);
+  background: linear-gradient(270deg, #FBD72B 0%, #F9484A 100%);
+}
+
+/* line 197, src/scss/_components/homepage/_main.scss */
+.main__box-6:before {
+  background: -webkit-gradient(linear, right top, left top, from(#647DEE), to(#7F53AC));
+  background: -webkit-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
+  background: -o-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
+  background: linear-gradient(270deg, #647DEE 0%, #7F53AC 100%);
+}
+
+/* line 202, src/scss/_components/homepage/_main.scss */
+.main__box-7:before {
+  background: -webkit-gradient(linear, left top, right top, from(#20BF55), to(#01BAEF));
+  background: -webkit-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
+  background: -o-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
+  background: linear-gradient(90deg, #20BF55 0%, #01BAEF 100%);
+}
+
+/* line 208, src/scss/_components/homepage/_main.scss */
+.main__box > div .icon-font {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  color: #ffffff;
+}
+
+/* line 218, src/scss/_components/homepage/_main.scss */
 .main__box-wrapper {
   opacity: 0;
   position: absolute;
@@ -1926,76 +2055,58 @@ picture {
   width: 100%;
   height: 120px;
   background: rgba(4, 4, 4, 0.8);
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 135, src/scss/_components/homepage/_main.scss */
+  /* line 218, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper {
     height: 100px;
   }
 }
 
-/* line 150, src/scss/_components/homepage/_main.scss */
+/* line 231, src/scss/_components/homepage/_main.scss */
 .main__box-wrapper > div {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out;
+  -o-transition: flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out, -ms-flex-positive 0.3s ease-in-out;
 }
 
-/* line 155, src/scss/_components/homepage/_main.scss */
-.main__box-left, .main__box-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-height: 100%;
-  height: 100%;
+/* line 235, src/scss/_components/homepage/_main.scss */
+.main__box-wrapper > div:hover {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out;
+  -o-transition: flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out;
+  transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out, -ms-flex-positive 0.3s ease-in-out;
 }
 
-/* line 163, src/scss/_components/homepage/_main.scss */
-.main__box-left > div, .main__box-right > div {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  min-width: 1px;
-  max-width: 100%;
-  height: 100%;
-}
-
-/* line 171, src/scss/_components/homepage/_main.scss */
-.main__box-middle {
-  height: 100%;
-}
-
-/* line 174, src/scss/_components/homepage/_main.scss */
-.main__box-middle > div {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 180, src/scss/_components/homepage/_main.scss */
+/* line 242, src/scss/_components/homepage/_main.scss */
 .main__box-photo {
+  opacity: 0;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 72px;
   height: 72px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
 }
 
-/* line 188, src/scss/_components/homepage/_main.scss */
+/* line 253, src/scss/_components/homepage/_main.scss */
 .main__box-photo img {
   position: absolute;
   top: 0;
@@ -2008,7 +2119,7 @@ picture {
      object-position: center;
 }
 
-/* line 199, src/scss/_components/homepage/_main.scss */
+/* line 264, src/scss/_components/homepage/_main.scss */
 .main__box-name {
   white-space: nowrap;
   font-size: 20px;
