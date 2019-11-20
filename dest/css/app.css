@@ -1775,9 +1775,9 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 11, src/scss/_components/homepage/_main.scss */
   .main:after {
-    background: -webkit-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 55.96%);
-    background: -o-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 55.96%);
-    background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 55.96%);
+    background: -webkit-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 65.96%);
+    background: -o-linear-gradient(53.13deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 65.96%);
+    background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 30.18%, rgba(0, 0, 0, 0) 65.96%);
   }
 }
 
