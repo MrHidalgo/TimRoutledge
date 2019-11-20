@@ -1,0 +1,65 @@
+// SECTION contact :: START
+
+section#contact.contact
+
+  .contact__bg
+    .contact__bg-left
+    .contact__bg-right
+    .contact__bg-line(parallax-js data-stellar-ratio="0.9")
+
+  .container-fluid
+
+    .contact__row
+      .contact__wrapper
+        .contact__wrapper-left
+
+          h1.contact__title Get in touch
+
+          .contact__info.contact__info-1
+            p.contact__info-title Phone
+            a.contact__info-phone(href='tel:+44 (0) 20 8274 1999' title='') +44 (0) 20 8274 1999
+            a.contact__info-phone(href='tel:+44 (0) 7739 316307' title='') +44 (0) 7739 316307
+
+          .contact__info.contact__info-2
+            p.contact__info-title Correspondence address
+            p.contact__info-address 24 Church Grove, Hampton Wick, Kingston Upon Thames, London KT1 4AL
+
+        .contact__wrapper-right
+
+          form
+            .form-group
+              label(for='contact_name') Name
+              input#contact_name.form-control(type='name')
+
+            .form-group
+              label(for='contact_email') Email
+              input#contact_email.form-control(type='email')
+
+            .form-group
+              label(for='contatc_message') Message
+              textarea#contatc_message.form-control()
+
+            .form-group
+              button.btn(type='submit') Send
+
+    .contact__row
+      .contact__box-wrapper
+        img.contact__box-grid(src='img/img-grid.svg' parallax-js data-stellar-ratio="1.1")
+        div
+          .card
+            .card__image
+              img(src='img/img-contact-box-1.jpg')
+            .card-body
+              a.btn.btn-primary(href='#')
+                i.icon-font.icon-instagram
+                span Follow
+        div
+          .card
+            .card__image
+              img(src='img/img-contact-box-2.jpg')
+            .card-body
+              a.btn(href='#')
+                i.icon-font.icon-facebook
+                span Like
+
+// SECTION contact :: END

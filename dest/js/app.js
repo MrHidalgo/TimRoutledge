@@ -270,7 +270,10 @@ $(document).ready(function (ev) {
     initPressESC();
     initVideo();
     initAutoLoadContent();
-    initMainAnimation();
+
+    $(window).on('load', function () {
+      initMainAnimation();
+    });
     // ==========================================
   };
   initJquery();

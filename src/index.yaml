@@ -22,3 +22,6 @@ PageList:
 - file: press.html
   titleName: Press
   ready: 100
+- file: contact.html
+  titleName: Contact
+  ready: 100

@@ -194,7 +194,10 @@ $(document).ready((ev) => {
     initPressESC();
     initVideo();
     initAutoLoadContent();
-    initMainAnimation();
+
+    $(window).on('load', () => {
+      initMainAnimation();
+    });
 		// ==========================================
   };
   initJquery();
