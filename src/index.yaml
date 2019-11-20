@@ -12,7 +12,7 @@ PageList:
   ready: 90
 - file: single-project.html
   titleName: Single Project
-  ready: 90
+  ready: 100
 - file: category.html
   titleName: Category
   ready: 100

@@ -3982,36 +3982,42 @@ picture {
   padding-bottom: 22px;
 }
 
-/* line 102, src/scss/_components/single-project/_single.scss */
+/* line 104, src/scss/_components/single-project/_single.scss */
+.single__list.single__list--tags li p {
+  font-family: "aktiv-grotesk",sans-serif;
+}
+
+/* line 110, src/scss/_components/single-project/_single.scss */
 .single__list li {
   padding-right: 45px;
   padding-bottom: 20px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 102, src/scss/_components/single-project/_single.scss */
+  /* line 110, src/scss/_components/single-project/_single.scss */
   .single__list li {
     padding-right: 25px;
   }
 }
 
-/* line 109, src/scss/_components/single-project/_single.scss */
+/* line 117, src/scss/_components/single-project/_single.scss */
 .single__list li p {
   font-size: 16px;
   line-height: 20px;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 109, src/scss/_components/single-project/_single.scss */
+  /* line 117, src/scss/_components/single-project/_single.scss */
   .single__list li p {
     font-size: 14px;
   }
 }
 
-/* line 119, src/scss/_components/single-project/_single.scss */
+/* line 127, src/scss/_components/single-project/_single.scss */
 .single__list li span {
+  font-family: "aktiv-grotesk",sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -4019,16 +4025,17 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 119, src/scss/_components/single-project/_single.scss */
+  /* line 127, src/scss/_components/single-project/_single.scss */
   .single__list li span {
     font-size: 14px;
   }
 }
 
-/* line 131, src/scss/_components/single-project/_single.scss */
+/* line 140, src/scss/_components/single-project/_single.scss */
 .single__desc {
-  padding-bottom: 30px;
+  font-family: "aktiv-grotesk",sans-serif;
   font-weight: 300;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 24px;
 }

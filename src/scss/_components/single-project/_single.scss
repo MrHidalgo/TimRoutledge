@@ -99,6 +99,14 @@
   &__list {
     padding-bottom: 22px;
 
+    &.single__list--tags {
+      li {
+        p {
+          font-family:"aktiv-grotesk",sans-serif;
+        }
+      }
+    }
+
     li {
       padding-right: 45px;
       padding-bottom: 20px;
@@ -109,7 +117,7 @@
       p {
         font-size: 16px;
         line-height: 20px;
-        font-family: 'Aktiv Grotesk Ex', sans-serif;
+        font-weight: 700;
         color: #FFFFFF;
         @include adaptive(767) {
           font-size: 14px;
@@ -117,6 +125,7 @@
       }
 
       span {
+        font-family:"aktiv-grotesk",sans-serif;
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
@@ -129,8 +138,9 @@
   }
 
   &__desc {
-    padding-bottom: 30px;
+    font-family:"aktiv-grotesk",sans-serif;
     font-weight: 300;
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 24px;
   }
