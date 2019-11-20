@@ -9,7 +9,7 @@ PageList:
   ready: 90
 - file: projects.html
   titleName: Projects
-  ready: 90
+  ready: 100
 - file: single-project.html
   titleName: Single Project
   ready: 100

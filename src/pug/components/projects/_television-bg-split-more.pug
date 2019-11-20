@@ -13,7 +13,7 @@ section#television.television.television--bg(style='background-image:url("img/im
       .television__box-wrapper.position-relative.d-flex
         each val, idx in [1,2,3,4,5]
           div
-            a.card.television__box.d-flex.flex-column(href='#' title='' class= (idx === 3)?'card--split':'')
+            a.card.television__box.d-flex.flex-column(href='https://www.google.com/' title='')
 
               .television__box-head.overflow-hidden.position-relative.w-100
                 if(idx === 0 || idx === 2)
@@ -40,11 +40,9 @@ section#television.television.television--bg(style='background-image:url("img/im
                   p.card-text Psychodrama
                   i.icon-font.icon-arrow
                 else if(idx === 3)
-                  div
-                    h5.card-title Florance & The Machine
-                    p.card-text High As Hope
-                  div
-                    i.icon-font.icon-arrow
+                  h5.card-title Florance & The Machine
+                  p.card-text High As Hope
+                  i.icon-font.icon-arrow
 
 
 // SECTION television :: END
