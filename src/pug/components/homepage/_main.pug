@@ -8,12 +8,18 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
 
       .main__wrapper-overlay(main-overlay-js)
 
+      .main__subtitle(main-subtitle-js)
+        div
+          .main__subtitle-line
+        div
+          p Exceptional lighting experiences for some of the biggest events in the world.
+
       .main__title(main-title-js)
         div
           .main__title-line(main-title-line-js)
         div
-          .main__title-text(main-title-text-js)
-            p
+          .main__title-text
+            p(main-title-text-1-js)
               span E
               span x
               span c
@@ -26,7 +32,7 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
               span a
               span l
               | &nbsp;
-            p
+            p(main-title-text-1-js)
               span l
               span i
               span g
@@ -36,7 +42,7 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
               span n
               span g
               | &nbsp;
-            p
+            p(main-title-text-1-js)
               span e
               span x
               span p
@@ -49,27 +55,27 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
               span e
               span s
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span f
               span o
               span r
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span s
               span o
               span m
               span e
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span o
               span f
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span t
               span h
               span e
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span b
               span i
               span g
@@ -78,7 +84,7 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
               span s
               span t
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span e
               span v
               span e
@@ -86,16 +92,16 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
               span t
               span s
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span i
               span n
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span t
               span h
               span e
               | &nbsp;
-            p
+            p(main-title-text-2-js)
               span w
               span o
               span r
@@ -127,7 +133,7 @@ section#main.main(parallax-js data-stellar-background-ratio="1.1")
           ];
         each val, idx in artistName
           div
-            a.main__box(href='#' title='' class!='main__box-' + idx)
+            a.main__box(href='https://www.google.com/' title='' class!='main__box-' + idx)
               div
                 .main__box-photo
                   img(src='img/' + artistNamePhoto[idx])

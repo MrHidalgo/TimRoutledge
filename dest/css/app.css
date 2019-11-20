@@ -1041,12 +1041,13 @@ picture {
 /* line 194, src/scss/_components/_header.scss */
 .header__menu .nav-link {
   position: relative;
+  font-family: "aktiv-grotesk", sans-serif;
   color: #FFFFFF;
   font-size: 20px;
   line-height: 26px;
 }
 
-/* line 201, src/scss/_components/_header.scss */
+/* line 202, src/scss/_components/_header.scss */
 .header__menu .nav-link:hover:before, .header__menu .nav-link:hover:after {
   opacity: 1;
   visibility: visible;
@@ -1060,7 +1061,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 210, src/scss/_components/_header.scss */
+/* line 211, src/scss/_components/_header.scss */
 .header__menu .nav-link:before, .header__menu .nav-link:after {
   opacity: 0;
   visibility: hidden;
@@ -1076,7 +1077,7 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 222, src/scss/_components/_header.scss */
+/* line 223, src/scss/_components/_header.scss */
 .header__menu .nav-link:before {
   content: '[';
   left: -15px;
@@ -1085,7 +1086,7 @@ picture {
           transform: translateX(20px);
 }
 
-/* line 228, src/scss/_components/_header.scss */
+/* line 229, src/scss/_components/_header.scss */
 .header__menu .nav-link:after {
   content: ']';
   right: -15px;
@@ -1094,41 +1095,41 @@ picture {
           transform: translateX(-20px);
 }
 
-/* line 237, src/scss/_components/_header.scss */
+/* line 238, src/scss/_components/_header.scss */
 .header__social {
   padding-top: 165px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 237, src/scss/_components/_header.scss */
+  /* line 238, src/scss/_components/_header.scss */
   .header__social {
     padding-top: 50px;
   }
 }
 
-/* line 244, src/scss/_components/_header.scss */
+/* line 245, src/scss/_components/_header.scss */
 .header__social-btn:nth-of-type(1) {
   margin-right: 30px;
 }
 
-/* line 249, src/scss/_components/_header.scss */
+/* line 250, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 253, src/scss/_components/_header.scss */
+/* line 254, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font.icon-facebook {
   color: #3b5998;
 }
 
-/* line 256, src/scss/_components/_header.scss */
+/* line 257, src/scss/_components/_header.scss */
 .header__social-btn:hover .icon-font.icon-instagram {
   color: #c13584;
 }
 
-/* line 264, src/scss/_components/_header.scss */
+/* line 265, src/scss/_components/_header.scss */
 .header__social .icon-font {
   color: #ffffff;
   font-size: 21px;
@@ -1801,6 +1802,71 @@ picture {
 }
 
 /* line 46, src/scss/_components/homepage/_main.scss */
+.main__subtitle {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 575px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 46, src/scss/_components/homepage/_main.scss */
+  .main__subtitle {
+    bottom: 170px;
+    padding-right: 30px;
+  }
+}
+
+/* line 60, src/scss/_components/homepage/_main.scss */
+.main__subtitle > div:nth-of-type(1) {
+  padding-top: 20px;
+  padding-right: 34px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 60, src/scss/_components/homepage/_main.scss */
+  .main__subtitle > div:nth-of-type(1) {
+    padding-top: 15px;
+    padding-right: 12px;
+  }
+}
+
+/* line 70, src/scss/_components/homepage/_main.scss */
+.main__subtitle-line {
+  width: 80px;
+  height: 2px;
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 70, src/scss/_components/homepage/_main.scss */
+  .main__subtitle-line {
+    width: 30px;
+  }
+}
+
+/* line 79, src/scss/_components/homepage/_main.scss */
+.main__subtitle p {
+  font-size: 30px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/homepage/_main.scss */
+  .main__subtitle p {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}
+
+/* line 90, src/scss/_components/homepage/_main.scss */
 .main__title {
   position: relative;
   display: -webkit-box;
@@ -1811,14 +1877,14 @@ picture {
   max-width: 1100px;
 }
 
-/* line 53, src/scss/_components/homepage/_main.scss */
+/* line 97, src/scss/_components/homepage/_main.scss */
 .main__title > div:nth-of-type(1) {
   width: 114px;
   padding-top: 38px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 53, src/scss/_components/homepage/_main.scss */
+  /* line 97, src/scss/_components/homepage/_main.scss */
   .main__title > div:nth-of-type(1) {
     width: 75px;
     padding-top: 23px;
@@ -1826,13 +1892,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 53, src/scss/_components/homepage/_main.scss */
+  /* line 97, src/scss/_components/homepage/_main.scss */
   .main__title > div:nth-of-type(1) {
     padding-top: 20px;
   }
 }
 
-/* line 64, src/scss/_components/homepage/_main.scss */
+/* line 108, src/scss/_components/homepage/_main.scss */
 .main__title > div:nth-of-type(2) {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1842,7 +1908,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 71, src/scss/_components/homepage/_main.scss */
+/* line 115, src/scss/_components/homepage/_main.scss */
 .main__title-line {
   opacity: 0;
   width: 0;
@@ -1850,7 +1916,7 @@ picture {
   background: #FFFFFF;
 }
 
-/* line 78, src/scss/_components/homepage/_main.scss */
+/* line 122, src/scss/_components/homepage/_main.scss */
 .main__title-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1859,14 +1925,13 @@ picture {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 60px;
   line-height: 77px;
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 78, src/scss/_components/homepage/_main.scss */
+  /* line 122, src/scss/_components/homepage/_main.scss */
   .main__title-text {
     font-size: 50px;
     line-height: 66px;
@@ -1874,7 +1939,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 78, src/scss/_components/homepage/_main.scss */
+  /* line 122, src/scss/_components/homepage/_main.scss */
   .main__title-text {
     font-size: 45px;
     line-height: 55px;
@@ -1882,7 +1947,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 78, src/scss/_components/homepage/_main.scss */
+  /* line 122, src/scss/_components/homepage/_main.scss */
   .main__title-text {
     font-size: 35px;
     line-height: 45px;
@@ -1890,20 +1955,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 78, src/scss/_components/homepage/_main.scss */
+  /* line 122, src/scss/_components/homepage/_main.scss */
   .main__title-text {
     font-size: 30px;
     line-height: 40px;
   }
 }
 
-/* line 102, src/scss/_components/homepage/_main.scss */
+/* line 145, src/scss/_components/homepage/_main.scss */
 .main__title-text span {
   opacity: 0;
   display: inline-block;
 }
 
-/* line 109, src/scss/_components/homepage/_main.scss */
+/* line 152, src/scss/_components/homepage/_main.scss */
 .main__box {
   overflow: hidden;
   cursor: pointer;
@@ -1929,13 +1994,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 109, src/scss/_components/homepage/_main.scss */
+  /* line 152, src/scss/_components/homepage/_main.scss */
   .main__box {
     padding: 20px;
   }
 }
 
-/* line 125, src/scss/_components/homepage/_main.scss */
+/* line 167, src/scss/_components/homepage/_main.scss */
 .main__box:after {
   opacity: 0;
   content: '';
@@ -1957,13 +2022,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 125, src/scss/_components/homepage/_main.scss */
+  /* line 167, src/scss/_components/homepage/_main.scss */
   .main__box:after {
     opacity: 1;
   }
 }
 
-/* line 142, src/scss/_components/homepage/_main.scss */
+/* line 184, src/scss/_components/homepage/_main.scss */
 .main__box:before {
   opacity: 0;
   content: '';
@@ -1979,13 +2044,13 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 142, src/scss/_components/homepage/_main.scss */
+  /* line 184, src/scss/_components/homepage/_main.scss */
   .main__box:before {
     opacity: 1;
   }
 }
 
-/* line 158, src/scss/_components/homepage/_main.scss */
+/* line 200, src/scss/_components/homepage/_main.scss */
 .main__box:hover:after {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -1998,7 +2063,7 @@ picture {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 164, src/scss/_components/homepage/_main.scss */
+/* line 206, src/scss/_components/homepage/_main.scss */
 .main__box:hover:before {
   opacity: 1;
   -webkit-transition: opacity 0.55s ease-in-out;
@@ -2006,7 +2071,7 @@ picture {
   transition: opacity 0.55s ease-in-out;
 }
 
-/* line 169, src/scss/_components/homepage/_main.scss */
+/* line 211, src/scss/_components/homepage/_main.scss */
 .main__box:hover .main__box-photo,
 .main__box:hover .icon-font {
   opacity: 1;
@@ -2015,7 +2080,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 177, src/scss/_components/homepage/_main.scss */
+/* line 219, src/scss/_components/homepage/_main.scss */
 .main__box-0:before {
   background: -webkit-gradient(linear, left top, right top, from(#DE4DAA), color-stop(100.07%, #F6D327));
   background: -webkit-linear-gradient(left, #DE4DAA 0%, #F6D327 100.07%);
@@ -2023,7 +2088,7 @@ picture {
   background: linear-gradient(90deg, #DE4DAA 0%, #F6D327 100.07%);
 }
 
-/* line 182, src/scss/_components/homepage/_main.scss */
+/* line 224, src/scss/_components/homepage/_main.scss */
 .main__box-1:before {
   background: -webkit-gradient(linear, right top, left top, from(#09C6F9), to(#045DE9));
   background: -webkit-linear-gradient(right, #09C6F9 0%, #045DE9 100%);
@@ -2031,7 +2096,7 @@ picture {
   background: linear-gradient(270deg, #09C6F9 0%, #045DE9 100%);
 }
 
-/* line 187, src/scss/_components/homepage/_main.scss */
+/* line 229, src/scss/_components/homepage/_main.scss */
 .main__box-2:before {
   background: -webkit-gradient(linear, left top, right top, from(#20BF55), to(#01BAEF));
   background: -webkit-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
@@ -2039,7 +2104,7 @@ picture {
   background: linear-gradient(90deg, #20BF55 0%, #01BAEF 100%);
 }
 
-/* line 192, src/scss/_components/homepage/_main.scss */
+/* line 234, src/scss/_components/homepage/_main.scss */
 .main__box-3:before {
   background: -webkit-gradient(linear, right top, left top, from(#647DEE), to(#7F53AC));
   background: -webkit-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
@@ -2047,7 +2112,7 @@ picture {
   background: linear-gradient(270deg, #647DEE 0%, #7F53AC 100%);
 }
 
-/* line 197, src/scss/_components/homepage/_main.scss */
+/* line 239, src/scss/_components/homepage/_main.scss */
 .main__box-4:before {
   background: -webkit-gradient(linear, right top, left top, from(#4A00A8), to(#AF0189));
   background: -webkit-linear-gradient(right, #4A00A8 0%, #AF0189 100%);
@@ -2055,7 +2120,7 @@ picture {
   background: linear-gradient(270deg, #4A00A8 0%, #AF0189 100%);
 }
 
-/* line 202, src/scss/_components/homepage/_main.scss */
+/* line 244, src/scss/_components/homepage/_main.scss */
 .main__box-5:before {
   background: -webkit-gradient(linear, right top, left top, from(#FBD72B), to(#F9484A));
   background: -webkit-linear-gradient(right, #FBD72B 0%, #F9484A 100%);
@@ -2063,7 +2128,7 @@ picture {
   background: linear-gradient(270deg, #FBD72B 0%, #F9484A 100%);
 }
 
-/* line 207, src/scss/_components/homepage/_main.scss */
+/* line 249, src/scss/_components/homepage/_main.scss */
 .main__box-6:before {
   background: -webkit-gradient(linear, right top, left top, from(#647DEE), to(#7F53AC));
   background: -webkit-linear-gradient(right, #647DEE 0%, #7F53AC 100%);
@@ -2071,7 +2136,7 @@ picture {
   background: linear-gradient(270deg, #647DEE 0%, #7F53AC 100%);
 }
 
-/* line 212, src/scss/_components/homepage/_main.scss */
+/* line 254, src/scss/_components/homepage/_main.scss */
 .main__box-7:before {
   background: -webkit-gradient(linear, left top, right top, from(#20BF55), to(#01BAEF));
   background: -webkit-linear-gradient(left, #20BF55 0%, #01BAEF 100%);
@@ -2080,14 +2145,14 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 218, src/scss/_components/homepage/_main.scss */
+  /* line 260, src/scss/_components/homepage/_main.scss */
   .main__box > div:nth-of-type(2) {
     padding-left: 10px;
     padding-right: 20px;
   }
 }
 
-/* line 225, src/scss/_components/homepage/_main.scss */
+/* line 267, src/scss/_components/homepage/_main.scss */
 .main__box > div .icon-font {
   opacity: 0;
   position: absolute;
@@ -2101,7 +2166,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 225, src/scss/_components/homepage/_main.scss */
+  /* line 267, src/scss/_components/homepage/_main.scss */
   .main__box > div .icon-font {
     opacity: 1;
     position: static;
@@ -2111,7 +2176,7 @@ picture {
   }
 }
 
-/* line 241, src/scss/_components/homepage/_main.scss */
+/* line 283, src/scss/_components/homepage/_main.scss */
 .main__box-wrapper {
   opacity: 0;
   position: absolute;
@@ -2127,7 +2192,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 241, src/scss/_components/homepage/_main.scss */
+  /* line 283, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper {
     white-space: nowrap;
     overflow-x: auto;
@@ -2139,13 +2204,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 241, src/scss/_components/homepage/_main.scss */
+  /* line 283, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper {
     height: 115px;
   }
 }
 
-/* line 262, src/scss/_components/homepage/_main.scss */
+/* line 304, src/scss/_components/homepage/_main.scss */
 .main__box-wrapper > div {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -2159,7 +2224,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 262, src/scss/_components/homepage/_main.scss */
+  /* line 304, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div {
     -webkit-box-flex: unset;
     -webkit-flex-grow: unset;
@@ -2175,13 +2240,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 262, src/scss/_components/homepage/_main.scss */
+  /* line 304, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div {
     max-width: 250px;
   }
 }
 
-/* line 278, src/scss/_components/homepage/_main.scss */
+/* line 320, src/scss/_components/homepage/_main.scss */
 .main__box-wrapper > div:hover {
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -2195,7 +2260,7 @@ picture {
 }
 
 @media screen and (max-width: 1919px) {
-  /* line 278, src/scss/_components/homepage/_main.scss */
+  /* line 320, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div:hover {
     -webkit-box-flex: 4;
     -webkit-flex-grow: 4;
@@ -2205,7 +2270,7 @@ picture {
 }
 
 @media screen and (max-width: 1439px) {
-  /* line 278, src/scss/_components/homepage/_main.scss */
+  /* line 320, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div:hover {
     -webkit-box-flex: 5;
     -webkit-flex-grow: 5;
@@ -2215,7 +2280,7 @@ picture {
 }
 
 @media screen and (max-width: 1335px) {
-  /* line 278, src/scss/_components/homepage/_main.scss */
+  /* line 320, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div:hover {
     -webkit-box-flex: 7;
     -webkit-flex-grow: 7;
@@ -2225,7 +2290,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 278, src/scss/_components/homepage/_main.scss */
+  /* line 320, src/scss/_components/homepage/_main.scss */
   .main__box-wrapper > div:hover {
     -webkit-box-flex: unset;
     -webkit-flex-grow: unset;
@@ -2234,7 +2299,7 @@ picture {
   }
 }
 
-/* line 297, src/scss/_components/homepage/_main.scss */
+/* line 339, src/scss/_components/homepage/_main.scss */
 .main__box-photo {
   opacity: 0;
   overflow: hidden;
@@ -2251,7 +2316,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 297, src/scss/_components/homepage/_main.scss */
+  /* line 339, src/scss/_components/homepage/_main.scss */
   .main__box-photo {
     opacity: 1;
     position: relative;
@@ -2262,7 +2327,7 @@ picture {
   }
 }
 
-/* line 314, src/scss/_components/homepage/_main.scss */
+/* line 356, src/scss/_components/homepage/_main.scss */
 .main__box-photo img {
   position: absolute;
   top: 0;
@@ -2275,16 +2340,17 @@ picture {
      object-position: center;
 }
 
-/* line 325, src/scss/_components/homepage/_main.scss */
+/* line 367, src/scss/_components/homepage/_main.scss */
 .main__box-name {
   white-space: nowrap;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 325, src/scss/_components/homepage/_main.scss */
+  /* line 367, src/scss/_components/homepage/_main.scss */
   .main__box-name {
     white-space: normal;
   }

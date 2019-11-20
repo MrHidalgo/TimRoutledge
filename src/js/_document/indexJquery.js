@@ -120,8 +120,10 @@ $(document).ready((ev) => {
       _mainOverlay = $('[main-overlay-js]'),
       _mainBoxWrapper = $('[main-boxWrapper-js]'),
       _mainTitle = $('[main-title-js]'),
+      _mainSubtitle = $('[main-subtitle-js]'),
       _mainTitleLine = $('[main-title-line-js]'),
-      _mainTitleText = $('[main-title-text-js] span');
+      _mainTitleText1 = $('[main-title-text-1-js] span'),
+      _mainTitleText2 = $('[main-title-text-2-js] span');
 
     if(_winW > 767) {
       tl.set(
@@ -158,25 +160,15 @@ $(document).ready((ev) => {
       _titleLineWidth = 50
     }
 
-    // if(_winW > 1279 && _winH > 767) {
-    //   _titleOffsetY = '110%';
-    // } else if(_winW > 1023 && _winH > 767) {
-    //   _titleOffsetY = '105%';
-    // } else if(_winW < 375 && _winH < 569) {
-    //   _titleOffsetY = '42%';
-    // } else if(_winW < 424 && _winH < 668) {
-    //   _titleOffsetY = '60%';
-    // } else {
-    //   _titleOffsetY = '75%';
-    // }
-
     tl
       .to(_header, 0.5, {opacity:1, left: 0, top: 0, ease: Power1.easeInOut})
       .to(_mainBoxWrapper, 0.5, {opacity:1, bottom: 0, ease: Power1.easeInOut}, '-=0.2')
       .to(_mainTitleLine, 0.35, {opacity: 1, width: _titleLineWidth, ease: Power1.easeInOut})
-      .staggerTo(_mainTitleText, 0.75, {opacity: 1, ease: Power1.easeInOut}, 0.035)
-      .to(_mainTitle, 0.5, {scale: 0.55, y:_titleOffsetY, transformOrigin: 'left', ease: Power1.easeInOut})
-      .to(_mainOverlay, 0.5, {opacity: 0, ease: Power1.easeInOut}, '-=0.5');
+      .staggerTo(_mainTitleText1, 0.65, {opacity: 1, ease: Power1.easeInOut}, 0.065)
+      .staggerTo(_mainTitleText2, 0.65, {opacity: 1, ease: Power1.easeInOut}, 0.065, '+=0.75')
+      .to(_mainOverlay, 0.5, {opacity: 0, ease: Power1.easeInOut}, '+=0.15')
+      .to(_mainTitle, 0.5, {opacity: 0, ease: Power1.easeInOut}, '-=0.25')
+      .to(_mainSubtitle, 0.5, {opacity: 1, ease: Power1.easeInOut}, '-=0.15');
   };
 	/*
 	* CALLBACK :: end
