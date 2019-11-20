@@ -67,10 +67,10 @@
 
       &-2 {
         opacity: 0.45;
+        display: none !important;
         bottom: 100px;
-        display: none;
         @include adaptive(767) {
-          display: block;
+          display: block !important;
         }
       }
     }
@@ -144,7 +144,7 @@
   &__title {
     letter-spacing: 0.6px;
     padding-bottom: 56px;
-    font-family: 'Aktiv Grotesk Ex', sans-serif;
+    font-weight: 800;
     font-size: 30px;
     line-height: 38px;
     color: #0C0C0C;
@@ -270,6 +270,8 @@
       display: flex;
       padding-right: 5px;
       font-size: 16px;
+      font-family:"aktiv-grotesk", sans-serif;
+      font-weight: normal;
       line-height: 19px;
       color: #0c0c0c;
 
@@ -310,15 +312,14 @@
       padding-bottom: 13px;
       text-align: right;
       font-size: 30px;
+      font-weight: 800;
       line-height: 38px;
-      font-family: 'Aktiv Grotesk Ex', sans-serif;
       color: #FFFFFF;
     }
 
     &-desc {
       padding-bottom: 21px;
       text-align: right;
-      font-family: 'Aktiv Grotesk Ex', sans-serif;
       font-size: 22px;
       line-height: 28px;
       color: #FFFFFF;

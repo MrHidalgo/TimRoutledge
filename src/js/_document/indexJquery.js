@@ -17,6 +17,24 @@ $(document).ready((ev) => {
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
+	const initOverlayClick = () => {
+	  $('#overlay').on('click', (ev) => {
+      $('[hamburger-js]').removeClass("is-active").find('.hamburger').removeClass('is-active');
+      $('[mobile-block-js]').removeClass("is-open");
+      $('html, body').removeClass("is-hideScroll");
+    });
+  };
+
+	const initPressESC = () => {
+    $(document).on('keyup', (ev) => {
+      if($(ev.keyCode === 27)) {
+        $('[hamburger-js]').removeClass("is-active").find('.hamburger').removeClass('is-active');
+        $('[mobile-block-js]').removeClass("is-open");
+        $('html, body').removeClass("is-hideScroll");
+      }
+    });
+  };
+
   const initVideo = () => {
     const vid = document.getElementById("video");
 
@@ -40,6 +58,56 @@ $(document).ready((ev) => {
         }
       });
     }
+  };
+
+  const initAutoLoadContent = () => {
+    let _count = 0;
+
+    function loadMore() {
+      const _tmpl = `
+        <div>
+          <a class="card flex-row" href="#" title="">
+            <div class="card-head"><img class="card-img-top" src="img/img-press-1.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="card-text d-flex">
+                <p class="d-flex align-items-center justify-content-center">CQ</p>
+              </div>
+              <h5 class="card-title">Meet the man responsible for the flashing Spiceworld globe on stage on the new Spice Girls Tour.</h5><i class="icon-font icon-arrow"></i>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class="card card--reverse flex-row-reverse" href="#" title="">
+            <div class="card-head"><img class="card-img-top" src="img/img-press-2.jpg" alt=""></div>
+            <div class="card-body">
+              <div class="card-text d-flex">
+                <p class="d-flex align-items-center justify-content-center">Evening Standard</p>
+              </div>
+              <h5 class="card-title">Meet Tim Routledge, the lighting designer behind Stormzy’s incredible Glastonbury set.</h5><i class="icon-font icon-arrow"></i>
+            </div>
+          </a>
+        </div>
+      `;
+
+      if(_count <= 1) {
+        $("#loadContent").append(_tmpl);
+        _count++;
+      } else {
+        return false;
+      }
+    }
+
+    function bindScroll() {
+      if(_count <= 1) {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - $('#footer').outerHeight(true) - 200) {
+          loadMore();
+        }
+      } else {
+        return false;
+      }
+    }
+
+    $(window).scroll(bindScroll);
   };
 
   const initMainAnimation = () => {
@@ -90,17 +158,17 @@ $(document).ready((ev) => {
       _titleLineWidth = 50
     }
 
-    if(_winW > 1279 && _winH > 767) {
-      _titleOffsetY = '110%';
-    } else if(_winW > 1023 && _winH > 767) {
-      _titleOffsetY = '105%';
-    } else if(_winW < 375 && _winH < 569) {
-      _titleOffsetY = '42%';
-    } else if(_winW < 424 && _winH < 668) {
-      _titleOffsetY = '60%';
-    } else {
-      _titleOffsetY = '75%';
-    }
+    // if(_winW > 1279 && _winH > 767) {
+    //   _titleOffsetY = '110%';
+    // } else if(_winW > 1023 && _winH > 767) {
+    //   _titleOffsetY = '105%';
+    // } else if(_winW < 375 && _winH < 569) {
+    //   _titleOffsetY = '42%';
+    // } else if(_winW < 424 && _winH < 668) {
+    //   _titleOffsetY = '60%';
+    // } else {
+    //   _titleOffsetY = '75%';
+    // }
 
     tl
       .to(_header, 0.5, {opacity:1, left: 0, top: 0, ease: Power1.easeInOut})
@@ -130,7 +198,10 @@ $(document).ready((ev) => {
 		// ==========================================
 
     // callback
+    initOverlayClick();
+    initPressESC();
     initVideo();
+    initAutoLoadContent();
     initMainAnimation();
 		// ==========================================
   };

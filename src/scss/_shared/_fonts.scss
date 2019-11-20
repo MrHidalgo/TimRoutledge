@@ -67,41 +67,113 @@
 
 //@include mixinFontFace("JournalRegular", "-Bold", "../fonts/", normal, otf eot woff2 woff ttf svg);
 
-@include mixinFontFace("AktivGrotesk", "-Bold", "../fonts/", bold, woff2 woff ttf svg);
-@include mixinFontFace("AktivGrotesk", "-Thin", "../fonts/", 100, woff2 woff ttf svg);
-@include mixinFontFace("AktivGrotesk", "-Medium", "../fonts/", 500, woff2 woff ttf svg);
-@include mixinFontFace("AktivGrotesk", "-Regular", "../fonts/", normal, woff2 woff ttf svg);
-@include mixinFontFace("AktivGrotesk", "-Black", "../fonts/", 900, woff2 woff ttf svg);
-@include mixinFontFace("AktivGrotesk", "-Light", "../fonts/", 300, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Bold", "../fonts/", bold, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Thin", "../fonts/", 100, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Medium", "../fonts/", 500, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Regular", "../fonts/", normal, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Black", "../fonts/", 900, woff2 woff ttf svg);
+//@include mixinFontFace("AktivGrotesk", "-Light", "../fonts/", 300, woff2 woff ttf svg);
+//
+//@font-face {
+//	font-family: 'AktivGrotesk-Hairline';
+//	src: local('☞Aktiv Grotesk Hairline'), local('AktivGrotesk-Hairline'),
+//	url('../fonts/AktivGrotesk-Hairline.woff2') format('woff2'),
+//	url('../fonts/AktivGrotesk-Hairline.woff') format('woff'),
+//	url('../fonts/AktivGrotesk-Hairline.ttf') format('truetype'),
+//	url('../fonts/AktivGrotesk-Hairline.svg#AktivGrotesk-Hairline') format('svg');
+//	font-weight: normal;
+//	font-style: normal;
+//}
+//
+//@font-face {
+//	font-family: 'AktivGrotesk-XBold';
+//	src: local('☞Aktiv Grotesk XBold'), local('AktivGrotesk-XBold'),
+//	url('../fonts/AktivGrotesk-XBold.woff2') format('woff2'),
+//	url('../fonts/AktivGrotesk-XBold.woff') format('woff'),
+//	url('../fonts/AktivGrotesk-XBold.ttf') format('truetype'),
+//	url('../fonts/AktivGrotesk-XBold.svg#AktivGrotesk-XBold') format('svg');
+//	font-weight: bold;
+//	font-style: normal;
+//}
+//
+//@font-face {
+//	font-family: 'Aktiv Grotesk Ex';
+//	src: url('../fonts/AktivGroteskEx.woff2') format('woff2'),
+//	url('../fonts/AktivGroteskEx.woff') format('woff'),
+//	url('../fonts/AktivGroteskEx.ttf') format('truetype'),
+//	url('../fonts/AktivGroteskEx.svg#.') format('svg');
+//	font-weight: bold;
+//	font-style: normal;
+//}
 
 @font-face {
-	font-family: 'AktivGrotesk-Hairline';
-	src: local('☞Aktiv Grotesk Hairline'), local('AktivGrotesk-Hairline'),
-	url('../fonts/AktivGrotesk-Hairline.woff2') format('woff2'),
-	url('../fonts/AktivGrotesk-Hairline.woff') format('woff'),
-	url('../fonts/AktivGrotesk-Hairline.ttf') format('truetype'),
-	url('../fonts/AktivGrotesk-Hairline.svg#AktivGrotesk-Hairline') format('svg');
-	font-weight: normal;
-	font-style: normal;
+	font-family:"aktiv-grotesk";
+	src:url("https://use.typekit.net/af/b5ce2a/00000000000000003b9b032d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/b5ce2a/00000000000000003b9b032d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/b5ce2a/00000000000000003b9b032d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:700;
 }
 
 @font-face {
-	font-family: 'AktivGrotesk-XBold';
-	src: local('☞Aktiv Grotesk XBold'), local('AktivGrotesk-XBold'),
-	url('../fonts/AktivGrotesk-XBold.woff2') format('woff2'),
-	url('../fonts/AktivGrotesk-XBold.woff') format('woff'),
-	url('../fonts/AktivGrotesk-XBold.ttf') format('truetype'),
-	url('../fonts/AktivGrotesk-XBold.svg#AktivGrotesk-XBold') format('svg');
-	font-weight: bold;
-	font-style: normal;
+	font-family:"aktiv-grotesk";
+	src:url("https://use.typekit.net/af/2223ac/00000000000000003b9b0326/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/2223ac/00000000000000003b9b0326/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/2223ac/00000000000000003b9b0326/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:300;
 }
 
 @font-face {
-	font-family: 'Aktiv Grotesk Ex';
-	src: url('../fonts/AktivGroteskEx.woff2') format('woff2'),
-	url('../fonts/AktivGroteskEx.woff') format('woff'),
-	url('../fonts/AktivGroteskEx.ttf') format('truetype'),
-	url('../fonts/AktivGroteskEx.svg#.') format('svg');
-	font-weight: bold;
-	font-style: normal;
+	font-family:"aktiv-grotesk";
+	src:url("https://use.typekit.net/af/67187a/00000000000000003b9b032a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/67187a/00000000000000003b9b032a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/67187a/00000000000000003b9b032a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:500;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk";
+	src:url("https://use.typekit.net/af/97f831/000000000000000000017875/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/97f831/000000000000000000017875/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/97f831/000000000000000000017875/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:800;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk-extended";
+	src:url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:400;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk-extended";
+	src:url("https://use.typekit.net/af/5a2c6f/00000000000000003b9ad13c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/5a2c6f/00000000000000003b9ad13c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/5a2c6f/00000000000000003b9ad13c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:500;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk-extended";
+	src:url("https://use.typekit.net/af/3f03c1/00000000000000003b9ad13e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/3f03c1/00000000000000003b9ad13e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/3f03c1/00000000000000003b9ad13e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:700;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk-extended";
+	src:url("https://use.typekit.net/af/50539a/00000000000000003b9ad140/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/50539a/00000000000000003b9ad140/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/50539a/00000000000000003b9ad140/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:800;
+}
+
+@font-face {
+	font-family:"aktiv-grotesk-extended";
+	src:url("https://use.typekit.net/af/d8d5f7/00000000000000003b9ad142/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d8d5f7/00000000000000003b9ad142/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d8d5f7/00000000000000003b9ad142/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+	font-display:auto;
+	font-style:normal;
+	font-weight:900;
 }

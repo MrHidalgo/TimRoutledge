@@ -133,6 +133,24 @@ $(document).ready(function (ev) {
   * =============================================
   * CALLBACK :: start
   * ============================================= */
+  var initOverlayClick = function initOverlayClick() {
+    $('#overlay').on('click', function (ev) {
+      $('[hamburger-js]').removeClass("is-active").find('.hamburger').removeClass('is-active');
+      $('[mobile-block-js]').removeClass("is-open");
+      $('html, body').removeClass("is-hideScroll");
+    });
+  };
+
+  var initPressESC = function initPressESC() {
+    $(document).on('keyup', function (ev) {
+      if ($(ev.keyCode === 27)) {
+        $('[hamburger-js]').removeClass("is-active").find('.hamburger').removeClass('is-active');
+        $('[mobile-block-js]').removeClass("is-open");
+        $('html, body').removeClass("is-hideScroll");
+      }
+    });
+  };
+
   var initVideo = function initVideo() {
     var vid = document.getElementById("video");
 
@@ -156,6 +174,33 @@ $(document).ready(function (ev) {
         }
       });
     }
+  };
+
+  var initAutoLoadContent = function initAutoLoadContent() {
+    var _count = 0;
+
+    function loadMore() {
+      var _tmpl = "\n        <div>\n          <a class=\"card flex-row\" href=\"#\" title=\"\">\n            <div class=\"card-head\"><img class=\"card-img-top\" src=\"img/img-press-1.jpg\" alt=\"\"></div>\n            <div class=\"card-body\">\n              <div class=\"card-text d-flex\">\n                <p class=\"d-flex align-items-center justify-content-center\">CQ</p>\n              </div>\n              <h5 class=\"card-title\">Meet the man responsible for the flashing Spiceworld globe on stage on the new Spice Girls Tour.</h5><i class=\"icon-font icon-arrow\"></i>\n            </div>\n          </a>\n        </div>\n        <div>\n          <a class=\"card card--reverse flex-row-reverse\" href=\"#\" title=\"\">\n            <div class=\"card-head\"><img class=\"card-img-top\" src=\"img/img-press-2.jpg\" alt=\"\"></div>\n            <div class=\"card-body\">\n              <div class=\"card-text d-flex\">\n                <p class=\"d-flex align-items-center justify-content-center\">Evening Standard</p>\n              </div>\n              <h5 class=\"card-title\">Meet Tim Routledge, the lighting designer behind Stormzy\u2019s incredible Glastonbury set.</h5><i class=\"icon-font icon-arrow\"></i>\n            </div>\n          </a>\n        </div>\n      ";
+
+      if (_count <= 1) {
+        $("#loadContent").append(_tmpl);
+        _count++;
+      } else {
+        return false;
+      }
+    }
+
+    function bindScroll() {
+      if (_count <= 1) {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - $('#footer').outerHeight(true) - 200) {
+          loadMore();
+        }
+      } else {
+        return false;
+      }
+    }
+
+    $(window).scroll(bindScroll);
   };
 
   var initMainAnimation = function initMainAnimation() {
@@ -199,17 +244,17 @@ $(document).ready(function (ev) {
       _titleLineWidth = 50;
     }
 
-    if (_winW > 1279 && _winH > 767) {
-      _titleOffsetY = '110%';
-    } else if (_winW > 1023 && _winH > 767) {
-      _titleOffsetY = '105%';
-    } else if (_winW < 375 && _winH < 569) {
-      _titleOffsetY = '42%';
-    } else if (_winW < 424 && _winH < 668) {
-      _titleOffsetY = '60%';
-    } else {
-      _titleOffsetY = '75%';
-    }
+    // if(_winW > 1279 && _winH > 767) {
+    //   _titleOffsetY = '110%';
+    // } else if(_winW > 1023 && _winH > 767) {
+    //   _titleOffsetY = '105%';
+    // } else if(_winW < 375 && _winH < 569) {
+    //   _titleOffsetY = '42%';
+    // } else if(_winW < 424 && _winH < 668) {
+    //   _titleOffsetY = '60%';
+    // } else {
+    //   _titleOffsetY = '75%';
+    // }
 
     tl.to(_header, 0.5, { opacity: 1, left: 0, top: 0, ease: Power1.easeInOut }).to(_mainBoxWrapper, 0.5, { opacity: 1, bottom: 0, ease: Power1.easeInOut }, '-=0.2').to(_mainTitleLine, 0.35, { opacity: 1, width: _titleLineWidth, ease: Power1.easeInOut }).staggerTo(_mainTitleText, 0.75, { opacity: 1, ease: Power1.easeInOut }, 0.035).to(_mainTitle, 0.5, { scale: 0.55, y: _titleOffsetY, transformOrigin: 'left', ease: Power1.easeInOut }).to(_mainOverlay, 0.5, { opacity: 0, ease: Power1.easeInOut }, '-=0.5');
   };
@@ -231,7 +276,10 @@ $(document).ready(function (ev) {
     // ==========================================
 
     // callback
+    initOverlayClick();
+    initPressESC();
     initVideo();
+    initAutoLoadContent();
     initMainAnimation();
     // ==========================================
   };

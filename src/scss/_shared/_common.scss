@@ -48,7 +48,7 @@
   max-width: 1171px;
   margin-left: auto;
   margin-right: auto;
-  padding: 49px 15px 45px;
+  padding: 49px 15px 45px 0;
   @include adaptive(767) {
     flex-direction: column;
     padding-top: 30px;
@@ -79,7 +79,6 @@
 
   &__text,
   &__info {
-    font-family: 'Aktiv Grotesk Ex', sans-serif;
     font-size: 12px;
     line-height: 15px;
   }
@@ -101,6 +100,10 @@
     }
     @include adaptive(767) {
       transform: translate(0);
+    }
+
+    strong {
+      font-weight: 800;
     }
   }
 }

@@ -24,7 +24,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--link(rel="stylesheet" href="https://use.typekit.net/fus3yuy.css")-->
+    <link rel="stylesheet" href="https://use.typekit.net/fus3yuy.css">
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
@@ -81,8 +81,8 @@
         <div class="container-fluid">
           <div class="press__wrapper">
             <h1 class="press__title c-title c-title--dark d-flex align-items-center">Press</h1>
-            <div class="press__box-wrapper ml-auto mr-auto">
-              <div><a class="card flex-row" href="#" title="">
+            <div class="press__box-wrapper ml-auto mr-auto" id="loadContent">
+              <div><a class="card flex-row" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-1.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -90,7 +90,7 @@
                     </div>
                     <h5 class="card-title">Meet the man responsible for the flashing Spiceworld globe on stage on the new Spice Girls Tour.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div><a class="card card--reverse flex-row-reverse" href="#" title="">
+              <div><a class="card card--reverse flex-row-reverse" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-2.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -98,7 +98,7 @@
                     </div>
                     <h5 class="card-title">Meet Tim Routledge, the lighting designer behind Stormzy’s incredible Glastonbury set.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div><a class="card flex-row" href="#" title="">
+              <div><a class="card flex-row" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-3.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -106,7 +106,7 @@
                     </div>
                     <h5 class="card-title">Meet the man responsible for the flashing Spiceworld globe on stage on the new Spice Girls Tour.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div><a class="card card--reverse flex-row-reverse" href="#" title="">
+              <div><a class="card card--reverse flex-row-reverse" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-4.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -114,7 +114,7 @@
                     </div>
                     <h5 class="card-title">Meet Tim Routledge, the lighting designer behind Stormzy’s incredible Glastonbury set.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div><a class="card flex-row" href="#" title="">
+              <div><a class="card flex-row" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-5.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -122,7 +122,7 @@
                     </div>
                     <h5 class="card-title">Meet the man responsible for the flashing Spiceworld globe on stage on the new Spice Girls Tour.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div><a class="card card--reverse flex-row-reverse" href="#" title="">
+              <div><a class="card card--reverse flex-row-reverse" href="https://www.google.com/" target="_blank" title="">
                   <div class="card-head"><img class="card-img-top" src="img/img-press-6.jpg" alt=""></div>
                   <div class="card-body">
                     <div class="card-text d-flex">
@@ -130,10 +130,11 @@
                     </div>
                     <h5 class="card-title">Meet Tim Routledge, the lighting designer behind Stormzy’s incredible Glastonbury set.</h5><i class="icon-font icon-arrow"></i>
                   </div></a></div>
-              <div>
-                <div class="press__infinite d-flex align-items-center justify-content-center w-100"><a href="#" title="">Infinite Scroll</a></div>
-              </div>
             </div>
+            <!--.press__box-wrapper.ml-auto.mr-auto-->
+            <!--  div-->
+            <!--    .press__infinite.d-flex.align-items-center.justify-content-center.w-100-->
+            <!--      a(href='#' title='') Infinite Scroll-->
           </div>
         </div>
       </section>
@@ -143,7 +144,7 @@
     <footer class="footer" id="footer">
       <div class="footer__bg">
         <div class="footer__bg-left"></div>
-        <div class="footer__bg-right"></div><img class="footer__bg-img footer__bg-img-1" src="img/text-tim-routledge.svg" parallax-js data-stellar-ratio="1.15"><img class="footer__bg-img footer__bg-img-2" src="img/text-tim-routledge-1.svg" parallax-js data-stellar-ratio="1.15">
+        <div class="footer__bg-right"></div><img class="footer__bg-img footer__bg-img-1" src="img/text-tim-routledge.svg" parallax-js data-stellar-ratio="1.05"><img class="footer__bg-img footer__bg-img-2" src="img/text-tim-routledge-1.svg" parallax-js data-stellar-ratio="1.05">
       </div>
       <div class="container-fluid">
         <div class="footer__wrapper">
@@ -201,7 +202,7 @@
       </div>
     </footer>
     <!-- FOOTER :: END-->
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
   </body>
   <!-- SCRIPT :: START-->
   <script src="js/vendor.js"></script>

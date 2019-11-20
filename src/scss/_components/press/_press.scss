@@ -4,7 +4,7 @@
   overflow: hidden;
   position: relative;
   padding-top: 56px;
-  padding-bottom: 97px;
+  padding-bottom: 197px;
   background-color: #ffffff;
   @include adaptive(1023) {
     padding-bottom: 55px;
@@ -72,6 +72,9 @@
 
       > div {
         padding-bottom: 80px;
+        animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-name: c-fadeIn;
         @include adaptive(767) {
           padding-bottom: 50px;
         }
@@ -87,66 +90,71 @@
         &:last-of-type {
           padding-bottom: 0;
         }
-      }
-    }
-  }
 
-  &__infinite {
-    height: 80px;
-
-    &:hover,
-    &:focus {
-      a {
-        box-shadow: none;
-        color: #202020;
-      }
-    }
-
-    &:hover {
-      a {
-        &:before,
-        &:after {
-          opacity: 1;
-          visibility: visible;
-          transform: translateX(0px);
-          @include transition(opacity, visibility, transform);
+        @keyframes c-fadeIn {
+          from {opacity: 0;}
+          to {opacity: 1;}
         }
       }
     }
-
-    a {
-      position: relative;
-      font-size: 20px;
-      line-height: 23px;
-      text-align: center;
-      color: #202020;
-
-      &:before,
-      &:after {
-        opacity: 0;
-        visibility: hidden;
-        z-index: -1;
-        position: absolute;
-        top: -1px;
-        display: inline-block;
-        vertical-align: middle;
-        @include transition(opacity, visibility, transform);
-      }
-
-      &:before {
-        content: '[';
-        left: -15px;
-        transform: translateX(20px);
-      }
-
-      &:after {
-        content: ']';
-        right: -15px;
-        transform: translateX(-20px);
-      }
-    }
-
   }
+
+  //&__infinite {
+  //  height: 80px;
+  //
+  //  &:hover,
+  //  &:focus {
+  //    a {
+  //      box-shadow: none;
+  //      color: #202020;
+  //    }
+  //  }
+  //
+  //  &:hover {
+  //    a {
+  //      &:before,
+  //      &:after {
+  //        opacity: 1;
+  //        visibility: visible;
+  //        transform: translateX(0px);
+  //        @include transition(opacity, visibility, transform);
+  //      }
+  //    }
+  //  }
+  //
+  //  a {
+  //    position: relative;
+  //    font-size: 20px;
+  //    line-height: 23px;
+  //    text-align: center;
+  //    color: #202020;
+  //
+  //    &:before,
+  //    &:after {
+  //      opacity: 0;
+  //      visibility: hidden;
+  //      z-index: -1;
+  //      position: absolute;
+  //      top: -1px;
+  //      display: inline-block;
+  //      vertical-align: middle;
+  //      @include transition(opacity, visibility, transform);
+  //    }
+  //
+  //    &:before {
+  //      content: '[';
+  //      left: -15px;
+  //      transform: translateX(20px);
+  //    }
+  //
+  //    &:after {
+  //      content: ']';
+  //      right: -15px;
+  //      transform: translateX(-20px);
+  //    }
+  //  }
+  //
+  //}
 
   .card {
     padding-right: 15px;
@@ -256,7 +264,7 @@
         line-height: 20px;
         text-align: center;
         color: #FFFFFF;
-        font-family: 'Aktiv Grotesk Ex', sans-serif;
+        font-weight: 700;
         background: linear-gradient(270deg, #4A00A8 0%, #AF0189 25%, #4A00A8 50%, #AF0189 100%);
         background-size: 200% 200%;
         animation: animatedGradient 5s ease-in-out alternate infinite;
@@ -282,8 +290,8 @@
       width: 100%;
       max-width: 383px;
       padding-bottom: 10px;
-      font-family: 'Aktiv Grotesk Ex', sans-serif;
       font-size: 30px;
+      font-weight: 700;
       line-height: 33px;
       color: #0C0C0C;
       @include adaptive(1023) {

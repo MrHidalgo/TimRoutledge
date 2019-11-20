@@ -1,5 +1,18 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+  &__btn {
+    display: block;
+    @include adaptive(767) {
+      width: 25px;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 // LOGOTYPE :: END
