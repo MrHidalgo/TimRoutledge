@@ -18,7 +18,7 @@ PageList:
   ready: 90
 - file: about.html
   titleName: About
-  ready: 90
+  ready: 100
 - file: press.html
   titleName: Press
-  ready: 90
+  ready: 100

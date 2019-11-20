@@ -74,7 +74,6 @@
 
   &__title {
     padding-bottom: 44px;
-    font-family: 'Aktiv Grotesk Ex', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 38px;
@@ -206,7 +205,6 @@
 
       span {
         padding-bottom: 12px;
-        font-family: 'Aktiv Grotesk Ex', sans-serif;
         font-size: 16px;
         line-height: 20px;
         color: #FFFFFF;
@@ -238,13 +236,14 @@
 
     &-title {
       margin-bottom: 5px;
-      font-family: 'Aktiv Grotesk Ex', sans-serif;
+      font-weight: 700;
       font-size: 16px;
       line-height: 20px;
       color: #FFFFFF;
     }
 
     &-text {
+      font-family:"aktiv-grotesk",sans-serif;
       font-weight: 300;
       font-size: 16px;
       line-height: 18px;

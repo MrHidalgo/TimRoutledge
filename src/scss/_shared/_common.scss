@@ -85,7 +85,6 @@
 
   &__text {
     color: #0c0c0c;
-    letter-spacing: -0.3px;
     @include adaptive(767) {
       color: #ffffff;
     }

@@ -591,7 +591,6 @@ picture {
 /* line 86, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #0c0c0c;
-  letter-spacing: -0.3px;
 }
 
 @media screen and (max-width: 767px) {
@@ -601,7 +600,7 @@ picture {
   }
 }
 
-/* line 94, src/scss/_shared/_common.scss */
+/* line 93, src/scss/_shared/_common.scss */
 .copyright__info {
   -webkit-transform: translateX(-150%);
       -ms-transform: translateX(-150%);
@@ -610,7 +609,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 94, src/scss/_shared/_common.scss */
+  /* line 93, src/scss/_shared/_common.scss */
   .copyright__info {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
@@ -620,7 +619,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 94, src/scss/_shared/_common.scss */
+  /* line 93, src/scss/_shared/_common.scss */
   .copyright__info {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
@@ -628,7 +627,7 @@ picture {
   }
 }
 
-/* line 105, src/scss/_shared/_common.scss */
+/* line 104, src/scss/_shared/_common.scss */
 .copyright__info strong {
   font-weight: 800;
 }
@@ -1359,7 +1358,6 @@ picture {
 
 /* line 144, src/scss/_components/_footer.scss */
 .footer__title {
-  letter-spacing: 0.6px;
   padding-bottom: 56px;
   font-weight: 800;
   font-size: 30px;
@@ -1382,31 +1380,31 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 158, src/scss/_components/_footer.scss */
+  /* line 157, src/scss/_components/_footer.scss */
   .footer__title-1 {
     display: none;
   }
 }
 
-/* line 164, src/scss/_components/_footer.scss */
+/* line 163, src/scss/_components/_footer.scss */
 .footer__title-2 {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 164, src/scss/_components/_footer.scss */
+  /* line 163, src/scss/_components/_footer.scss */
   .footer__title-2 {
     display: block;
   }
 }
 
-/* line 170, src/scss/_components/_footer.scss */
+/* line 169, src/scss/_components/_footer.scss */
 .footer__title-2:before {
   top: 15px;
   background-color: #000000;
 }
 
-/* line 177, src/scss/_components/_footer.scss */
+/* line 176, src/scss/_components/_footer.scss */
 .footer__awards {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1420,14 +1418,14 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 177, src/scss/_components/_footer.scss */
+  /* line 176, src/scss/_components/_footer.scss */
   .footer__awards {
     padding-bottom: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 177, src/scss/_components/_footer.scss */
+  /* line 176, src/scss/_components/_footer.scss */
   .footer__awards {
     width: 100%;
     max-width: 425px;
@@ -1436,34 +1434,34 @@ picture {
   }
 }
 
-/* line 193, src/scss/_components/_footer.scss */
+/* line 192, src/scss/_components/_footer.scss */
 .footer__awards li {
   padding-right: 33px;
   padding-bottom: 53px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 193, src/scss/_components/_footer.scss */
+  /* line 192, src/scss/_components/_footer.scss */
   .footer__awards li {
     padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 193, src/scss/_components/_footer.scss */
+  /* line 192, src/scss/_components/_footer.scss */
   .footer__awards li {
     max-width: 50%;
   }
 }
 
-/* line 203, src/scss/_components/_footer.scss */
+/* line 202, src/scss/_components/_footer.scss */
 .footer__awards li img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 211, src/scss/_components/_footer.scss */
+/* line 210, src/scss/_components/_footer.scss */
 .footer__tim {
   display: none;
   -webkit-box-align: center;
@@ -1477,7 +1475,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 211, src/scss/_components/_footer.scss */
+  /* line 210, src/scss/_components/_footer.scss */
   .footer__tim {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1486,14 +1484,14 @@ picture {
   }
 }
 
-/* line 219, src/scss/_components/_footer.scss */
+/* line 218, src/scss/_components/_footer.scss */
 .footer__tim img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 226, src/scss/_components/_footer.scss */
+/* line 225, src/scss/_components/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1506,13 +1504,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 226, src/scss/_components/_footer.scss */
+  /* line 225, src/scss/_components/_footer.scss */
   .footer__nav {
     display: none;
   }
 }
 
-/* line 233, src/scss/_components/_footer.scss */
+/* line 232, src/scss/_components/_footer.scss */
 .footer__nav-line {
   position: relative;
   display: block;
@@ -1525,20 +1523,20 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 233, src/scss/_components/_footer.scss */
+  /* line 232, src/scss/_components/_footer.scss */
   .footer__nav-line {
     max-width: 95%;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 233, src/scss/_components/_footer.scss */
+  /* line 232, src/scss/_components/_footer.scss */
   .footer__nav-line {
     display: none;
   }
 }
 
-/* line 249, src/scss/_components/_footer.scss */
+/* line 248, src/scss/_components/_footer.scss */
 .footer__nav-line:after {
   content: '';
   position: absolute;
@@ -1549,19 +1547,19 @@ picture {
   background-color: #000000;
 }
 
-/* line 260, src/scss/_components/_footer.scss */
+/* line 259, src/scss/_components/_footer.scss */
 .footer__nav li {
   padding-right: 25px;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 260, src/scss/_components/_footer.scss */
+  /* line 259, src/scss/_components/_footer.scss */
   .footer__nav li {
     padding-right: 15px;
   }
 }
 
-/* line 267, src/scss/_components/_footer.scss */
+/* line 266, src/scss/_components/_footer.scss */
 .footer__nav a {
   overflow: hidden;
   position: relative;
@@ -1577,14 +1575,14 @@ picture {
   color: #0c0c0c;
 }
 
-/* line 279, src/scss/_components/_footer.scss */
+/* line 278, src/scss/_components/_footer.scss */
 .footer__nav a:hover span {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-/* line 284, src/scss/_components/_footer.scss */
+/* line 283, src/scss/_components/_footer.scss */
 .footer__nav a span {
   position: relative;
   display: inline-block;
@@ -1595,7 +1593,7 @@ picture {
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
-/* line 289, src/scss/_components/_footer.scss */
+/* line 288, src/scss/_components/_footer.scss */
 .footer__nav a span:before {
   content: attr(data-hover);
   position: absolute;
@@ -1605,12 +1603,12 @@ picture {
           transform: translate3d(0, 0, 0);
 }
 
-/* line 300, src/scss/_components/_footer.scss */
+/* line 299, src/scss/_components/_footer.scss */
 .footer__user {
-  padding-right: 21px;
+  padding-right: 13px;
 }
 
-/* line 303, src/scss/_components/_footer.scss */
+/* line 302, src/scss/_components/_footer.scss */
 .footer__user-image {
   display: block;
   max-width: 100%;
@@ -1619,7 +1617,7 @@ picture {
   margin-bottom: 27px;
 }
 
-/* line 311, src/scss/_components/_footer.scss */
+/* line 310, src/scss/_components/_footer.scss */
 .footer__user-name {
   padding-bottom: 13px;
   text-align: right;
@@ -1629,7 +1627,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 320, src/scss/_components/_footer.scss */
+/* line 319, src/scss/_components/_footer.scss */
 .footer__user-desc {
   padding-bottom: 21px;
   text-align: right;
@@ -1638,7 +1636,7 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 329, src/scss/_components/_footer.scss */
+/* line 328, src/scss/_components/_footer.scss */
 .footer__video {
   position: relative;
   right: 2px;
@@ -1648,7 +1646,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 329, src/scss/_components/_footer.scss */
+  /* line 328, src/scss/_components/_footer.scss */
   .footer__video {
     width: 100%;
     max-width: 540px;
@@ -1656,13 +1654,13 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 329, src/scss/_components/_footer.scss */
+  /* line 328, src/scss/_components/_footer.scss */
   .footer__video {
     display: none;
   }
 }
 
-/* line 343, src/scss/_components/_footer.scss */
+/* line 342, src/scss/_components/_footer.scss */
 .footer__video-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1680,7 +1678,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 354, src/scss/_components/_footer.scss */
+/* line 353, src/scss/_components/_footer.scss */
 .footer__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1692,7 +1690,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 360, src/scss/_components/_footer.scss */
+/* line 359, src/scss/_components/_footer.scss */
 .footer__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1710,7 +1708,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 371, src/scss/_components/_footer.scss */
+/* line 370, src/scss/_components/_footer.scss */
 .footer__video iframe,
 .footer__video video,
 .footer__video img {
@@ -1725,7 +1723,7 @@ picture {
      object-position: center;
 }
 
-/* line 384, src/scss/_components/_footer.scss */
+/* line 383, src/scss/_components/_footer.scss */
 .footer__info {
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -2416,8 +2414,8 @@ picture {
 .about__desc {
   max-width: 537px;
   padding-bottom: 65px;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 30px;
+  font-weight: 500;
   line-height: 39px;
   color: #0C0C0C;
   letter-spacing: -0.4px;
@@ -2725,11 +2723,12 @@ picture {
   padding-bottom: 26px;
   font-weight: 300;
   font-size: 16px;
+  font-family: "aktiv-grotesk", sans-serif;
   line-height: 26px;
   color: #FFFFFF;
 }
 
-/* line 181, src/scss/_components/about/_description.scss */
+/* line 182, src/scss/_components/about/_description.scss */
 .description__text:last-of-type {
   padding-bottom: 0;
 }
@@ -3036,7 +3035,6 @@ picture {
 /* line 75, src/scss/_components/category/_television.scss */
 .television__title {
   padding-bottom: 44px;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 38px;
@@ -3052,7 +3050,7 @@ picture {
   }
 }
 
-/* line 90, src/scss/_components/category/_television.scss */
+/* line 89, src/scss/_components/category/_television.scss */
 .television__box-wrapper {
   white-space: nowrap;
   display: -webkit-box;
@@ -3066,7 +3064,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 90, src/scss/_components/category/_television.scss */
+  /* line 89, src/scss/_components/category/_television.scss */
   .television__box-wrapper {
     overflow-x: auto;
     display: block !important;
@@ -3077,7 +3075,7 @@ picture {
   }
 }
 
-/* line 104, src/scss/_components/category/_television.scss */
+/* line 103, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div {
   white-space: normal;
   -webkit-box-flex: 1;
@@ -3106,7 +3104,7 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 104, src/scss/_components/category/_television.scss */
+  /* line 103, src/scss/_components/category/_television.scss */
   .television__box-wrapper > div {
     display: inline-block;
     vertical-align: top;
@@ -3123,13 +3121,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 104, src/scss/_components/category/_television.scss */
+  /* line 103, src/scss/_components/category/_television.scss */
   .television__box-wrapper > div {
     max-width: 215px;
   }
 }
 
-/* line 130, src/scss/_components/category/_television.scss */
+/* line 129, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div:hover {
   -webkit-box-flex: 2;
   -webkit-flex-grow: 2;
@@ -3142,7 +3140,7 @@ picture {
   transition: flex-grow 0.3s ease-in-out, -webkit-box-flex 0.3s ease-in-out, -webkit-flex-grow 0.3s ease-in-out, -ms-flex-positive 0.3s ease-in-out;
 }
 
-/* line 135, src/scss/_components/category/_television.scss */
+/* line 134, src/scss/_components/category/_television.scss */
 .television__box-wrapper > div:hover .card-body .icon-font {
   opacity: 1;
   visibility: visible;
@@ -3156,13 +3154,13 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 146, src/scss/_components/category/_television.scss */
+/* line 145, src/scss/_components/category/_television.scss */
 .television__box-head {
   height: 505px;
   background-color: #000000;
 }
 
-/* line 150, src/scss/_components/category/_television.scss */
+/* line 149, src/scss/_components/category/_television.scss */
 .television__box-head img {
   position: absolute;
   top: 0;
@@ -3183,7 +3181,7 @@ picture {
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-/* line 164, src/scss/_components/category/_television.scss */
+/* line 163, src/scss/_components/category/_television.scss */
 .television .card {
   overflow: hidden;
   border: none;
@@ -3192,7 +3190,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 171, src/scss/_components/category/_television.scss */
+/* line 170, src/scss/_components/category/_television.scss */
 .television .card:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -3204,7 +3202,7 @@ picture {
   transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
 }
 
-/* line 177, src/scss/_components/category/_television.scss */
+/* line 176, src/scss/_components/category/_television.scss */
 .television .card:hover .card__more .icon-font {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -3216,7 +3214,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 184, src/scss/_components/category/_television.scss */
+/* line 183, src/scss/_components/category/_television.scss */
 .television .card__overlay {
   white-space: nowrap;
   z-index: 0;
@@ -3236,7 +3234,7 @@ picture {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 199, src/scss/_components/category/_television.scss */
+/* line 198, src/scss/_components/category/_television.scss */
 .television .card__more {
   z-index: 2;
   position: absolute;
@@ -3253,16 +3251,15 @@ picture {
           flex-direction: column;
 }
 
-/* line 207, src/scss/_components/category/_television.scss */
+/* line 206, src/scss/_components/category/_television.scss */
 .television .card__more span {
   padding-bottom: 12px;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
 
-/* line 215, src/scss/_components/category/_television.scss */
+/* line 213, src/scss/_components/category/_television.scss */
 .television .card__more .icon-font {
   font-size: 14px;
   color: #ffffff;
@@ -3273,13 +3270,13 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 222, src/scss/_components/category/_television.scss */
+/* line 220, src/scss/_components/category/_television.scss */
 .television .card-body {
   position: relative;
   padding: 23px 20px 15px 0;
 }
 
-/* line 226, src/scss/_components/category/_television.scss */
+/* line 224, src/scss/_components/category/_television.scss */
 .television .card-body .icon-font {
   opacity: 0;
   visibility: hidden;
@@ -3298,17 +3295,18 @@ picture {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 239, src/scss/_components/category/_television.scss */
+/* line 237, src/scss/_components/category/_television.scss */
 .television .card-title {
   margin-bottom: 5px;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
 }
 
-/* line 247, src/scss/_components/category/_television.scss */
+/* line 245, src/scss/_components/category/_television.scss */
 .television .card-text {
+  font-family: "aktiv-grotesk",sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -3599,7 +3597,19 @@ picture {
   }
 }
 
-/* line 59, src/scss/_components/projects/_projects.scss */
+/* line 60, src/scss/_components/projects/_projects.scss */
+.projects .card:hover .icon-arrow {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 66, src/scss/_components/projects/_projects.scss */
 .projects .card:after {
   content: '';
   position: absolute;
@@ -3612,7 +3622,7 @@ picture {
   background: linear-gradient(36.87deg, rgba(0, 0, 0, 0.8) 16.18%, rgba(0, 0, 0, 0) 32.46%);
 }
 
-/* line 69, src/scss/_components/projects/_projects.scss */
+/* line 76, src/scss/_components/projects/_projects.scss */
 .projects .card-body {
   position: relative;
   z-index: 2;
@@ -3623,7 +3633,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 69, src/scss/_components/projects/_projects.scss */
+  /* line 76, src/scss/_components/projects/_projects.scss */
   .projects .card-body {
     -webkit-box-align: start !important;
     -webkit-align-items: flex-start !important;
@@ -3637,7 +3647,7 @@ picture {
   }
 }
 
-/* line 78, src/scss/_components/projects/_projects.scss */
+/* line 85, src/scss/_components/projects/_projects.scss */
 .projects .card-body__bg {
   z-index: -1;
   position: absolute;
@@ -3648,77 +3658,84 @@ picture {
   height: auto;
 }
 
-/* line 89, src/scss/_components/projects/_projects.scss */
+/* line 96, src/scss/_components/projects/_projects.scss */
 .projects .card-title {
   padding-left: 4px;
   letter-spacing: 1.5px;
   margin-bottom: 0;
-  font-family: 'Aktiv Grotesk Ex', sans-serif;
   font-size: 60px;
+  font-weight: 800;
   line-height: 77px;
   color: #ffffff;
   text-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
 }
 
 @media screen and (max-width: 1365px) {
-  /* line 89, src/scss/_components/projects/_projects.scss */
+  /* line 96, src/scss/_components/projects/_projects.scss */
   .projects .card-title {
     font-size: 55px;
   }
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 89, src/scss/_components/projects/_projects.scss */
+  /* line 96, src/scss/_components/projects/_projects.scss */
   .projects .card-title {
     font-size: 45px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 89, src/scss/_components/projects/_projects.scss */
+  /* line 96, src/scss/_components/projects/_projects.scss */
   .projects .card-title {
     font-size: 36px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 89, src/scss/_components/projects/_projects.scss */
+  /* line 96, src/scss/_components/projects/_projects.scss */
   .projects .card-title {
     font-size: 30px;
   }
 }
 
-/* line 112, src/scss/_components/projects/_projects.scss */
+/* line 119, src/scss/_components/projects/_projects.scss */
 .projects .card-text {
   padding-left: 8px;
   padding-bottom: 18px;
   font-size: 20px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 300;
   line-height: 24px;
   color: #FFFFFF;
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 112, src/scss/_components/projects/_projects.scss */
+  /* line 119, src/scss/_components/projects/_projects.scss */
   .projects .card-text {
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 112, src/scss/_components/projects/_projects.scss */
+  /* line 119, src/scss/_components/projects/_projects.scss */
   .projects .card-text {
     font-size: 16px;
   }
 }
 
-/* line 126, src/scss/_components/projects/_projects.scss */
+/* line 135, src/scss/_components/projects/_projects.scss */
 .projects .card .icon-font {
   margin-left: 10px;
   color: #ffffff;
   font-size: 14px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 132, src/scss/_components/projects/_projects.scss */
+/* line 142, src/scss/_components/projects/_projects.scss */
 .projects .card__bg {
   position: absolute;
   top: 0;
@@ -3731,7 +3748,7 @@ picture {
           background-size: cover;
 }
 
-/* line 143, src/scss/_components/projects/_projects.scss */
+/* line 153, src/scss/_components/projects/_projects.scss */
 .projects .card__overlay {
   opacity: 0.5;
   position: absolute;
@@ -3742,7 +3759,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 143, src/scss/_components/projects/_projects.scss */
+  /* line 153, src/scss/_components/projects/_projects.scss */
   .projects .card__overlay {
     max-width: -webkit-calc(210px / 2);
     max-width: calc(210px / 2);
@@ -3750,7 +3767,7 @@ picture {
   }
 }
 
-/* line 156, src/scss/_components/projects/_projects.scss */
+/* line 166, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge {
   overflow: hidden;
   position: relative;
@@ -3763,14 +3780,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 156, src/scss/_components/projects/_projects.scss */
+  /* line 166, src/scss/_components/projects/_projects.scss */
   .projects .card__iamge {
     width: 90px;
     height: 90px;
   }
 }
 
-/* line 169, src/scss/_components/projects/_projects.scss */
+/* line 179, src/scss/_components/projects/_projects.scss */
 .projects .card__iamge img {
   position: absolute;
   top: 0;
@@ -3783,7 +3800,7 @@ picture {
      object-position: center;
 }
 
-/* line 180, src/scss/_components/projects/_projects.scss */
+/* line 190, src/scss/_components/projects/_projects.scss */
 .projects .card__line {
   position: absolute;
   top: 0;
@@ -3793,7 +3810,7 @@ picture {
   background-color: #FFFFFF;
 }
 
-/* line 189, src/scss/_components/projects/_projects.scss */
+/* line 199, src/scss/_components/projects/_projects.scss */
 .projects .card .btn {
   width: 120px;
   height: 30px;
@@ -3809,13 +3826,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 189, src/scss/_components/projects/_projects.scss */
+  /* line 199, src/scss/_components/projects/_projects.scss */
   .projects .card .btn {
     margin-top: 30px;
   }
 }
 
-/* line 204, src/scss/_components/projects/_projects.scss */
+/* line 214, src/scss/_components/projects/_projects.scss */
 .projects .card .btn:hover, .projects .card .btn:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
