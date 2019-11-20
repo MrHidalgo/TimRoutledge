@@ -6,7 +6,7 @@ PageList:
   ready: 55
 - file: showreel.html
   titleName: Showreel
-  ready: 90
+  ready: 100
 - file: projects.html
   titleName: Projects
   ready: 100
