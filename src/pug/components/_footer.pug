@@ -79,8 +79,10 @@ footer#footer.footer
           p.footer__user-name Tim Routledge
           p.footer__user-desc Showreel
 
-        .footer__video
+        a.footer__video(href='/showreel.html' title='')
           img(src='img/showreel.gif')
+
+          i.icon-font.icon-arrow
           //video#video(poster='img/img-video-poster.jpg')
           //  source(src="media/video.mp4" type="video/mp4")
           //
@@ -91,6 +93,6 @@ footer#footer.footer
       div
         p.copyright__text 1994-2019 All rights reserved. Tim Routledge - Lighting Designer, Lighting Director, Lighting Programmer.
       div
-        p.copyright__info!= "Site by <strong>Pony.</strong>"
+        p.copyright__info!= "<a href='https://pony.studio/' target='_blank' title='Site by Pony.'>Site by <strong>Pony.</strong></a>"
 
 // FOOTER :: END

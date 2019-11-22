@@ -550,13 +550,13 @@ picture {
 @media screen and (max-width: 767px) {
   /* line 41, src/scss/_shared/_common.scss */
   .copyright {
+    z-index: 15;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 15px;
   }
 }
 
@@ -641,6 +641,49 @@ picture {
 }
 
 /* line 104, src/scss/_shared/_common.scss */
+.copyright__info a,
+.copyright__info strong {
+  color: #ffffff;
+}
+
+/* line 109, src/scss/_shared/_common.scss */
+.copyright__info a {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 114, src/scss/_shared/_common.scss */
+.copyright__info a:hover:before, .copyright__info a:hover:after {
+  width: 50%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 121, src/scss/_shared/_common.scss */
+.copyright__info a:before, .copyright__info a:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+/* line 132, src/scss/_shared/_common.scss */
+.copyright__info a:before {
+  left: 50%;
+}
+
+/* line 135, src/scss/_shared/_common.scss */
+.copyright__info a:after {
+  right: 50%;
+}
+
+/* line 140, src/scss/_shared/_common.scss */
 .copyright__info strong {
   font-weight: 800;
 }
@@ -1654,7 +1697,20 @@ picture {
 
 /* line 328, src/scss/_components/_footer.scss */
 .footer__video {
+  overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   right: 2px;
   width: 540px;
   height: 304px;
@@ -1676,7 +1732,107 @@ picture {
   }
 }
 
-/* line 342, src/scss/_components/_footer.scss */
+/* line 347, src/scss/_components/_footer.scss */
+.footer__video:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(3);
+      -ms-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 353, src/scss/_components/_footer.scss */
+.footer__video:hover .icon-arrow {
+  opacity: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: slideArrow;
+          animation-name: slideArrow;
+}
+
+/* line 363, src/scss/_components/_footer.scss */
+.footer__video:after {
+  content: '';
+  z-index: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.55);
+  -webkit-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+          transform: scale(0.2);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 378, src/scss/_components/_footer.scss */
+.footer__video .icon-arrow {
+  z-index: 4;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 22px;
+}
+
+@-webkit-keyframes slideArrow {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes slideArrow {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+/* line 403, src/scss/_components/_footer.scss */
 .footer__video-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1694,7 +1850,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 353, src/scss/_components/_footer.scss */
+/* line 414, src/scss/_components/_footer.scss */
 .footer__video-btn:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1706,7 +1862,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 359, src/scss/_components/_footer.scss */
+/* line 420, src/scss/_components/_footer.scss */
 .footer__video-btn .icon-font {
   position: relative;
   left: 2px;
@@ -1724,7 +1880,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 370, src/scss/_components/_footer.scss */
+/* line 431, src/scss/_components/_footer.scss */
 .footer__video iframe,
 .footer__video video,
 .footer__video img {
@@ -1739,7 +1895,7 @@ picture {
      object-position: center;
 }
 
-/* line 383, src/scss/_components/_footer.scss */
+/* line 444, src/scss/_components/_footer.scss */
 .footer__info {
   text-align: right;
   font-family: 'Aktiv Grotesk Ex', sans-serif;
@@ -2419,7 +2575,7 @@ picture {
 @media screen and (max-width: 1279px) {
   /* line 30, src/scss/_components/about/_about.scss */
   .about__bg img:nth-of-type(2) {
-    display: none;
+    display: none !important;
   }
 }
 
